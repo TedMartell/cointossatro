@@ -30,9 +30,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 725449621009601,
+							"sid": 563150673332792,
 							"parameters": {
-								"interval-seconds": "0.5"
+								"interval-seconds": "0.1"
 							}
 						}
 					],
@@ -91,6 +91,24 @@
 					"parameters": {
 						"instance-variable": "power",
 						"value": "1000"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 381866028002766,
+					"parameters": {
+						"seconds": "0.5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "pusher",
+					"sid": 132701605036719,
+					"parameters": {
+						"x": "1514",
+						"y": "376"
 					}
 				}
 			],
