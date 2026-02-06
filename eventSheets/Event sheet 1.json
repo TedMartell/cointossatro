@@ -1,5 +1,147 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 891797545967736,
+					"parameters": {
+						"object": "pusher"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 748032842408734,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 701766599541374,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 725449621009601,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "pusher",
+							"sid": 149940611587718,
+							"parameters": {
+								"instance-variable": "power",
+								"value": "100"
+							}
+						}
+					],
+					"sid": 155498964090891
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 352734271981745,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 998288833181463,
+					"parameters": {
+						"object": "pusher"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-impulse-towards-position",
+					"objectClass": "pusher",
+					"sid": 330059502611829,
+					"behaviorType": "Physics",
+					"parameters": {
+						"impulse": "pusher.power",
+						"x": "coint.X",
+						"y": "coint.Y",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "pusher",
+					"sid": 705981187897089,
+					"parameters": {
+						"instance-variable": "power",
+						"value": "1000"
+					}
+				}
+			],
+			"sid": 486005217810853
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 744721947682496
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "powerVariable",
+					"sid": 823142353414541,
+					"parameters": {
+						"text": "pusher.power"
+					}
+				}
+			],
+			"sid": 897020211578799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 178215972937999,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "coint",
+					"sid": 219804229748483,
+					"parameters": {
+						"x": "1344",
+						"y": "192"
+					}
+				}
+			],
+			"sid": 449176995056915
+		}
+	],
 	"sid": 878535526920507
 }
