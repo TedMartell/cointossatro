@@ -40,10 +40,10 @@
 						{
 							"id": "add-to-instvar",
 							"objectClass": "pusher",
-							"sid": 149940611587718,
+							"sid": 635840755873400,
 							"parameters": {
 								"instance-variable": "power",
-								"value": "100"
+								"value": "1"
 							}
 						}
 					],
@@ -76,6 +76,7 @@
 					"id": "apply-impulse-towards-position",
 					"objectClass": "pusher",
 					"sid": 330059502611829,
+					"disabled": true,
 					"behaviorType": "Physics",
 					"parameters": {
 						"impulse": "pusher.power",
@@ -85,34 +86,66 @@
 					}
 				},
 				{
-					"id": "set-instvar-value",
-					"objectClass": "pusher",
-					"sid": 705981187897089,
-					"parameters": {
-						"instance-variable": "power",
-						"value": "1000"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 381866028002766,
-					"parameters": {
-						"seconds": "0.5",
-						"use-timescale": true
-					}
-				},
-				{
 					"id": "set-position",
 					"objectClass": "pusher",
 					"sid": 132701605036719,
+					"disabled": true,
 					"parameters": {
 						"x": "1514",
 						"y": "376"
 					}
 				}
 			],
-			"sid": 486005217810853
+			"sid": 486005217810853,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "coint",
+							"sid": 943220570174697,
+							"parameters": {
+								"instance-variable": "pushed"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "apply-impulse-towards-position",
+							"objectClass": "coint",
+							"sid": 683211913688126,
+							"behaviorType": "Physics",
+							"parameters": {
+								"impulse": "pusher.power",
+								"x": "force_target.X",
+								"y": "force_target.Y",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 837915529562014,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "pusher",
+							"sid": 676669489858277,
+							"parameters": {
+								"instance-variable": "power",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 131827698829122
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -149,16 +182,50 @@
 			],
 			"actions": [
 				{
-					"id": "set-position",
-					"objectClass": "coint",
-					"sid": 219804229748483,
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 995662434541451,
 					"parameters": {
-						"x": "1344",
-						"y": "192"
+						"object-to-create": "coint",
+						"layer": "\"Layer 0\"",
+						"x": "1350",
+						"y": "359",
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
 				}
 			],
 			"sid": 449176995056915
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "coint",
+					"sid": 348822788812521,
+					"parameters": {
+						"object": "force_target"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 701082909490933
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "coint",
+					"sid": 101919644871825,
+					"parameters": {
+						"instance-variable": "pushed",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 663295233503258
 		}
 	],
 	"sid": 878535526920507

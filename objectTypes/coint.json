@@ -4,7 +4,15 @@
 	"sid": 257798423873622,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "pushed",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 776337022108937
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Physics",
