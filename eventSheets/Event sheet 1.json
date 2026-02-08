@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 995440368135159
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -119,8 +129,8 @@
 							"behaviorType": "Physics",
 							"parameters": {
 								"impulse": "pusher.power",
-								"x": "force_target.X",
-								"y": "force_target.Y",
+								"x": "forceTarget.X",
+								"y": "forceTarget.Y",
 								"image-point": "0"
 							}
 						},
@@ -164,6 +174,14 @@
 					"parameters": {
 						"text": "pusher.power"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "pointsText",
+					"sid": 779304244563110,
+					"parameters": {
+						"text": "score"
+					}
 				}
 			],
 			"sid": 897020211578799
@@ -184,10 +202,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 995662434541451,
+					"sid": 255918372680103,
 					"parameters": {
 						"object-to-create": "coint",
-						"layer": "\"Layer 0\"",
+						"layer": "\"action\"",
 						"x": "1350",
 						"y": "359",
 						"create-hierarchy": false,
@@ -205,7 +223,7 @@
 					"objectClass": "coint",
 					"sid": 348822788812521,
 					"parameters": {
-						"object": "force_target"
+						"object": "forceTarget"
 					}
 				},
 				{
@@ -226,6 +244,53 @@
 				}
 			],
 			"sid": 663295233503258
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 157867411405385,
+					"parameters": {
+						"object": "coint"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 250787123335730,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "coint",
+							"sid": 292675430169365,
+							"parameters": {
+								"object": "pointsTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 231028414230777,
+							"parameters": {
+								"variable": "score",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "coint",
+							"sid": 441776292684143
+						}
+					],
+					"sid": 145078246903446
+				}
+			]
 		}
 	],
 	"sid": 878535526920507

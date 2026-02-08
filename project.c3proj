@@ -67,7 +67,10 @@
 			"powerVariable",
 			"pajatso",
 			"test_background",
-			"force_target"
+			"forceTarget",
+			"coin_slot_foreground",
+			"pointsTrigger",
+			"pointsText"
 		],
 		"subfolders": []
 	},
