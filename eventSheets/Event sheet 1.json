@@ -50,10 +50,10 @@
 						{
 							"id": "add-to-instvar",
 							"objectClass": "pusher",
-							"sid": 635840755873400,
+							"sid": 688238318734894,
 							"parameters": {
 								"instance-variable": "power",
-								"value": "1"
+								"value": "0.2"
 							}
 						}
 					],
@@ -289,6 +289,60 @@
 						}
 					],
 					"sid": 145078246903446
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 125880398902452,
+					"parameters": {
+						"object": "slotWalls"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 625704631178757,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 568588771055378
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "slotWalls",
+							"sid": 774356393152216,
+							"parameters": {
+								"object": "pointsTrigger",
+								"layer": "\"background\"",
+								"image-point": "\"pointsTrigger\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "slotWalls",
+							"sid": 452119661157293,
+							"parameters": {
+								"object": "coinSlotForeground",
+								"layer": "\"foreground\"",
+								"image-point": "\"coinSlotForeground\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 898872306179733
 				}
 			]
 		}

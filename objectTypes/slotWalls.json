@@ -1,0 +1,86 @@
+{
+	"name": "slotWalls",
+	"plugin-id": "Sprite",
+	"sid": 510147786615500,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 133015244377585
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 57,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3293798,
+						"collisionPoly": {
+							"points": [
+								0.043859649122807015,
+								0,
+								0.08771936517012743,
+								0.03,
+								0.12280701754385964,
+								0.49,
+								0.12280701754385964,
+								0.95,
+								0.8771929824561403,
+								0.95,
+								0.8771929824561403,
+								0.49,
+								0.9122807017543859,
+								0.03,
+								0.956140350877193,
+								0,
+								1,
+								0.03,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.03
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "pointsTrigger",
+								"x": 0.47368421052631576,
+								"y": 0.8
+							},
+							{
+								"name": "coinSlotForeground",
+								"x": 0,
+								"y": 0.33
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 855358164096913,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

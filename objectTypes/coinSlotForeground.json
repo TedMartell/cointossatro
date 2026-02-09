@@ -1,5 +1,5 @@
 {
-	"name": "coin_slot_foreground",
+	"name": "coinSlotForeground",
 	"plugin-id": "Sprite",
 	"sid": 566677639994154,
 	"isGlobal": false,
@@ -14,8 +14,8 @@
 					{
 						"width": 57,
 						"height": 67,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

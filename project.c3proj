@@ -68,9 +68,10 @@
 			"pajatso",
 			"test_background",
 			"forceTarget",
-			"coin_slot_foreground",
+			"coinSlotForeground",
 			"pointsTrigger",
-			"pointsText"
+			"pointsText",
+			"slotWalls"
 		],
 		"subfolders": []
 	},
