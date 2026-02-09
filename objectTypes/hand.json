@@ -1,0 +1,52 @@
+{
+	"name": "hand",
+	"plugin-id": "Sprite",
+	"sid": 318694506336609,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 350,
+						"height": 750,
+						"originX": 0.375,
+						"originY": 0.34375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 171339,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.75,
+								0,
+								0.75,
+								0.6875,
+								0,
+								0.6875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 726789689690332,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

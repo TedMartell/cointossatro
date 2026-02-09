@@ -71,7 +71,8 @@
 			"coinSlotForeground",
 			"pointsTrigger",
 			"pointsText",
-			"slotWalls"
+			"slotWalls",
+			"hand"
 		],
 		"subfolders": []
 	},

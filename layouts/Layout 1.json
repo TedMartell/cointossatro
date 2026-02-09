@@ -44,7 +44,7 @@
 					}
 				},
 				{
-					"type": "pointsTrigger",
+					"type": "hand",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -53,23 +53,23 @@
 						"live-preview": false
 					},
 					"uid": 16,
-					"sid": 145062644840148,
+					"sid": 213742275135525,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 145062644840148,
+						"sid": 213742275135525,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 783.7063051232785,
-						"y": 1146.3537054507228,
-						"width": 990.2026775015039,
-						"height": 15,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1429,
+						"y": 584,
+						"width": 350,
+						"height": 750,
+						"originX": 0.375,
+						"originY": 0.34375,
 						"color": [
 							1,
 							1,
@@ -209,10 +209,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1445.8371269940158,
-						"y": 387.70206834504785,
-						"width": 65.37149453040388,
-						"height": 74.9826088075448,
+						"x": 1711,
+						"y": 514,
+						"width": 107.37149453040388,
+						"height": 254.9826088075448,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
