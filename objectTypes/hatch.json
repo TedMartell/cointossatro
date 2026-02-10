@@ -1,40 +1,46 @@
 {
-	"name": "pointsTrigger",
+	"name": "hatch",
 	"plugin-id": "Sprite",
-	"sid": 543052920686926,
+	"sid": 969940488247951,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
-			"name": "pointsTriggerID",
+			"name": "hatchID",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 343652402184147
+			"sid": 825142568802606
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 537694276342690
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 15,
-						"height": 15,
+						"width": 55,
+						"height": 5,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 808612,
+						"imageSpriteId": 1399226,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 473052958247728,
+				"sid": 635972284223929,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

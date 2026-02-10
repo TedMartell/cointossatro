@@ -1,7 +1,7 @@
 {
-	"name": "pointsTrigger",
+	"name": "pointsTriggerBottom",
 	"plugin-id": "Sprite",
-	"sid": 543052920686926,
+	"sid": 377289020319239,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 343652402184147
+			"sid": 403917043790770
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 808612,
+						"imageSpriteId": 2302213,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 473052958247728,
+				"sid": 198752727280747,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

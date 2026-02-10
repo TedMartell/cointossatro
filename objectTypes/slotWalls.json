@@ -4,7 +4,15 @@
 	"sid": 510147786615500,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "slotID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 857766404403336
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Physics",
@@ -66,6 +74,11 @@
 								"name": "coinSlotForeground",
 								"x": 0,
 								"y": 0.33
+							},
+							{
+								"name": "slotLights",
+								"x": 0.19298245614035087,
+								"y": -0.18
 							}
 						],
 						"duration": 1,

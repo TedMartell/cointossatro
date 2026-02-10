@@ -72,7 +72,11 @@
 			"pointsTrigger",
 			"pointsText",
 			"slotWalls",
-			"hand"
+			"hand",
+			"hatch",
+			"slotLights",
+			"pointsTriggerBottom",
+			"coinStart"
 		],
 		"subfolders": []
 	},
