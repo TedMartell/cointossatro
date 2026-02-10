@@ -76,7 +76,8 @@
 			"hatch",
 			"slotLights",
 			"pointsTriggerBottom",
-			"coinStart"
+			"coinStart",
+			"powerMeter"
 		],
 		"subfolders": []
 	},

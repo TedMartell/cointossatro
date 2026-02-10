@@ -64,8 +64,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1426,
-						"y": 584,
+						"x": 1442,
+						"y": 548,
 						"width": 350,
 						"height": 800,
 						"originX": 0.375,
@@ -1465,6 +1465,43 @@
 					}
 				},
 				{
+					"type": "powerMeter",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 81,
+					"sid": 126661621054720,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 126661621054720,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1300.4903338463384,
+						"y": 234.4029953418264,
+						"width": 125,
+						"height": 85,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "hatch",
 					"properties": {
 						"initially-visible": true,
@@ -1702,8 +1739,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1305,
-						"y": 241,
+						"x": 1321,
+						"y": 104,
 						"width": 91,
 						"height": 41,
 						"originX": 0,

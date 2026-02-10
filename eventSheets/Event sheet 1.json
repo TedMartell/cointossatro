@@ -100,24 +100,6 @@
 						"animation": "\"pressed\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 354842930357623,
-					"parameters": {
-						"seconds": "0.25",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 313495162581539,
-					"parameters": {
-						"animation": "\"idle\"",
-						"from": "beginning"
-					}
 				}
 			],
 			"sid": 486005217810853,
@@ -172,6 +154,24 @@
 							"parameters": {
 								"instance-variable": "power",
 								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 819661096084911,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hand",
+							"sid": 151505588941726,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
 							}
 						}
 					],
@@ -280,15 +280,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 178215972937999,
-					"disabled": true,
-					"parameters": {
-						"key": 82
-					}
-				},
 				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
