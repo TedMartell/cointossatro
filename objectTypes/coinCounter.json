@@ -1,0 +1,57 @@
+{
+	"name": "coinCounter",
+	"plugin-id": "Sprite",
+	"sid": 775483789405779,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 130,
+						"height": 210,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7035762,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "creditNumHun",
+								"x": 0.015384615384615385,
+								"y": 0.5761904761904761
+							},
+							{
+								"name": "creditNumTen",
+								"x": 0.34615384615384615,
+								"y": 0.5761904761904761
+							},
+							{
+								"name": "creditNumOne",
+								"x": 0.676923076923077,
+								"y": 0.5761904761904761
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 593199077854800,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
