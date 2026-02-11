@@ -210,6 +210,18 @@
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 217855457438783,
+							"parameters": {
+								"object": "plexi",
+								"layer": "\"foreground\"",
+								"image-point": "\"plexi\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
 						}
 					],
 					"sid": 170345300454462
@@ -245,9 +257,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "pointsText",
-							"sid": 499330693390028,
+							"sid": 381315040607410,
 							"parameters": {
-								"text": "credit"
+								"text": "money"
 							}
 						},
 						{
@@ -410,9 +422,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 837915529562014,
+							"sid": 315705572424082,
 							"parameters": {
-								"seconds": "0.5",
+								"seconds": "0.2",
 								"use-timescale": true
 							}
 						},
@@ -618,9 +630,9 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 231028414230777,
+							"sid": 873055535021151,
 							"parameters": {
-								"variable": "credit",
+								"variable": "money",
 								"value": "1"
 							}
 						},
@@ -714,9 +726,9 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 782038937270250,
+							"sid": 931620602438848,
 							"parameters": {
-								"variable": "credit",
+								"variable": "money",
 								"value": "1"
 							}
 						},
