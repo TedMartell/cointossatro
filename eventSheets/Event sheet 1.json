@@ -174,6 +174,42 @@
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "coinCounter",
+							"sid": 372394019098802,
+							"parameters": {
+								"object": "buyCoinHun",
+								"layer": "\"background\"",
+								"image-point": "\"buyCoinHun\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "coinCounter",
+							"sid": 598534444389782,
+							"parameters": {
+								"object": "buyCoinTen",
+								"layer": "\"background\"",
+								"image-point": "\"buyCoinTen\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "coinCounter",
+							"sid": 165630709994031,
+							"parameters": {
+								"object": "buyCoinOne",
+								"layer": "\"background\"",
+								"image-point": "\"buyCoinOne\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
 						}
 					],
 					"sid": 170345300454462
@@ -795,14 +831,209 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 984239396649134,
+					"sid": 705323501961486,
 					"parameters": {
-						"variable": "credit",
-						"value": "10"
+						"variable": "money",
+						"value": "100"
 					}
 				}
 			],
 			"sid": 288675988320068
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 372560367727773,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "buyCoinHun"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 641557429598315,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 649585884305781,
+							"parameters": {
+								"first-value": "money",
+								"comparison": 5,
+								"second-value": "100"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 375451139364916,
+							"parameters": {
+								"first-value": "credit",
+								"comparison": 3,
+								"second-value": "899"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 148720975936873,
+							"parameters": {
+								"variable": "credit",
+								"value": "100"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 259323131726797,
+							"parameters": {
+								"variable": "money",
+								"value": "100"
+							}
+						}
+					],
+					"sid": 366388240022866
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 259398854654297,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "buyCoinTen"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 796524754472921,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 876728681673056,
+							"parameters": {
+								"first-value": "money",
+								"comparison": 5,
+								"second-value": "10"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 378333648396618,
+							"parameters": {
+								"first-value": "credit",
+								"comparison": 3,
+								"second-value": "989"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 413274545902846,
+							"parameters": {
+								"variable": "credit",
+								"value": "10"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 850234194618199,
+							"parameters": {
+								"variable": "money",
+								"value": "10"
+							}
+						}
+					],
+					"sid": 893368320159774
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 878471146825068,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "buyCoinOne"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 686477267660701,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 934250966346625,
+							"parameters": {
+								"first-value": "credit",
+								"comparison": 3,
+								"second-value": "998"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 688387135843269,
+							"parameters": {
+								"first-value": "money",
+								"comparison": 5,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 905496150543139,
+							"parameters": {
+								"variable": "credit",
+								"value": "1"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 279401836850917,
+							"parameters": {
+								"variable": "money",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 822537243731600
+				}
+			]
 		}
 	],
 	"sid": 878535526920507
