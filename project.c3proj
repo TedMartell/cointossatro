@@ -87,7 +87,11 @@
 			"buyCoinTen",
 			"buyCoinOne",
 			"plexi",
-			"borderStick"
+			"borderStick",
+			"borderLeft",
+			"borderTop",
+			"borderRightTop",
+			"borderRightBottom"
 		],
 		"subfolders": []
 	},
