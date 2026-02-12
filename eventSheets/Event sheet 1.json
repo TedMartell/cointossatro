@@ -50,756 +50,1522 @@
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [
+					"conditions": [
 						{
-							"type": "script",
-							"language": "javascript",
-							"script": [
-								"// SPAWN SLOTS AND LIGHTS"
-							]
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 271520208544595
 						}
 					],
+					"actions": [],
 					"sid": 650150549242526,
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-start-of-layout",
-									"objectClass": "System",
-									"sid": 371041603010512
-								}
-							],
+							"conditions": [],
 							"actions": [
-								{
-									"type": "comment",
-									"text": "Slot 0"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 261830724740383,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot0\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 937707831057455,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "0"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 515142990580830,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 538991275257357,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 777631155180720,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 128077448636178,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 713893144341129,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot 1"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 537608597701591,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot1\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 662810673508686,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "1"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 782563800869878,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 279012234969423,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 668857531688279,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 341637337697946,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 843707767108526,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot 2"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 995522985344650,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot2\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 102175743098566,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "2"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 774143520627918,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 475106650158699,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 846121071450945,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 455064901494349,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 716243730941476,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot  3"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 233932596679413,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot3\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 962366485422837,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "3"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 809094236313338,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 948156664806570,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 367504603729535,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 502462177861698,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 162761470024649,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot 4"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 538538338515624,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot4\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 897926637945168,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "4"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 592029270719426,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 576930003373096,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 991448214955331,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 193602819926743,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 592156763223611,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot 5"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 260444162359904,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot5\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 455048859609014,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "5"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 565015765979854,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 686289350540136,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 219222053378926,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 517142347134843,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 696770274303551,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot 6"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 519755133215130,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot6\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 696493316933602,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "6"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 794189364530004,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 805639436576018,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 471507707947694,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 991970070351320,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 365209011597966,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot 7"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 420074532602522,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot7\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 292000242684287,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "7"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 661962031281981,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 947276481732313,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 877655222372909,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 459178770620932,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 867732599691917,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "Slot 8"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "pajatso",
-									"sid": 979514910379593,
-									"parameters": {
-										"object": "slotWalls",
-										"layer": "\"background\"",
-										"image-point": "\"slot8\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotWalls",
-									"sid": 312266503580389,
-									"parameters": {
-										"instance-variable": "slotID",
-										"value": "8"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 638149133135729,
-									"parameters": {
-										"object": "coinSlotForeground",
-										"layer": "\"foreground\"",
-										"image-point": "\"coinSlotForeground\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 218102510674475,
-									"parameters": {
-										"object": "pointsTrigger",
-										"layer": "\"background\"",
-										"image-point": "\"pointsTrigger\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pointsTrigger",
-									"sid": 186406234204858,
-									"parameters": {
-										"instance-variable": "pointsTriggerID",
-										"value": "slotWalls.slotID"
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "slotWalls",
-									"sid": 239220773327894,
-									"parameters": {
-										"object": "slotLights",
-										"layer": "\"foreground\"",
-										"image-point": "\"slotLights\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "slotLights",
-									"sid": 653585716056245,
-									"parameters": {
-										"instance-variable": "slotLightsID",
-										"value": "slotWalls.slotID"
-									}
-								},
 								{
 									"type": "script",
 									"language": "javascript",
 									"script": [
-										"const triggers = runtime.objects[\"slotWalls\"].getAllInstances();",
-										"",
-										"for(let i = 0; i<triggers.length; i++) {",
-										"\tconsole.log(triggers[i].instVars.slotID)",
-										"}",
-										"",
-										"",
-										"",
-										""
+										"//SLOTS HATCHES AND LIGHTS With ID"
 									]
 								}
 							],
-							"sid": 708834891526596
+							"sid": 268470141451077,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Slot 0"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 713767834919358,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot0\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 976581415347589,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 139959972280348,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 998543123555955,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 573114755898707,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 642782738543898,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 813978425134472,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 966624776018015,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch0\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 682442796169475,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 321804774128504,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light0\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 736126133223676,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "0"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot 1"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 512070308998743,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot1\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 299866098998996,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 246383627699227,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 454617535745608,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 866117603502250,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 944758543458812,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 409558255471793,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 953404805845554,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch10\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 762686906082496,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 332203103854537,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch11\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 407993212602868,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 613331832966231,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light1\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 658556564631067,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "1"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot 2"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 983187762928987,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot2\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 999487582660651,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "2"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 441491074152772,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 150447953407195,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 173234502117793,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 344447084331789,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 755643127315433,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 441568495232028,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch20\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 337745929231210,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "2"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 639716647474835,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch21\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 381455364036664,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "2"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 912535625621897,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light2\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 943153829527590,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "2"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot  3"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 907405767880613,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot3\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 496462594261894,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "3"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 514031133569312,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 282986581183364,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 940127758694783,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 478554960865910,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 503833737124412,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 967836477936816,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch30\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 187551212076790,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "3"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 418787781404587,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch31\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 780654601452087,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "3"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 567627003293034,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light3\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 165462628643862,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "3"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot 4"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 862446887304006,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot4\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 164354816227813,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "4"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 358720891740318,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 507805137992829,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 322798889845625,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 441534755833686,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 812483579590116,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 778967795773636,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch40\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 366393312398973,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "4"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 371673007586246,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch41\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 224091855991342,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "4"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 145516189004320,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light4\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 952836447199214,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "4"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot 5"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 375109719966569,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot5\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 109790384653520,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "5"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 586020374271611,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 663342916646013,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 271494847003636,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 848625485899198,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 654466385838360,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 209895480905150,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch50\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 140768404809107,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "5"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 205201887666586,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch51\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 390138592168966,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "5"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 758235950085156,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light5\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 224581276791429,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "5"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot 6"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 480221251291827,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot6\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 777876127744816,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "6"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 987070628223043,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 505986815196839,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 768415199317428,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 200106476754990,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 310634940080517,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 306667935009232,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch60\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 704737995775040,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "6"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 264449668500621,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch61\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 153536861161936,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "6"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 583827620730250,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light6\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 271310374188752,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "6"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot 7"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 245596586246532,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot7\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 852581159938696,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "7"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 626759056015281,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 159834279238318,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 318620972192633,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 956449520185728,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 497774675433291,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 160353966704994,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch70\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 577264176080349,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "7"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 907905942843804,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch71\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 524086059704333,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "7"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 719985722701565,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light7\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 183101226150925,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "7"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Slot 8"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 480314633385625,
+											"parameters": {
+												"object": "slotWalls",
+												"layer": "\"background\"",
+												"image-point": "\"slot8\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotWalls",
+											"sid": 227593611998253,
+											"parameters": {
+												"instance-variable": "slotID",
+												"value": "8"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 731826574461094,
+											"parameters": {
+												"object": "coinSlotForeground",
+												"layer": "\"foreground\"",
+												"image-point": "\"coinSlotForeground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 399479095562437,
+											"parameters": {
+												"object": "pointsTrigger",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTrigger\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pointsTrigger",
+											"sid": 491286107440351,
+											"parameters": {
+												"instance-variable": "pointsTriggerID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "slotWalls",
+											"sid": 762339201686987,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"foreground\"",
+												"image-point": "\"slotLights\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 664347804304785,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "slotWalls.slotID"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 145481826476869,
+											"parameters": {
+												"object": "hatch",
+												"layer": "\"background\"",
+												"image-point": "\"hatch8\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "hatch",
+											"sid": 277863251006767,
+											"parameters": {
+												"instance-variable": "hatchID",
+												"value": "8"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 731879586279538,
+											"parameters": {
+												"object": "slotLights",
+												"layer": "\"background\"",
+												"image-point": "\"light8\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "slotLights",
+											"sid": 394525826984227,
+											"parameters": {
+												"instance-variable": "slotLightsID",
+												"value": "8"
+											}
+										},
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"const triggers = runtime.objects[\"slotWalls\"].getAllInstances();",
+												"",
+												"for(let i = 0; i<triggers.length; i++) {",
+												"\tconsole.log(triggers[i].instVars.slotID)",
+												"}",
+												"",
+												"",
+												"",
+												""
+											]
+										}
+									],
+									"sid": 329376849986423
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 888533484494171
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//BORDERS AND OBSTACLES "
+									]
+								}
+							],
+							"sid": 892887181547168,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 581396824463626,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick0\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 610632564649404,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick1\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 204039236096504,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick2\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 206962292421615,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick3\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 229803776355624,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick4\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 569402796849463,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick5\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 282271002181912,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick6\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 798072293798385,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick7\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 751230564289766,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick8\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 255535572930346,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick9\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 170048688117567,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick10\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 317232024964668,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick11\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 694520195660480,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick12\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 423443962975406,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick13\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 705316614018217,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick14\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 170847551376028,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick15\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 171561962176591,
+											"parameters": {
+												"object": "borderStick",
+												"layer": "\"background\"",
+												"image-point": "\"borderStick16\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 901829420971939
+								}
+							]
 						}
 					]
 				},
@@ -815,92 +1581,8 @@
 					"actions": [
 						{
 							"id": "spawn-another-object",
-							"objectClass": "powerMeter",
-							"sid": 367103175725085,
-							"parameters": {
-								"object": "chargeShadow",
-								"layer": "\"background\"",
-								"image-point": "\"chargeShadow\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "coinCounter",
-							"sid": 303388081414244,
-							"parameters": {
-								"object": "creditNumHun",
-								"layer": "\"background\"",
-								"image-point": "\"creditNumHun\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "coinCounter",
-							"sid": 268219113526539,
-							"parameters": {
-								"object": "creditNumTen",
-								"layer": "\"background\"",
-								"image-point": "\"creditNumTen\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "coinCounter",
-							"sid": 534657303666496,
-							"parameters": {
-								"object": "creditNumOne",
-								"layer": "\"background\"",
-								"image-point": "\"creditNumOne\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "coinCounter",
-							"sid": 501048936459355,
-							"parameters": {
-								"object": "buyCoinHun",
-								"layer": "\"background\"",
-								"image-point": "\"buyCoinHun\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "coinCounter",
-							"sid": 849171624936041,
-							"parameters": {
-								"object": "buyCoinTen",
-								"layer": "\"background\"",
-								"image-point": "\"buyCoinTen\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "coinCounter",
-							"sid": 760553520844048,
-							"parameters": {
-								"object": "buyCoinOne",
-								"layer": "\"background\"",
-								"image-point": "\"buyCoinOne\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
 							"objectClass": "pajatso",
-							"sid": 404665561898455,
+							"sid": 644472705994563,
 							"parameters": {
 								"object": "plexi",
 								"layer": "\"foreground\"",
@@ -908,9 +1590,126 @@
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 732308062601282,
+							"parameters": {
+								"object": "coinCounter",
+								"layer": "\"background\"",
+								"image-point": "\"coinCounter\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 598107638314202,
+							"parameters": {
+								"object": "powerMeter",
+								"layer": "\"background\"",
+								"image-point": "\"powerMeter\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
 						}
 					],
-					"sid": 375103075285210
+					"sid": 375103075285210,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "powerMeter",
+									"sid": 837699735375616,
+									"parameters": {
+										"object": "chargeShadow",
+										"layer": "\"background\"",
+										"image-point": "\"chargeShadow\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "coinCounter",
+									"sid": 324860090750094,
+									"parameters": {
+										"object": "creditNumHun",
+										"layer": "\"background\"",
+										"image-point": "\"creditNumHun\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "coinCounter",
+									"sid": 298267242479879,
+									"parameters": {
+										"object": "creditNumTen",
+										"layer": "\"background\"",
+										"image-point": "\"creditNumTen\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "coinCounter",
+									"sid": 778809675989612,
+									"parameters": {
+										"object": "creditNumOne",
+										"layer": "\"background\"",
+										"image-point": "\"creditNumOne\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "coinCounter",
+									"sid": 962741632274712,
+									"parameters": {
+										"object": "buyCoinHun",
+										"layer": "\"background\"",
+										"image-point": "\"buyCoinHun\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "coinCounter",
+									"sid": 585292416345769,
+									"parameters": {
+										"object": "buyCoinTen",
+										"layer": "\"background\"",
+										"image-point": "\"buyCoinTen\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "coinCounter",
+									"sid": 560963721617461,
+									"parameters": {
+										"object": "buyCoinOne",
+										"layer": "\"background\"",
+										"image-point": "\"buyCoinOne\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 696618463562868
+						}
+					]
 				}
 			],
 			"sid": 153702891955900

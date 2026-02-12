@@ -1,23 +1,15 @@
 {
-	"name": "hatch",
+	"name": "borderStick",
 	"plugin-id": "Sprite",
-	"sid": 969940488247951,
+	"sid": 781177389386376,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "hatchID",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 825142568802606
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Physics",
 			"name": "Physics",
-			"sid": 537694276342690
+			"sid": 657114920883378
 		}
 	],
 	"effectTypes": [],
@@ -26,21 +18,37 @@
 			{
 				"frames": [
 					{
-						"width": 48,
-						"height": 5,
-						"originX": 0,
+						"width": 5,
+						"height": 725,
+						"originX": 0.5,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2903769,
+						"imageSpriteId": 3684325,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								1,
+								0.008275862068965517,
+								1,
+								0.9917241379310345,
+								0.5,
+								1,
+								0,
+								0.9917241379310345,
+								0,
+								0.008275862068965517
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 635972284223929,
+				"sid": 620854000002627,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
