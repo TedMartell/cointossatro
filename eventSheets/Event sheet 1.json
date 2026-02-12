@@ -50,87 +50,773 @@
 			"children": [
 				{
 					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"// SPAWN SLOTS AND LIGHTS"
+							]
+						}
+					],
+					"sid": 650150549242526,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 371041603010512
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Slot 0"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 261830724740383,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot0\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 937707831057455,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "0"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 515142990580830,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 538991275257357,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 777631155180720,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 128077448636178,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 713893144341129,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot 1"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 537608597701591,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot1\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 662810673508686,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "1"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 782563800869878,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 279012234969423,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 668857531688279,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 341637337697946,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 843707767108526,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot 2"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 995522985344650,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot2\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 102175743098566,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "2"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 774143520627918,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 475106650158699,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 846121071450945,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 455064901494349,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 716243730941476,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot  3"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 233932596679413,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot3\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 962366485422837,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "3"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 809094236313338,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 948156664806570,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 367504603729535,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 502462177861698,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 162761470024649,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot 4"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 538538338515624,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot4\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 897926637945168,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "4"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 592029270719426,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 576930003373096,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 991448214955331,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 193602819926743,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 592156763223611,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot 5"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 260444162359904,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot5\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 455048859609014,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "5"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 565015765979854,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 686289350540136,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 219222053378926,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 517142347134843,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 696770274303551,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot 6"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 519755133215130,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot6\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 696493316933602,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "6"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 794189364530004,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 805639436576018,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 471507707947694,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 991970070351320,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 365209011597966,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot 7"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 420074532602522,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot7\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 292000242684287,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "7"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 661962031281981,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 947276481732313,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 877655222372909,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 459178770620932,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 867732599691917,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Slot 8"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "pajatso",
+									"sid": 979514910379593,
+									"parameters": {
+										"object": "slotWalls",
+										"layer": "\"background\"",
+										"image-point": "\"slot8\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotWalls",
+									"sid": 312266503580389,
+									"parameters": {
+										"instance-variable": "slotID",
+										"value": "8"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 638149133135729,
+									"parameters": {
+										"object": "coinSlotForeground",
+										"layer": "\"foreground\"",
+										"image-point": "\"coinSlotForeground\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 218102510674475,
+									"parameters": {
+										"object": "pointsTrigger",
+										"layer": "\"background\"",
+										"image-point": "\"pointsTrigger\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pointsTrigger",
+									"sid": 186406234204858,
+									"parameters": {
+										"instance-variable": "pointsTriggerID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "slotWalls",
+									"sid": 239220773327894,
+									"parameters": {
+										"object": "slotLights",
+										"layer": "\"foreground\"",
+										"image-point": "\"slotLights\"",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 653585716056245,
+									"parameters": {
+										"instance-variable": "slotLightsID",
+										"value": "slotWalls.slotID"
+									}
+								},
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const triggers = runtime.objects[\"slotWalls\"].getAllInstances();",
+										"",
+										"for(let i = 0; i<triggers.length; i++) {",
+										"\tconsole.log(triggers[i].instVars.slotID)",
+										"}",
+										"",
+										"",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 708834891526596
+						}
+					]
+				},
+				{
+					"eventType": "block",
 					"conditions": [
 						{
-							"id": "trigger-once-while-true",
+							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 759359018227259
+							"sid": 776917028349173
 						}
 					],
 					"actions": [
 						{
 							"id": "spawn-another-object",
-							"objectClass": "slotWalls",
-							"sid": 500191540723208,
-							"parameters": {
-								"object": "pointsTrigger",
-								"layer": "\"background\"",
-								"image-point": "\"pointsTrigger\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "pointsTrigger",
-							"sid": 698028004269184,
-							"parameters": {
-								"instance-variable": "pointsTriggerID",
-								"value": "slotWalls.slotID"
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "slotWalls",
-							"sid": 957433539936402,
-							"parameters": {
-								"object": "slotLights",
-								"layer": "\"foreground\"",
-								"image-point": "\"slotLights\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "slotLights",
-							"sid": 547513113624297,
-							"parameters": {
-								"instance-variable": "slotLightsID",
-								"value": "slotWalls.slotID"
-							}
-						},
-						{
-							"type": "script",
-							"language": "javascript",
-							"script": [
-								"const triggers = runtime.objects[\"pointsTrigger\"].getAllInstances();",
-								"",
-								"for(let i = 0; i<triggers.length; i++) {",
-								"\tconsole.log(triggers[i].instVars.pointsTriggerID)",
-								"}",
-								"",
-								"",
-								"",
-								""
-							]
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "slotWalls",
-							"sid": 707379987326410,
-							"parameters": {
-								"object": "coinSlotForeground",
-								"layer": "\"foreground\"",
-								"image-point": "\"coinSlotForeground\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
 							"objectClass": "powerMeter",
-							"sid": 241927823161461,
+							"sid": 367103175725085,
 							"parameters": {
 								"object": "chargeShadow",
 								"layer": "\"background\"",
@@ -142,7 +828,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "coinCounter",
-							"sid": 463473868060541,
+							"sid": 303388081414244,
 							"parameters": {
 								"object": "creditNumHun",
 								"layer": "\"background\"",
@@ -154,7 +840,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "coinCounter",
-							"sid": 336864478730803,
+							"sid": 268219113526539,
 							"parameters": {
 								"object": "creditNumTen",
 								"layer": "\"background\"",
@@ -166,7 +852,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "coinCounter",
-							"sid": 649061546161406,
+							"sid": 534657303666496,
 							"parameters": {
 								"object": "creditNumOne",
 								"layer": "\"background\"",
@@ -178,7 +864,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "coinCounter",
-							"sid": 372394019098802,
+							"sid": 501048936459355,
 							"parameters": {
 								"object": "buyCoinHun",
 								"layer": "\"background\"",
@@ -190,7 +876,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "coinCounter",
-							"sid": 598534444389782,
+							"sid": 849171624936041,
 							"parameters": {
 								"object": "buyCoinTen",
 								"layer": "\"background\"",
@@ -202,7 +888,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "coinCounter",
-							"sid": 165630709994031,
+							"sid": 760553520844048,
 							"parameters": {
 								"object": "buyCoinOne",
 								"layer": "\"background\"",
@@ -214,7 +900,7 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "pajatso",
-							"sid": 217855457438783,
+							"sid": 404665561898455,
 							"parameters": {
 								"object": "plexi",
 								"layer": "\"foreground\"",
@@ -224,7 +910,7 @@
 							}
 						}
 					],
-					"sid": 170345300454462
+					"sid": 375103075285210
 				}
 			],
 			"sid": 153702891955900
@@ -310,403 +996,164 @@
 			"sid": 468692875399790
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 105667994764683,
-					"parameters": {
-						"key": 32
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 376228595966426,
-					"parameters": {
-						"variable": "startBlocked"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 701766599541374,
+			"eventType": "group",
+			"disabled": false,
+			"title": "gameplay",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 563150673332792,
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 955711114496436,
 							"parameters": {
-								"interval-seconds": "0.1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 486359465438478,
-							"parameters": {
-								"variable": "power",
-								"value": "0.2"
-							}
-						}
-					],
-					"sid": 155498964090891
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-released",
-					"objectClass": "Keyboard",
-					"sid": 361353481588046,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "hand",
-					"sid": 352485234953290,
-					"parameters": {
-						"animation": "\"pressed\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 486005217810853,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "coint",
-							"sid": 943220570174697,
-							"parameters": {
-								"instance-variable": "pushed"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "apply-impulse-towards-position",
-							"objectClass": "coint",
-							"sid": 523956323031916,
-							"behaviorType": "Physics",
-							"parameters": {
-								"impulse": "power",
-								"x": "forceTarget.X",
-								"y": "forceTarget.Y",
-								"image-point": "0"
+								"key": 32
 							}
 						},
 						{
-							"id": "set-eventvar-value",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 870249826060500,
+							"sid": 476248307017849,
 							"parameters": {
-								"variable": "power",
-								"value": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 315705572424082,
-							"parameters": {
-								"seconds": "0.2",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "hand",
-							"sid": 151505588941726,
-							"parameters": {
-								"animation": "\"idle\"",
-								"from": "beginning"
+								"variable": "startBlocked"
 							}
 						}
 					],
-					"sid": 131827698829122
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 135496321035003
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "hand",
-							"sid": 434733305327075,
-							"parameters": {
-								"animation": "\"idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 681476606042003
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "coint",
-					"sid": 560402328190294,
-					"parameters": {
-						"object": "coinStart"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 166428928962454,
-					"parameters": {
-						"variable": "startBlocked",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "coint",
-					"sid": 243847120471630,
-					"parameters": {
-						"instance-variable": "pushed",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 876579085364168
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 258387865593940
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 822349383950623,
-					"parameters": {
-						"variable": "startBlocked",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "coint",
-					"sid": 934053960103924,
-					"parameters": {
-						"instance-variable": "pushed",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 936854486004547
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 884930422315615,
-					"parameters": {
-						"variable": "startBlocked"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 777828129705434,
-					"parameters": {
-						"first-value": "credit",
-						"comparison": 5,
-						"second-value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 589591904941022,
-					"disabled": true,
-					"parameters": {
-						"object-to-create": "coint",
-						"layer": "\"action\"",
-						"x": "1350",
-						"y": "359",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "spawn-another-object",
-					"objectClass": "coinStart",
-					"sid": 917852278860236,
-					"parameters": {
-						"object": "coint",
-						"layer": "\"action\"",
-						"image-point": "0",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 917237052724226,
-					"parameters": {
-						"variable": "credit",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 449176995056915,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
 					"actions": [],
-					"sid": 673466769713179
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 157867411405385,
-					"parameters": {
-						"object": "coint"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 250787123335730,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "coint",
-							"sid": 292675430169365,
-							"parameters": {
-								"object": "pointsTrigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 873055535021151,
-							"parameters": {
-								"variable": "money",
-								"value": "1"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "coint",
-							"sid": 974804065603335
-						}
-					],
-					"sid": 145078246903446,
+					"sid": 199907829871067,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-instance-variable",
-									"objectClass": "slotLights",
-									"sid": 270648595141026,
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 889690481262930,
 									"parameters": {
-										"instance-variable": "slotLightsID",
-										"comparison": 0,
-										"value": "pointsTrigger.pointsTriggerID"
+										"interval-seconds": "0.1"
 									}
 								}
 							],
-							"actions": [],
-							"sid": 546698861913387,
-							"children": [
+							"actions": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "slotLights",
-											"sid": 631245006382610,
-											"parameters": {
-												"instance-variable": "lights",
-												"comparison": 2,
-												"value": "3"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "add-to-instvar",
-											"objectClass": "slotLights",
-											"sid": 496598304468286,
-											"parameters": {
-												"instance-variable": "lights",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 877063750244406,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "slotLights",
-													"sid": 465399963591250,
-													"parameters": {
-														"animation": "str(slotLights.lights)",
-														"from": "beginning"
-													}
-												}
-											],
-											"sid": 557234439667783
-										}
-									]
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 316795874923807,
+									"parameters": {
+										"variable": "power",
+										"value": "0.2"
+									}
 								}
-							]
+							],
+							"sid": 668033746173287
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 848872064514804,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hand",
+							"sid": 180501485364014,
+							"parameters": {
+								"animation": "\"pressed\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 662324680407357,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "coint",
+									"sid": 304776595793592,
+									"parameters": {
+										"instance-variable": "pushed"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-towards-position",
+									"objectClass": "coint",
+									"sid": 442719775697472,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "power",
+										"x": "forceTarget.X",
+										"y": "forceTarget.Y",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 741751896622108,
+									"parameters": {
+										"variable": "power",
+										"value": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 147787409785491,
+									"parameters": {
+										"seconds": "0.2",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "hand",
+									"sid": 436713919418886,
+									"parameters": {
+										"animation": "\"idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 535335266536646
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 561187787559168
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "hand",
+									"sid": 107993822339659,
+									"parameters": {
+										"animation": "\"idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 475012552534264
 						}
 					]
 				},
@@ -716,116 +1163,544 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "coint",
-							"sid": 125911579408666,
+							"sid": 904585159368786,
 							"parameters": {
-								"object": "pointsTriggerBottom"
+								"object": "coinStart"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
+							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 931620602438848,
+							"sid": 452612424434727,
 							"parameters": {
-								"variable": "money",
-								"value": "1"
+								"variable": "startBlocked",
+								"value": "true"
 							}
 						},
 						{
-							"id": "destroy",
+							"id": "set-boolean-instvar",
 							"objectClass": "coint",
-							"sid": 952565243221980
+							"sid": 726345824833128,
+							"parameters": {
+								"instance-variable": "pushed",
+								"value": "false"
+							}
 						}
 					],
-					"sid": 627736818011102
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-animation-playing",
-					"objectClass": "slotLights",
-					"sid": 616185425147941,
-					"parameters": {
-						"animation": "\"3\""
-					}
+					"sid": 346931212309429
 				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "hatch",
-					"sid": 294911523599026,
-					"parameters": {
-						"instance-variable": "hatchID",
-						"comparison": 0,
-						"value": "slotLights.slotLightsID"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "hatch",
-					"sid": 463845217303056,
-					"disabled": true
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "hatch",
-					"sid": 325505033225149,
-					"behaviorType": "Physics",
-					"parameters": {
-						"mode": "disabled"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 840754849112542,
-					"parameters": {
-						"seconds": "3",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "slotLights",
-					"sid": 804219164152924,
-					"parameters": {
-						"animation": "\"0\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "slotLights",
-					"sid": 169009457262092,
-					"parameters": {
-						"instance-variable": "lights",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "hatch",
-					"sid": 305047204678507,
-					"behaviorType": "Physics",
-					"parameters": {
-						"mode": "enabled"
-					}
-				}
-			],
-			"sid": 342563848376395,
-			"children": [
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 862769951477664
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 665415979936050
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 544452034186694,
+							"parameters": {
+								"variable": "startBlocked",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "coint",
+							"sid": 173332270725808,
+							"parameters": {
+								"instance-variable": "pushed",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 342386957858259
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 802657962911400,
+							"parameters": {
+								"variable": "startBlocked"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 144753792116059,
+							"parameters": {
+								"first-value": "credit",
+								"comparison": 5,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "coinStart",
+							"sid": 908746523600507,
+							"parameters": {
+								"object": "coint",
+								"layer": "\"action\"",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 189757574742940,
+							"parameters": {
+								"variable": "credit",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 784050947203620
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "scoring",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 692975623357614,
+									"parameters": {
+										"object": "coint"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 547017962777623,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "coint",
+											"sid": 960468358148802,
+											"parameters": {
+												"object": "pointsTrigger"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 335154915200840,
+											"parameters": {
+												"variable": "money",
+												"value": "1"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "coint",
+											"sid": 167425883663078
+										}
+									],
+									"sid": 164354821477123,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "slotLights",
+													"sid": 634974169396857,
+													"parameters": {
+														"instance-variable": "slotLightsID",
+														"comparison": 0,
+														"value": "pointsTrigger.pointsTriggerID"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 433545780586805,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "slotLights",
+															"sid": 557418986549838,
+															"parameters": {
+																"instance-variable": "lights",
+																"comparison": 2,
+																"value": "3"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-instvar",
+															"objectClass": "slotLights",
+															"sid": 193136850269792,
+															"parameters": {
+																"instance-variable": "lights",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 538678830320684,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "set-animation",
+																	"objectClass": "slotLights",
+																	"sid": 567861943127702,
+																	"parameters": {
+																		"animation": "str(slotLights.lights)",
+																		"from": "beginning"
+																	}
+																}
+															],
+															"sid": 337121769779231
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "coint",
+											"sid": 339883370686544,
+											"parameters": {
+												"object": "pointsTriggerBottom"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 790914068424747,
+											"parameters": {
+												"variable": "money",
+												"value": "1"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "coint",
+											"sid": 391153097899976
+										}
+									],
+									"sid": 851404308295900
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "slotLights",
+									"sid": 639923759307811,
+									"parameters": {
+										"animation": "\"3\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "hatch",
+									"sid": 125525905369820,
+									"parameters": {
+										"instance-variable": "hatchID",
+										"comparison": 0,
+										"value": "slotLights.slotLightsID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "hatch",
+									"sid": 899138688651737,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 776685442045795,
+									"parameters": {
+										"seconds": "3",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "slotLights",
+									"sid": 102361351880972,
+									"parameters": {
+										"animation": "\"0\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "slotLights",
+									"sid": 604627099512203,
+									"parameters": {
+										"instance-variable": "lights",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "hatch",
+									"sid": 180533771779322,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "enabled"
+									}
+								}
+							],
+							"sid": 381317550426605
+						}
+					],
+					"sid": 884277251740095
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "credits",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 123066160560196,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "buyCoinHun"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 948880866001782,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 757385902411550,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 5,
+												"second-value": "100"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 534228010409750,
+											"parameters": {
+												"first-value": "credit",
+												"comparison": 3,
+												"second-value": "899"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 470792004270918,
+											"parameters": {
+												"variable": "credit",
+												"value": "100"
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 535153996475006,
+											"parameters": {
+												"variable": "money",
+												"value": "100"
+											}
+										}
+									],
+									"sid": 557263278623897
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 771995947785263,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "buyCoinTen"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 466297170194380,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 406445892785576,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 5,
+												"second-value": "10"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 127805339261565,
+											"parameters": {
+												"first-value": "credit",
+												"comparison": 3,
+												"second-value": "989"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 157229348103407,
+											"parameters": {
+												"variable": "credit",
+												"value": "10"
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 960573864046877,
+											"parameters": {
+												"variable": "money",
+												"value": "10"
+											}
+										}
+									],
+									"sid": 211153830489293
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 267134759854636,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "buyCoinOne"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 729575057502272,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 956803748851088,
+											"parameters": {
+												"first-value": "credit",
+												"comparison": 3,
+												"second-value": "998"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 773259104702318,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 5,
+												"second-value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 802829508884065,
+											"parameters": {
+												"variable": "credit",
+												"value": "1"
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 196232276531805,
+											"parameters": {
+												"variable": "money",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 366944049774300
+								}
+							]
+						}
+					],
+					"sid": 574505457457447
 				}
-			]
+			],
+			"sid": 102080341841110
 		},
 		{
 			"eventType": "block",
@@ -833,7 +1708,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 868486101691229,
+					"sid": 305727394755864,
 					"parameters": {
 						"key": 84
 					}
@@ -843,209 +1718,14 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 705323501961486,
+					"sid": 616237712960206,
 					"parameters": {
 						"variable": "money",
 						"value": "100"
 					}
 				}
 			],
-			"sid": 288675988320068
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 372560367727773,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "buyCoinHun"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 641557429598315,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 649585884305781,
-							"parameters": {
-								"first-value": "money",
-								"comparison": 5,
-								"second-value": "100"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 375451139364916,
-							"parameters": {
-								"first-value": "credit",
-								"comparison": 3,
-								"second-value": "899"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 148720975936873,
-							"parameters": {
-								"variable": "credit",
-								"value": "100"
-							}
-						},
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 259323131726797,
-							"parameters": {
-								"variable": "money",
-								"value": "100"
-							}
-						}
-					],
-					"sid": 366388240022866
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 259398854654297,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "buyCoinTen"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 796524754472921,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 876728681673056,
-							"parameters": {
-								"first-value": "money",
-								"comparison": 5,
-								"second-value": "10"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 378333648396618,
-							"parameters": {
-								"first-value": "credit",
-								"comparison": 3,
-								"second-value": "989"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 413274545902846,
-							"parameters": {
-								"variable": "credit",
-								"value": "10"
-							}
-						},
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 850234194618199,
-							"parameters": {
-								"variable": "money",
-								"value": "10"
-							}
-						}
-					],
-					"sid": 893368320159774
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 878471146825068,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "buyCoinOne"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 686477267660701,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 934250966346625,
-							"parameters": {
-								"first-value": "credit",
-								"comparison": 3,
-								"second-value": "998"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 688387135843269,
-							"parameters": {
-								"first-value": "money",
-								"comparison": 5,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 905496150543139,
-							"parameters": {
-								"variable": "credit",
-								"value": "1"
-							}
-						},
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 279401836850917,
-							"parameters": {
-								"variable": "money",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 822537243731600
-				}
-			]
+			"sid": 436585957534956
 		}
 	],
 	"sid": 878535526920507
