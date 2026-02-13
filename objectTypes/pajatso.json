@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7124437,
+						"imageSpriteId": 2825842,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
@@ -292,6 +292,61 @@
 								"name": "light8",
 								"x": 0.7714491708723864,
 								"y": 0.47368421052631576
+							},
+							{
+								"name": "borderLeft",
+								"x": 0.13193943763518384,
+								"y": 0.0784313725490196
+							},
+							{
+								"name": "borderTop",
+								"x": 0.13554434030281182,
+								"y": 0.0784313725490196
+							},
+							{
+								"name": "borderRightTop",
+								"x": 0.8608507570295602,
+								"y": 0.08101135190918472
+							},
+							{
+								"name": "borderRightBottom",
+								"x": 0.8608507570295602,
+								"y": 0.24922600619195046
+							},
+							{
+								"name": "blockTopRight",
+								"x": 0.5414563806777217,
+								"y": 0.36790505675954593
+							},
+							{
+								"name": "blockTopLeft",
+								"x": 0.3056957462148522,
+								"y": 0.34210526315789475
+							},
+							{
+								"name": "blockBottomLeft",
+								"x": 0.12905551550108146,
+								"y": 0.35758513931888547
+							},
+							{
+								"name": "blockBottomRight",
+								"x": 0.718817591925018,
+								"y": 0.38235294117647056
+							},
+							{
+								"name": "blockLeftBottom",
+								"x": 0.18385003604902667,
+								"y": 0.37306501547987614
+							},
+							{
+								"name": "blockRightBottom",
+								"x": 0.8053352559480894,
+								"y": 0.37306501547987614
+							},
+							{
+								"name": "coinSlot",
+								"x": 0.8601297764960346,
+								"y": 0.21413828689370484
 							}
 						],
 						"duration": 1,

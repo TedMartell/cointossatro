@@ -303,19 +303,19 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 304.5421447753906,
-						"y": 156.65640258789062,
-						"width": 212.09021198251935,
-						"height": 12.463217148616824,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 690.4353406422936,
+						"y": 68.36524773324226,
+						"width": 10,
+						"height": 135,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 2.8797932657906435,
+						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -693,7 +693,7 @@
 				{
 					"type": "borderLeft",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -747,7 +747,7 @@
 				{
 					"type": "borderTop",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -801,7 +801,7 @@
 				{
 					"type": "borderRightTop",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -836,10 +836,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1027,
-						"y": 295,
+						"x": 1172,
+						"y": 52,
 						"width": 5,
-						"height": 235,
+						"height": 255,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -855,7 +855,7 @@
 				{
 					"type": "borderRightBottom",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -890,10 +890,118 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1149,
-						"y": 89,
+						"x": 1172,
+						"y": 411,
 						"width": 5,
 						"height": 1185,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "block2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"sid": 863634248794287,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 863634248794287,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 442.13586044822176,
+						"y": 167.88584752216826,
+						"width": 214,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coinSlot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"sid": 723572292438668,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 723572292438668,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 792.7429809570312,
+						"y": 147.90838623046875,
+						"width": 123,
+						"height": 68,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -91,7 +91,10 @@
 			"borderLeft",
 			"borderTop",
 			"borderRightTop",
-			"borderRightBottom"
+			"borderRightBottom",
+			"block2",
+			"block3",
+			"coinSlot"
 		],
 		"subfolders": []
 	},

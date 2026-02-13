@@ -1359,6 +1359,10 @@
 									"conditions": [],
 									"actions": [
 										{
+											"type": "comment",
+											"text": "Dividers Spawn"
+										},
+										{
 											"id": "spawn-another-object",
 											"objectClass": "pajatso",
 											"sid": 581396824463626,
@@ -1561,6 +1565,166 @@
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
+										},
+										{
+											"type": "comment",
+											"text": "Borders spawn"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 824973329222450,
+											"parameters": {
+												"object": "borderLeft",
+												"layer": "\"background\"",
+												"image-point": "\"borderLeft\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 231110322294149,
+											"parameters": {
+												"object": "borderTop",
+												"layer": "\"background\"",
+												"image-point": "\"borderTop\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 540792081574735,
+											"parameters": {
+												"object": "borderRightTop",
+												"layer": "\"background\"",
+												"image-point": "\"borderRightTop\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 870572396951939,
+											"parameters": {
+												"object": "borderRightBottom",
+												"layer": "\"background\"",
+												"image-point": "\"borderRightBottom\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"type": "comment",
+											"text": "Blockers spawn"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 463763189511626,
+											"parameters": {
+												"object": "block2",
+												"layer": "\"background\"",
+												"image-point": "\"blockTopRight\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "block2",
+											"sid": 348257109087337,
+											"parameters": {
+												"angle": "345"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 850240022962440,
+											"parameters": {
+												"object": "block2",
+												"layer": "\"background\"",
+												"image-point": "\"blockTopLeft\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "block2",
+											"sid": 894927483295375,
+											"parameters": {
+												"angle": "14"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 456253454544400,
+											"parameters": {
+												"object": "block2",
+												"layer": "\"background\"",
+												"image-point": "\"blockBottomLeft\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "block2",
+											"sid": 239011367308336,
+											"parameters": {
+												"angle": "13"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 699737415838684,
+											"parameters": {
+												"object": "block2",
+												"layer": "\"background\"",
+												"image-point": "\"blockBottomRight\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "block2",
+											"sid": 646003049711624,
+											"parameters": {
+												"angle": "346"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 478938992233005,
+											"parameters": {
+												"object": "block",
+												"layer": "\"background\"",
+												"image-point": "\"blockLeftBottom\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 824044381901161,
+											"parameters": {
+												"object": "block",
+												"layer": "\"background\"",
+												"image-point": "\"blockRightBottom\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
 										}
 									],
 									"sid": 901829420971939
@@ -1611,6 +1775,18 @@
 								"object": "powerMeter",
 								"layer": "\"background\"",
 								"image-point": "\"powerMeter\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 827983186928326,
+							"parameters": {
+								"object": "coinSlot",
+								"layer": "\"background\"",
+								"image-point": "\"coinSlot\"",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
