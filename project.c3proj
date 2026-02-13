@@ -95,7 +95,11 @@
 			"block2",
 			"block3",
 			"coinSlot",
-			"coinDelete"
+			"coinDelete",
+			"pajatroLights",
+			"pajatroSign",
+			"multNumOne",
+			"multNumDec"
 		],
 		"subfolders": []
 	},

@@ -342,6 +342,48 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 225830284983354,
+											"parameters": {
+												"object": "multNumOne",
+												"layer": "\"background\"",
+												"image-point": "\"MultOne1\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumOne",
+											"sid": 865976372965273,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 746220380620926,
+											"parameters": {
+												"object": "multNumDec",
+												"layer": "\"background\"",
+												"image-point": "\"MultDec1\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumDec",
+											"sid": 181101724331709,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"value": "1"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 2"
 										},
@@ -480,6 +522,48 @@
 											"sid": 943153829527590,
 											"parameters": {
 												"instance-variable": "slotLightsID",
+												"value": "2"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 876563041156611,
+											"parameters": {
+												"object": "multNumOne",
+												"layer": "\"background\"",
+												"image-point": "\"MultOne2\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumOne",
+											"sid": 142350170588233,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"value": "2"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 811431968260783,
+											"parameters": {
+												"object": "multNumDec",
+												"layer": "\"background\"",
+												"image-point": "\"MultDec2\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumDec",
+											"sid": 229695969622695,
+											"parameters": {
+												"instance-variable": "multNumDecID",
 												"value": "2"
 											}
 										},
@@ -626,6 +710,48 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 815978745791148,
+											"parameters": {
+												"object": "multNumOne",
+												"layer": "\"background\"",
+												"image-point": "\"MultOne3\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumOne",
+											"sid": 515251017566108,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"value": "3"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 282048969308884,
+											"parameters": {
+												"object": "multNumDec",
+												"layer": "\"background\"",
+												"image-point": "\"MultDec3\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumDec",
+											"sid": 843088141024891,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"value": "3"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 4"
 										},
@@ -764,6 +890,48 @@
 											"sid": 952836447199214,
 											"parameters": {
 												"instance-variable": "slotLightsID",
+												"value": "4"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 734289993564604,
+											"parameters": {
+												"object": "multNumOne",
+												"layer": "\"background\"",
+												"image-point": "\"MultOne4\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumOne",
+											"sid": 101427433791931,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"value": "4"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 854066464282329,
+											"parameters": {
+												"object": "multNumDec",
+												"layer": "\"background\"",
+												"image-point": "\"MultDec4\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumDec",
+											"sid": 496739760957685,
+											"parameters": {
+												"instance-variable": "multNumDecID",
 												"value": "4"
 											}
 										},
@@ -910,6 +1078,48 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 240787640279644,
+											"parameters": {
+												"object": "multNumOne",
+												"layer": "\"background\"",
+												"image-point": "\"MultOne5\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumOne",
+											"sid": 432462900561093,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"value": "5"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 830303033456392,
+											"parameters": {
+												"object": "multNumDec",
+												"layer": "\"background\"",
+												"image-point": "\"MultDec5\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumDec",
+											"sid": 921957440908017,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"value": "5"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 6"
 										},
@@ -1052,6 +1262,48 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 515441932398769,
+											"parameters": {
+												"object": "multNumOne",
+												"layer": "\"background\"",
+												"image-point": "\"MultOne6\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumOne",
+											"sid": 585710859714754,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"value": "6"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 731845173586229,
+											"parameters": {
+												"object": "multNumDec",
+												"layer": "\"background\"",
+												"image-point": "\"MultDec6\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumDec",
+											"sid": 282502785134423,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"value": "6"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 7"
 										},
@@ -1190,6 +1442,48 @@
 											"sid": 183101226150925,
 											"parameters": {
 												"instance-variable": "slotLightsID",
+												"value": "7"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 676303775307903,
+											"parameters": {
+												"object": "multNumOne",
+												"layer": "\"background\"",
+												"image-point": "\"MultOne7\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumOne",
+											"sid": 162309830368841,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"value": "7"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 745560173950905,
+											"parameters": {
+												"object": "multNumDec",
+												"layer": "\"background\"",
+												"image-point": "\"MultDec7\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "multNumDec",
+											"sid": 786689916585666,
+											"parameters": {
+												"instance-variable": "multNumDecID",
 												"value": "7"
 											}
 										},
@@ -1847,6 +2141,18 @@
 								"object": "coinDelete",
 								"layer": "\"background\"",
 								"image-point": "\"coinDeleteRight\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 743139444948992,
+							"parameters": {
+								"object": "pajatroSign",
+								"layer": "\"background\"",
+								"image-point": "\"pajatroSign\"",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
