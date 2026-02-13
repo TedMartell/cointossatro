@@ -1,7 +1,7 @@
 {
-	"name": "pointsTriggerBottom",
+	"name": "coinDelete",
 	"plugin-id": "Sprite",
-	"sid": 377289020319239,
+	"sid": 306260173514239,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 403917043790770
+			"sid": 919491066066389
 		}
 	],
 	"behaviorTypes": [],
@@ -20,7 +20,7 @@
 			{
 				"frames": [
 					{
-						"width": 848,
+						"width": 77,
 						"height": 15,
 						"originX": 0,
 						"originY": 0,
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1041264,
+						"imageSpriteId": 4025242,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 198752727280747,
+				"sid": 837068743662060,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

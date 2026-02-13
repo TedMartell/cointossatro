@@ -139,10 +139,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 642782738543898,
+											"sid": 489548281771240,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -260,10 +260,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 944758543458812,
+											"sid": 520801797932405,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -402,10 +402,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 344447084331789,
+											"sid": 433036609534373,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -544,10 +544,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 478554960865910,
+											"sid": 586029695350878,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -686,10 +686,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 441534755833686,
+											"sid": 905555069154989,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -828,10 +828,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 848625485899198,
+											"sid": 136573902933681,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -970,10 +970,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 200106476754990,
+											"sid": 485469930417163,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -1112,10 +1112,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 956449520185728,
+											"sid": 860377621227237,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -1254,10 +1254,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "slotWalls",
-											"sid": 762339201686987,
+											"sid": 145602256573026,
 											"parameters": {
 												"object": "slotLights",
-												"layer": "\"foreground\"",
+												"layer": "\"background\"",
 												"image-point": "\"slotLights\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -1790,6 +1790,66 @@
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 984632553141079,
+							"parameters": {
+								"object": "coinStart",
+								"layer": "\"background\"",
+								"image-point": "\"coinSlot\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 884474331637461,
+							"parameters": {
+								"object": "forceTarget",
+								"layer": "\"background\"",
+								"image-point": "\"forceTarget\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 651205611020069,
+							"parameters": {
+								"object": "pointsTriggerBottom",
+								"layer": "\"background\"",
+								"image-point": "\"pointsTriggerBottom\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 573279970381731,
+							"parameters": {
+								"object": "coinDelete",
+								"layer": "\"background\"",
+								"image-point": "\"coinDeleteLeft\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 876897215781168,
+							"parameters": {
+								"object": "coinDelete",
+								"layer": "\"background\"",
+								"image-point": "\"coinDeleteRight\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
 						}
 					],
 					"sid": 375103075285210,
@@ -2223,12 +2283,12 @@
 					"actions": [
 						{
 							"id": "spawn-another-object",
-							"objectClass": "coinStart",
-							"sid": 908746523600507,
+							"objectClass": "pajatso",
+							"sid": 897030562720127,
 							"parameters": {
 								"object": "coint",
 								"layer": "\"action\"",
-								"image-point": "0",
+								"image-point": "\"coinSpawn\"",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -2392,6 +2452,27 @@
 										}
 									],
 									"sid": 851404308295900
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "coint",
+											"sid": 391480796023706,
+											"parameters": {
+												"object": "coinDelete"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "coint",
+											"sid": 836484722205672
+										}
+									],
+									"sid": 479381580234410
 								}
 							]
 						},

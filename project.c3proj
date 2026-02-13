@@ -94,7 +94,8 @@
 			"borderRightBottom",
 			"block2",
 			"block3",
-			"coinSlot"
+			"coinSlot",
+			"coinDelete"
 		],
 		"subfolders": []
 	},
