@@ -1,10 +1,18 @@
 {
-	"name": "pajatroLights",
+	"name": "pajatroLight",
 	"plugin-id": "Sprite",
 	"sid": 456833550343295,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "pajatroLightID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 620152780583120
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -14,8 +22,8 @@
 					{
 						"width": 15,
 						"height": 15,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

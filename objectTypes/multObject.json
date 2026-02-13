@@ -1,0 +1,97 @@
+{
+	"name": "multObject",
+	"plugin-id": "Sprite",
+	"sid": 569921469644007,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "numLights",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 252687570348898
+		},
+		{
+			"name": "slotMult1",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 977232334026344
+		},
+		{
+			"name": "slotMult2",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 805886429123602
+		},
+		{
+			"name": "slotMult3",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 795480806134463
+		},
+		{
+			"name": "slotMult4",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 455886826426470
+		},
+		{
+			"name": "slotMult5",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 639140165459141
+		},
+		{
+			"name": "slotMult6",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 962683025378172
+		},
+		{
+			"name": "slotMult7",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 522304145008712
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2531142,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 369608131773234,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

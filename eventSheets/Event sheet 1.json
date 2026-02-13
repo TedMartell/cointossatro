@@ -200,6 +200,27 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 923524677727479,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight0\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 773947767150542,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
+												"value": "0"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 1"
 										},
@@ -380,6 +401,27 @@
 											"sid": 181101724331709,
 											"parameters": {
 												"instance-variable": "multNumDecID",
+												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 638843571899303,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight1\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 811129662188590,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
 												"value": "1"
 											}
 										},
@@ -568,6 +610,27 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 990498689874237,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight2\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 602041617491156,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
+												"value": "2"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot  3"
 										},
@@ -748,6 +811,27 @@
 											"sid": 843088141024891,
 											"parameters": {
 												"instance-variable": "multNumDecID",
+												"value": "3"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 744787750576923,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight3\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 137344085881527,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
 												"value": "3"
 											}
 										},
@@ -936,6 +1020,27 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 719606219440826,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight4\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 277022637292469,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
+												"value": "4"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 5"
 										},
@@ -1116,6 +1221,27 @@
 											"sid": 921957440908017,
 											"parameters": {
 												"instance-variable": "multNumDecID",
+												"value": "5"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 142587816186679,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight5\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 217672499691446,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
 												"value": "5"
 											}
 										},
@@ -1304,6 +1430,27 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 166165567555439,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight6\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 992523462890876,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
+												"value": "6"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 7"
 										},
@@ -1488,6 +1635,27 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 862101121850536,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight7\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 704036618094605,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
+												"value": "7"
+											}
+										},
+										{
 											"type": "comment",
 											"text": "Slot 8"
 										},
@@ -1605,6 +1773,27 @@
 											"sid": 394525826984227,
 											"parameters": {
 												"instance-variable": "slotLightsID",
+												"value": "8"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 895316314947100,
+											"parameters": {
+												"object": "pajatroLight",
+												"layer": "\"background\"",
+												"image-point": "\"PajatroLight8\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pajatroLight",
+											"sid": 547388094200061,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
 												"value": "8"
 											}
 										},
@@ -2024,232 +2213,242 @@
 									"sid": 901829420971939
 								}
 							]
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 776917028349173
-						}
-					],
-					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 644472705994563,
-							"parameters": {
-								"object": "plexi",
-								"layer": "\"foreground\"",
-								"image-point": "\"plexi\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
 						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 732308062601282,
-							"parameters": {
-								"object": "coinCounter",
-								"layer": "\"background\"",
-								"image-point": "\"coinCounter\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 598107638314202,
-							"parameters": {
-								"object": "powerMeter",
-								"layer": "\"background\"",
-								"image-point": "\"powerMeter\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 827983186928326,
-							"parameters": {
-								"object": "coinSlot",
-								"layer": "\"background\"",
-								"image-point": "\"coinSlot\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 984632553141079,
-							"parameters": {
-								"object": "coinStart",
-								"layer": "\"background\"",
-								"image-point": "\"coinSlot\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 884474331637461,
-							"parameters": {
-								"object": "forceTarget",
-								"layer": "\"background\"",
-								"image-point": "\"forceTarget\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 651205611020069,
-							"parameters": {
-								"object": "pointsTriggerBottom",
-								"layer": "\"background\"",
-								"image-point": "\"pointsTriggerBottom\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 573279970381731,
-							"parameters": {
-								"object": "coinDelete",
-								"layer": "\"background\"",
-								"image-point": "\"coinDeleteLeft\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 876897215781168,
-							"parameters": {
-								"object": "coinDelete",
-								"layer": "\"background\"",
-								"image-point": "\"coinDeleteRight\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 743139444948992,
-							"parameters": {
-								"object": "pajatroSign",
-								"layer": "\"background\"",
-								"image-point": "\"pajatroSign\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 375103075285210,
-					"children": [
 						{
 							"eventType": "block",
 							"conditions": [],
 							"actions": [
 								{
-									"id": "spawn-another-object",
-									"objectClass": "powerMeter",
-									"sid": 837699735375616,
-									"parameters": {
-										"object": "chargeShadow",
-										"layer": "\"background\"",
-										"image-point": "\"chargeShadow\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "coinCounter",
-									"sid": 324860090750094,
-									"parameters": {
-										"object": "creditNumHun",
-										"layer": "\"background\"",
-										"image-point": "\"creditNumHun\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "coinCounter",
-									"sid": 298267242479879,
-									"parameters": {
-										"object": "creditNumTen",
-										"layer": "\"background\"",
-										"image-point": "\"creditNumTen\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "coinCounter",
-									"sid": 778809675989612,
-									"parameters": {
-										"object": "creditNumOne",
-										"layer": "\"background\"",
-										"image-point": "\"creditNumOne\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "coinCounter",
-									"sid": 962741632274712,
-									"parameters": {
-										"object": "buyCoinHun",
-										"layer": "\"background\"",
-										"image-point": "\"buyCoinHun\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "coinCounter",
-									"sid": 585292416345769,
-									"parameters": {
-										"object": "buyCoinTen",
-										"layer": "\"background\"",
-										"image-point": "\"buyCoinTen\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "coinCounter",
-									"sid": 560963721617461,
-									"parameters": {
-										"object": "buyCoinOne",
-										"layer": "\"background\"",
-										"image-point": "\"buyCoinOne\"",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//OTHER"
+									]
 								}
 							],
-							"sid": 696618463562868
+							"sid": 218953508464781,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 415857498866422,
+											"parameters": {
+												"object": "plexi",
+												"layer": "\"foreground\"",
+												"image-point": "\"plexi\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 224799954121114,
+											"parameters": {
+												"object": "coinCounter",
+												"layer": "\"background\"",
+												"image-point": "\"coinCounter\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 261670873024303,
+											"parameters": {
+												"object": "powerMeter",
+												"layer": "\"background\"",
+												"image-point": "\"powerMeter\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 453416996560670,
+											"parameters": {
+												"object": "coinSlot",
+												"layer": "\"background\"",
+												"image-point": "\"coinSlot\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 369379182197715,
+											"parameters": {
+												"object": "coinStart",
+												"layer": "\"background\"",
+												"image-point": "\"coinSlot\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 136214750358353,
+											"parameters": {
+												"object": "forceTarget",
+												"layer": "\"background\"",
+												"image-point": "\"forceTarget\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 560233995413797,
+											"parameters": {
+												"object": "pointsTriggerBottom",
+												"layer": "\"background\"",
+												"image-point": "\"pointsTriggerBottom\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 370188283601410,
+											"parameters": {
+												"object": "coinDelete",
+												"layer": "\"background\"",
+												"image-point": "\"coinDeleteLeft\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 465848049680649,
+											"parameters": {
+												"object": "coinDelete",
+												"layer": "\"background\"",
+												"image-point": "\"coinDeleteRight\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 355796092405415,
+											"parameters": {
+												"object": "pajatroSign",
+												"layer": "\"background\"",
+												"image-point": "\"pajatroSign\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 921348530750103,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "powerMeter",
+													"sid": 647243258482952,
+													"parameters": {
+														"object": "chargeShadow",
+														"layer": "\"background\"",
+														"image-point": "\"chargeShadow\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinCounter",
+													"sid": 421961243215721,
+													"parameters": {
+														"object": "creditNumHun",
+														"layer": "\"background\"",
+														"image-point": "\"creditNumHun\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinCounter",
+													"sid": 257302574931824,
+													"parameters": {
+														"object": "creditNumTen",
+														"layer": "\"background\"",
+														"image-point": "\"creditNumTen\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinCounter",
+													"sid": 460584420380593,
+													"parameters": {
+														"object": "creditNumOne",
+														"layer": "\"background\"",
+														"image-point": "\"creditNumOne\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinCounter",
+													"sid": 137965932073895,
+													"parameters": {
+														"object": "buyCoinHun",
+														"layer": "\"background\"",
+														"image-point": "\"buyCoinHun\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinCounter",
+													"sid": 983604599516612,
+													"parameters": {
+														"object": "buyCoinTen",
+														"layer": "\"background\"",
+														"image-point": "\"buyCoinTen\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinCounter",
+													"sid": 475362619147769,
+													"parameters": {
+														"object": "buyCoinOne",
+														"layer": "\"background\"",
+														"image-point": "\"buyCoinOne\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												}
+											],
+											"sid": 846134046889852
+										}
+									]
+								}
+							]
 						}
 					]
 				}
@@ -2323,13 +2522,327 @@
 								{
 									"id": "set-width",
 									"objectClass": "chargeShadow",
-									"sid": 593794231674418,
+									"sid": 800304964694255,
 									"parameters": {
 										"width": "101 / power"
 									}
 								}
 							],
-							"sid": 679626797914677
+							"sid": 405255091390451
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumOne",
+									"sid": 344378685750135,
+									"parameters": {
+										"instance-variable": "multNumOneID",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumDec",
+									"sid": 280206138641914,
+									"parameters": {
+										"instance-variable": "multNumDecID",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumOne",
+									"sid": 380392233360345,
+									"parameters": {
+										"frame-number": "multObject.slotMult1 % 10"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumDec",
+									"sid": 245438865446863,
+									"parameters": {
+										"frame-number": "floor(multObject.slotMult1 * 10) % 10"
+									}
+								}
+							],
+							"sid": 691533325386437
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumOne",
+									"sid": 669573888394131,
+									"parameters": {
+										"instance-variable": "multNumOneID",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumDec",
+									"sid": 886696988078927,
+									"parameters": {
+										"instance-variable": "multNumDecID",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumOne",
+									"sid": 392671872974448,
+									"parameters": {
+										"frame-number": "multObject.slotMult2 % 10"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumDec",
+									"sid": 743695060001598,
+									"parameters": {
+										"frame-number": "floor(multObject.slotMult2 * 10) % 10"
+									}
+								}
+							],
+							"sid": 101735198525948
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumOne",
+									"sid": 652173654651176,
+									"parameters": {
+										"instance-variable": "multNumOneID",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumDec",
+									"sid": 673857549468301,
+									"parameters": {
+										"instance-variable": "multNumDecID",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumOne",
+									"sid": 884927044994050,
+									"parameters": {
+										"frame-number": "multObject.slotMult3 % 10"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumDec",
+									"sid": 702848455616250,
+									"parameters": {
+										"frame-number": "floor(multObject.slotMult3 * 10) % 10"
+									}
+								}
+							],
+							"sid": 237682777681621
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumOne",
+									"sid": 626940975662065,
+									"parameters": {
+										"instance-variable": "multNumOneID",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumDec",
+									"sid": 540576862985979,
+									"parameters": {
+										"instance-variable": "multNumDecID",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumOne",
+									"sid": 944070401816832,
+									"parameters": {
+										"frame-number": "multObject.slotMult4 % 10"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumDec",
+									"sid": 623760108834973,
+									"parameters": {
+										"frame-number": "floor(multObject.slotMult4 * 10) % 10"
+									}
+								}
+							],
+							"sid": 992822363653210
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumOne",
+									"sid": 901036562719556,
+									"parameters": {
+										"instance-variable": "multNumOneID",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumDec",
+									"sid": 158173912102726,
+									"parameters": {
+										"instance-variable": "multNumDecID",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumOne",
+									"sid": 662746548959157,
+									"parameters": {
+										"frame-number": "multObject.slotMult5 % 10"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumDec",
+									"sid": 767535255141248,
+									"parameters": {
+										"frame-number": "floor(multObject.slotMult5 * 10) % 10"
+									}
+								}
+							],
+							"sid": 448265852571318
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumOne",
+									"sid": 100252896808513,
+									"parameters": {
+										"instance-variable": "multNumOneID",
+										"comparison": 0,
+										"value": "6"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumDec",
+									"sid": 567440381749846,
+									"parameters": {
+										"instance-variable": "multNumDecID",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumOne",
+									"sid": 995193866463922,
+									"parameters": {
+										"frame-number": "multObject.slotMult6 % 10"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumDec",
+									"sid": 140650172073353,
+									"parameters": {
+										"frame-number": "floor(multObject.slotMult6 * 10) % 10"
+									}
+								}
+							],
+							"sid": 519986260991580
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumOne",
+									"sid": 129387357205718,
+									"parameters": {
+										"instance-variable": "multNumOneID",
+										"comparison": 0,
+										"value": "7"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multNumDec",
+									"sid": 374798500388738,
+									"parameters": {
+										"instance-variable": "multNumDecID",
+										"comparison": 0,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumOne",
+									"sid": 698944865181486,
+									"parameters": {
+										"frame-number": "multObject.slotMult7 % 10"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "multNumDec",
+									"sid": 117223557948998,
+									"parameters": {
+										"frame-number": "floor(multObject.slotMult7 * 10) % 10"
+									}
+								}
+							],
+							"sid": 611298024330791
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 441368420250213
 						}
 					]
 				}
@@ -2851,7 +3364,89 @@
 									}
 								}
 							],
-							"sid": 381317550426605
+							"sid": 381317550426605,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "pajatroLight",
+											"sid": 850115955447924,
+											"parameters": {
+												"instance-variable": "pajatroLightID",
+												"comparison": 0,
+												"value": "slotLights.slotLightsID"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "pajatroLight",
+											"sid": 562155029033361,
+											"parameters": {
+												"animation": "\"off\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "pajatroLight",
+											"sid": 746039435614028,
+											"parameters": {
+												"animation": "\"on\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 813578397149358,
+											"parameters": {
+												"instance-variable": "numLights",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 211871984317605
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "multObject",
+									"sid": 982507318452886,
+									"parameters": {
+										"instance-variable": "numLights",
+										"comparison": 0,
+										"value": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "multObject",
+									"sid": 998217624960797,
+									"parameters": {
+										"instance-variable": "numLights",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "pajatroLight",
+									"sid": 125433886293632,
+									"parameters": {
+										"animation": "\"off\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 506316482140906
 						}
 					],
 					"sid": 884277251740095

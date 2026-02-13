@@ -79,6 +79,52 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "multObject",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"sid": 888200331464829,
+					"tags": "",
+					"instanceVariables": {
+						"numLights": 0,
+						"slotMult1": 1.3,
+						"slotMult2": 1.5,
+						"slotMult3": 4.7,
+						"slotMult4": 5.8,
+						"slotMult5": 6.3,
+						"slotMult6": 7.1,
+						"slotMult7": 8.9
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 888200331464829,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 335,
+						"y": 94,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 652145884578523,

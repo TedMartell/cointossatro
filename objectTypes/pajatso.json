@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6505643,
+						"imageSpriteId": 7177090,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
@@ -449,7 +449,52 @@
 								"y": 0.20691434468524253
 							},
 							{
-								"name": "Image Point 86",
+								"name": "pajatroLight0",
+								"x": 0.17519826964671953,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight1",
+								"x": 0.25594808940158614,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight2",
+								"x": 0.334534967555876,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight3",
+								"x": 0.414563806777217,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight4",
+								"x": 0.4989185291997116,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight5",
+								"x": 0.5811103100216294,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight6",
+								"x": 0.6611391492429705,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight7",
+								"x": 0.7411679884643114,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "pajatroLight8",
+								"x": 0.8204758471521268,
+								"y": 0.195562435500516
+							},
+							{
+								"name": "Image Point 95",
 								"x": 0.5,
 								"y": 0.5
 							}
