@@ -3397,18 +3397,27 @@
 												"animation": "\"on\"",
 												"from": "beginning"
 											}
-										},
-										{
-											"id": "add-to-instvar",
-											"objectClass": "multObject",
-											"sid": 813578397149358,
-											"parameters": {
-												"instance-variable": "numLights",
-												"value": "1"
-											}
 										}
 									],
-									"sid": 211871984317605
+									"sid": 211871984317605,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "add-to-instvar",
+													"objectClass": "multObject",
+													"sid": 630888217450896,
+													"parameters": {
+														"instance-variable": "numLights",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 819084999922598
+										}
+									]
 								}
 							]
 						},
@@ -3446,7 +3455,79 @@
 									}
 								}
 							],
-							"sid": 506316482140906
+							"sid": 506316482140906,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 195236415871128,
+											"parameters": {
+												"instance-variable": "slotMult1",
+												"value": "0.2"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 334626861777835,
+											"parameters": {
+												"instance-variable": "slotMult2",
+												"value": "0.2"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 587694406612921,
+											"parameters": {
+												"instance-variable": "slotMult3",
+												"value": "0.2"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 594416073286001,
+											"parameters": {
+												"instance-variable": "slotMult4",
+												"value": "0.2"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 871059605141992,
+											"parameters": {
+												"instance-variable": "slotMult5",
+												"value": "0.2"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 579502913554559,
+											"parameters": {
+												"instance-variable": "slotMult6",
+												"value": "0.2"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "multObject",
+											"sid": 681821056856482,
+											"parameters": {
+												"instance-variable": "slotMult7",
+												"value": "0.2"
+											}
+										}
+									],
+									"sid": 530278920909465
+								}
+							]
 						}
 					],
 					"sid": 884277251740095
