@@ -1,0 +1,33 @@
+{
+	"name": "coins",
+	"plugin-id": "Sprite",
+	"sid": 175825323345654,
+	"instanceVariables": [
+		{
+			"name": "value",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 195032719132085
+		},
+		{
+			"name": "pushedFromStartBlock",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 535788419702539
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 628010920889168
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"coint",
+		"coint2"
+	]
+}

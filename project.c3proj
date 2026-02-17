@@ -100,7 +100,9 @@
 			"pajatroSign",
 			"multNumOne",
 			"multNumDec",
-			"multObject"
+			"multObject",
+			"coint2",
+			"testText"
 		],
 		"subfolders": []
 	},
@@ -108,7 +110,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"coins"
+		],
 		"subfolders": []
 	},
 	"layouts": {

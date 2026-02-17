@@ -42,6 +42,26 @@
 			"sid": 436000906928924
 		},
 		{
+			"eventType": "variable",
+			"name": "multScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 607013498075349
+		},
+		{
+			"eventType": "variable",
+			"name": "multID",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 401290829919308
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "spawns",
@@ -2895,10 +2915,10 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 316795874923807,
+									"sid": 838627272099860,
 									"parameters": {
 										"variable": "power",
-										"value": "0.2"
+										"value": "0.45"
 									}
 								}
 							],
@@ -2936,10 +2956,10 @@
 							"conditions": [
 								{
 									"id": "is-boolean-instance-variable-set",
-									"objectClass": "coint",
-									"sid": 304776595793592,
+									"objectClass": "coins",
+									"sid": 222644572002789,
 									"parameters": {
-										"instance-variable": "pushed"
+										"instance-variable": "pushedFromStartBlock"
 									},
 									"isInverted": true
 								}
@@ -2947,8 +2967,8 @@
 							"actions": [
 								{
 									"id": "apply-impulse-towards-position",
-									"objectClass": "coint",
-									"sid": 442719775697472,
+									"objectClass": "coins",
+									"sid": 927830630446412,
 									"behaviorType": "Physics",
 									"parameters": {
 										"impulse": "power",
@@ -3016,8 +3036,8 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "coint",
-							"sid": 904585159368786,
+							"objectClass": "coins",
+							"sid": 711505690166929,
 							"parameters": {
 								"object": "coinStart"
 							}
@@ -3035,10 +3055,10 @@
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "coint",
-							"sid": 726345824833128,
+							"objectClass": "coins",
+							"sid": 894462657148335,
 							"parameters": {
-								"instance-variable": "pushed",
+								"instance-variable": "pushedFromStartBlock",
 								"value": "false"
 							}
 						}
@@ -3066,10 +3086,10 @@
 						},
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "coint",
-							"sid": 173332270725808,
+							"objectClass": "coins",
+							"sid": 514900118235234,
 							"parameters": {
-								"instance-variable": "pushed",
+								"instance-variable": "pushedFromStartBlock",
 								"value": "true"
 							}
 						}
@@ -3103,9 +3123,9 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "pajatso",
-							"sid": 897030562720127,
+							"sid": 704777915004582,
 							"parameters": {
-								"object": "coint",
+								"object": "coint2",
 								"layer": "\"action\"",
 								"image-point": "\"coinSpawn\"",
 								"create-hierarchy": false,
@@ -3137,9 +3157,9 @@
 								{
 									"id": "for-each",
 									"objectClass": "System",
-									"sid": 692975623357614,
+									"sid": 417339840952973,
 									"parameters": {
-										"object": "coint"
+										"object": "coins"
 									}
 								}
 							],
@@ -3151,29 +3171,14 @@
 									"conditions": [
 										{
 											"id": "is-overlapping-another-object",
-											"objectClass": "coint",
-											"sid": 960468358148802,
+											"objectClass": "coins",
+											"sid": 277984698795443,
 											"parameters": {
 												"object": "pointsTrigger"
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 335154915200840,
-											"parameters": {
-												"variable": "money",
-												"value": "1"
-											}
-										},
-										{
-											"id": "destroy",
-											"objectClass": "coint",
-											"sid": 167425883663078
-										}
-									],
+									"actions": [],
 									"sid": 164354821477123,
 									"children": [
 										{
@@ -3190,9 +3195,96 @@
 													}
 												}
 											],
-											"actions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 424444124931941,
+													"parameters": {
+														"variable": "multID",
+														"value": "slotLights.slotLightsID"
+													}
+												}
+											],
 											"sid": 433545780586805,
 											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-between-values",
+															"objectClass": "System",
+															"sid": 230509772852147,
+															"parameters": {
+																"value": "multID",
+																"lower-bound": "1",
+																"upper-bound": "7"
+															}
+														}
+													],
+													"actions": [
+														{
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const inst = runtime.objects.multObject.getFirstInstance();",
+																"runtime.globalVars.multScore = inst.instVars[\"slotMult\" + runtime.globalVars.multID];",
+																"",
+																""
+															]
+														},
+														{
+															"id": "set-text",
+															"objectClass": "testText",
+															"sid": 232134801193957,
+															"parameters": {
+																"text": "multScore"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 558474626130271,
+															"parameters": {
+																"variable": "money",
+																"value": "coins.value * multScore"
+															}
+														},
+														{
+															"id": "destroy",
+															"objectClass": "coins",
+															"sid": 378442371420098
+														}
+													],
+													"sid": 647618538319965
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 237254758934467
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 857058748017996,
+															"parameters": {
+																"variable": "money",
+																"value": "coins.value "
+															}
+														},
+														{
+															"id": "destroy",
+															"objectClass": "coins",
+															"sid": 863443461507610
+														}
+													],
+													"sid": 554526633021239
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -3247,8 +3339,8 @@
 									"conditions": [
 										{
 											"id": "is-overlapping-another-object",
-											"objectClass": "coint",
-											"sid": 339883370686544,
+											"objectClass": "coins",
+											"sid": 443039732573010,
 											"parameters": {
 												"object": "pointsTriggerBottom"
 											}
@@ -3258,16 +3350,16 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 790914068424747,
+											"sid": 210923549429508,
 											"parameters": {
 												"variable": "money",
-												"value": "1"
+												"value": "coins.value"
 											}
 										},
 										{
 											"id": "destroy",
-											"objectClass": "coint",
-											"sid": 391153097899976
+											"objectClass": "coins",
+											"sid": 684159500262363
 										}
 									],
 									"sid": 851404308295900
@@ -3277,8 +3369,8 @@
 									"conditions": [
 										{
 											"id": "is-overlapping-another-object",
-											"objectClass": "coint",
-											"sid": 391480796023706,
+											"objectClass": "coins",
+											"sid": 914855461647887,
 											"parameters": {
 												"object": "coinDelete"
 											}
@@ -3287,8 +3379,8 @@
 									"actions": [
 										{
 											"id": "destroy",
-											"objectClass": "coint",
-											"sid": 836484722205672
+											"objectClass": "coins",
+											"sid": 631501394011537
 										}
 									],
 									"sid": 479381580234410

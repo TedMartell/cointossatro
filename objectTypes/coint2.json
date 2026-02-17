@@ -1,7 +1,7 @@
 {
-	"name": "coint",
+	"name": "coint2",
 	"plugin-id": "Sprite",
-	"sid": 257798423873622,
+	"sid": 313485877410650,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,14 +10,14 @@
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 776337022108937
+			"sid": 845539682431130
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 913424294933491
+			"sid": 863835793812503
 		}
 	],
 	"effectTypes": [],
@@ -34,7 +34,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6895371,
+						"imageSpriteId": 8592119,
 						"collisionPoly": {
 							"points": [
 								0.42424242424242425,
@@ -122,8 +122,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 920804933781576,
-				"name": "Animation 1",
+				"sid": 172856182744411,
+				"name": "Animation 2",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

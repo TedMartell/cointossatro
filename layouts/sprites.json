@@ -19,6 +19,8 @@
 					"sid": 181464819298506,
 					"tags": "",
 					"instanceVariables": {
+						"value": 1,
+						"pushedFromStartBlock": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -26,12 +28,12 @@
 							"properties": {
 								"immovable": false,
 								"collision-mask": "use-collision-polygon",
-								"collision-filter-tags": "block",
+								"collision-filter-tags": "",
 								"collision-filter-mode": "exclusive",
 								"prevent-rotation": false,
-								"density": 0.5,
+								"density": 1,
 								"friction": 0.5,
-								"elasticity": 0.5,
+								"elasticity": 0.2,
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
@@ -215,6 +217,8 @@
 					"sid": 870062895222086,
 					"tags": "",
 					"instanceVariables": {
+						"value": 1,
+						"pushedFromStartBlock": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -231,7 +235,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						},
 						"Solid": {
@@ -1310,6 +1314,71 @@
 						"height": 35,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coint2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"sid": 914163541365956,
+					"tags": "",
+					"instanceVariables": {
+						"value": 2,
+						"pushedFromStartBlock": false,
+						"pushed": false
+					},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 914163541365956,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 482.7495422363281,
+						"y": 222.31053161621094,
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
