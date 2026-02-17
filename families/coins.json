@@ -27,7 +27,9 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"coint",
-		"coint2"
+		"baseCoin1",
+		"baseCoin2",
+		"bouncyCoin",
+		"iceCoin"
 	]
 }

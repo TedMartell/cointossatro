@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "coint",
+					"type": "baseCoin1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -205,7 +205,7 @@
 					}
 				},
 				{
-					"type": "coint",
+					"type": "baseCoin1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -253,8 +253,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 383.961181640625,
-						"y": 181.62527465820312,
+						"x": 1285,
+						"y": 91,
 						"width": 40,
 						"height": 40,
 						"originX": 0.5,
@@ -805,7 +805,7 @@
 				{
 					"type": "borderRightTop",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1325,7 +1325,7 @@
 					}
 				},
 				{
-					"type": "coint2",
+					"type": "baseCoin2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 2",
@@ -1373,8 +1373,138 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 482.7495422363281,
-						"y": 222.31053161621094,
+						"x": 1346,
+						"y": 90,
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bouncyCoin",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"sid": 413208025719494,
+					"tags": "",
+					"instanceVariables": {
+						"value": 2,
+						"pushedFromStartBlock": false,
+						"pushed": false
+					},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 1,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 413208025719494,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1354,
+						"y": 172,
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "iceCoin",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 29,
+					"sid": 490325396461535,
+					"tags": "",
+					"instanceVariables": {
+						"value": 2,
+						"pushedFromStartBlock": false,
+						"pushed": false
+					},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 1,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 490325396461535,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1286,
+						"y": 165,
 						"width": 40,
 						"height": 40,
 						"originX": 0.5,

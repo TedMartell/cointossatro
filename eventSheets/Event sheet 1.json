@@ -3123,9 +3123,9 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "pajatso",
-							"sid": 704777915004582,
+							"sid": 350244546028767,
 							"parameters": {
-								"object": "coint2",
+								"object": "bouncyCoin",
 								"layer": "\"action\"",
 								"image-point": "\"coinSpawn\"",
 								"create-hierarchy": false,

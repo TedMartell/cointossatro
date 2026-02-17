@@ -1,5 +1,5 @@
 {
-	"name": "coint2",
+	"name": "baseCoin2",
 	"plugin-id": "Sprite",
 	"sid": 313485877410650,
 	"isGlobal": false,
@@ -34,7 +34,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8592119,
+						"imageSpriteId": 748934,
 						"collisionPoly": {
 							"points": [
 								0.42424242424242425,

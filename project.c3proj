@@ -59,7 +59,7 @@
 	"uniqueId": "ankgliost1r",
 	"objectTypes": {
 		"items": [
-			"coint",
+			"baseCoin1",
 			"block",
 			"pusher",
 			"Mouse",
@@ -101,8 +101,10 @@
 			"multNumOne",
 			"multNumDec",
 			"multObject",
-			"coint2",
-			"testText"
+			"baseCoin2",
+			"testText",
+			"bouncyCoin",
+			"iceCoin"
 		],
 		"subfolders": []
 	},

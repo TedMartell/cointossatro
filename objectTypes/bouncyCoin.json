@@ -1,7 +1,7 @@
 {
-	"name": "coint",
+	"name": "bouncyCoin",
 	"plugin-id": "Sprite",
-	"sid": 257798423873622,
+	"sid": 731701684863462,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,14 +10,14 @@
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 776337022108937
+			"sid": 251157477300577
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 913424294933491
+			"sid": 677212093911424
 		}
 	],
 	"effectTypes": [],
@@ -34,7 +34,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6895371,
+						"imageSpriteId": 1398705,
 						"collisionPoly": {
 							"points": [
 								0.42424242424242425,
@@ -122,8 +122,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 920804933781576,
-				"name": "Animation 1",
+				"sid": 507846638167866,
+				"name": "Animation 2",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
