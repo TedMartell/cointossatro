@@ -2385,10 +2385,10 @@
 										{
 											"id": "spawn-another-object",
 											"objectClass": "pajatso",
-											"sid": 186319582913162,
+											"sid": 581633778659256,
 											"parameters": {
 												"object": "payoutBackground",
-												"layer": "\"background\"",
+												"layer": "\"foreground\"",
 												"image-point": "\"payoutBackground\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
@@ -2424,6 +2424,10 @@
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
+												},
+												{
+													"type": "comment",
+													"text": "credit numbers"
 												},
 												{
 													"id": "spawn-another-object",
@@ -2462,6 +2466,10 @@
 													}
 												},
 												{
+													"type": "comment",
+													"text": "buycredit numbers"
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "coinCounter",
 													"sid": 137965932073895,
@@ -2498,6 +2506,10 @@
 													}
 												},
 												{
+													"type": "comment",
+													"text": "combometer numbers"
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "comboMeter",
 													"sid": 725545010431004,
@@ -2529,6 +2541,70 @@
 														"object": "comboMeterDec",
 														"layer": "\"background\"",
 														"image-point": "\"comboMeterDec\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"type": "comment",
+													"text": "payout numbers"
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 586353312414864,
+													"parameters": {
+														"object": "payoutK",
+														"layer": "\"foreground\"",
+														"image-point": "\"payoutK\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 597733037799062,
+													"parameters": {
+														"object": "payoutHun",
+														"layer": "\"foreground\"",
+														"image-point": "\"payoutHun\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 854165555541922,
+													"parameters": {
+														"object": "payoutTen",
+														"layer": "\"foreground\"",
+														"image-point": "\"payoutTen\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 329074945802290,
+													"parameters": {
+														"object": "payoutOne",
+														"layer": "\"foreground\"",
+														"image-point": "\"payoutOne\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 478541989014145,
+													"parameters": {
+														"object": "payoutDec",
+														"layer": "\"foreground\"",
+														"image-point": "\"payoutDec\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
@@ -2577,34 +2653,405 @@
 							"parameters": {
 								"text": "money"
 							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "creditNumHun",
-							"sid": 106130749053579,
-							"parameters": {
-								"frame-number": "floor(credit / 100)"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "creditNumTen",
-							"sid": 531145961141629,
-							"parameters": {
-								"frame-number": "floor((credit % 100) / 10)"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "creditNumOne",
-							"sid": 600287865923447,
-							"parameters": {
-								"frame-number": "credit % 10"
-							}
 						}
 					],
 					"sid": 761334187865273,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//Set Slot Mult Numbers"
+									]
+								}
+							],
+							"sid": 496097236672483,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumOne",
+											"sid": 661655021953792,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"comparison": 0,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumDec",
+											"sid": 220543945818505,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumOne",
+											"sid": 898273188874353,
+											"parameters": {
+												"frame-number": "multObject.slotMult1 % 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumDec",
+											"sid": 818983692988476,
+											"parameters": {
+												"frame-number": "floor(multObject.slotMult1 * 10) % 10"
+											}
+										}
+									],
+									"sid": 429195600810033
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumOne",
+											"sid": 971726046467075,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"comparison": 0,
+												"value": "2"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumDec",
+											"sid": 641330158097603,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumOne",
+											"sid": 548069015052147,
+											"parameters": {
+												"frame-number": "multObject.slotMult2 % 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumDec",
+											"sid": 707064239502474,
+											"parameters": {
+												"frame-number": "floor(multObject.slotMult2 * 10) % 10"
+											}
+										}
+									],
+									"sid": 529265517569631
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumOne",
+											"sid": 140766149284822,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"comparison": 0,
+												"value": "3"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumDec",
+											"sid": 149377189643530,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumOne",
+											"sid": 472004446582467,
+											"parameters": {
+												"frame-number": "multObject.slotMult3 % 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumDec",
+											"sid": 481426177372074,
+											"parameters": {
+												"frame-number": "floor(multObject.slotMult3 * 10) % 10"
+											}
+										}
+									],
+									"sid": 387312796908350
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumOne",
+											"sid": 966549591972591,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"comparison": 0,
+												"value": "4"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumDec",
+											"sid": 122888941133775,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumOne",
+											"sid": 583679563041406,
+											"parameters": {
+												"frame-number": "multObject.slotMult4 % 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumDec",
+											"sid": 111903918882232,
+											"parameters": {
+												"frame-number": "floor(multObject.slotMult4 * 10) % 10"
+											}
+										}
+									],
+									"sid": 217130536844873
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumOne",
+											"sid": 285573832505752,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"comparison": 0,
+												"value": "5"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumDec",
+											"sid": 568617692006897,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumOne",
+											"sid": 790886394554491,
+											"parameters": {
+												"frame-number": "multObject.slotMult5 % 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumDec",
+											"sid": 487271903328951,
+											"parameters": {
+												"frame-number": "floor(multObject.slotMult5 * 10) % 10"
+											}
+										}
+									],
+									"sid": 521457941149733
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumOne",
+											"sid": 754168887791552,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"comparison": 0,
+												"value": "6"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumDec",
+											"sid": 731238852096502,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"comparison": 0,
+												"value": "6"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumOne",
+											"sid": 113080227289846,
+											"parameters": {
+												"frame-number": "multObject.slotMult6 % 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumDec",
+											"sid": 534673873265178,
+											"parameters": {
+												"frame-number": "floor(multObject.slotMult6 * 10) % 10"
+											}
+										}
+									],
+									"sid": 158370516870834
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumOne",
+											"sid": 464577359295280,
+											"parameters": {
+												"instance-variable": "multNumOneID",
+												"comparison": 0,
+												"value": "7"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "multNumDec",
+											"sid": 745616539857627,
+											"parameters": {
+												"instance-variable": "multNumDecID",
+												"comparison": 0,
+												"value": "7"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumOne",
+											"sid": 326720101973798,
+											"parameters": {
+												"frame-number": "multObject.slotMult7 % 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "multNumDec",
+											"sid": 820784717233946,
+											"parameters": {
+												"frame-number": "floor(multObject.slotMult7 * 10) % 10"
+											}
+										}
+									],
+									"sid": 402145517171324
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 354817027288609
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//Set Credit Numbers"
+									]
+								}
+							],
+							"sid": 850915548309252,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "creditNumHun",
+											"sid": 778800793269083,
+											"parameters": {
+												"frame-number": "floor(credit / 100)"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "creditNumTen",
+											"sid": 170770706578876,
+											"parameters": {
+												"frame-number": "floor((credit % 100) / 10)"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "creditNumOne",
+											"sid": 269139708243582,
+											"parameters": {
+												"frame-number": "credit % 10"
+											}
+										}
+									],
+									"sid": 520681938440971
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 107915197659446
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 472643508446378
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 900498261010739
+						},
 						{
 							"eventType": "block",
 							"conditions": [],
@@ -2619,320 +3066,6 @@
 								}
 							],
 							"sid": 405255091390451
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumOne",
-									"sid": 344378685750135,
-									"parameters": {
-										"instance-variable": "multNumOneID",
-										"comparison": 0,
-										"value": "1"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumDec",
-									"sid": 280206138641914,
-									"parameters": {
-										"instance-variable": "multNumDecID",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumOne",
-									"sid": 380392233360345,
-									"parameters": {
-										"frame-number": "multObject.slotMult1 % 10"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumDec",
-									"sid": 245438865446863,
-									"parameters": {
-										"frame-number": "floor(multObject.slotMult1 * 10) % 10"
-									}
-								}
-							],
-							"sid": 691533325386437
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumOne",
-									"sid": 669573888394131,
-									"parameters": {
-										"instance-variable": "multNumOneID",
-										"comparison": 0,
-										"value": "2"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumDec",
-									"sid": 886696988078927,
-									"parameters": {
-										"instance-variable": "multNumDecID",
-										"comparison": 0,
-										"value": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumOne",
-									"sid": 392671872974448,
-									"parameters": {
-										"frame-number": "multObject.slotMult2 % 10"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumDec",
-									"sid": 743695060001598,
-									"parameters": {
-										"frame-number": "floor(multObject.slotMult2 * 10) % 10"
-									}
-								}
-							],
-							"sid": 101735198525948
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumOne",
-									"sid": 652173654651176,
-									"parameters": {
-										"instance-variable": "multNumOneID",
-										"comparison": 0,
-										"value": "3"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumDec",
-									"sid": 673857549468301,
-									"parameters": {
-										"instance-variable": "multNumDecID",
-										"comparison": 0,
-										"value": "3"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumOne",
-									"sid": 884927044994050,
-									"parameters": {
-										"frame-number": "multObject.slotMult3 % 10"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumDec",
-									"sid": 702848455616250,
-									"parameters": {
-										"frame-number": "floor(multObject.slotMult3 * 10) % 10"
-									}
-								}
-							],
-							"sid": 237682777681621
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumOne",
-									"sid": 626940975662065,
-									"parameters": {
-										"instance-variable": "multNumOneID",
-										"comparison": 0,
-										"value": "4"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumDec",
-									"sid": 540576862985979,
-									"parameters": {
-										"instance-variable": "multNumDecID",
-										"comparison": 0,
-										"value": "4"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumOne",
-									"sid": 944070401816832,
-									"parameters": {
-										"frame-number": "multObject.slotMult4 % 10"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumDec",
-									"sid": 623760108834973,
-									"parameters": {
-										"frame-number": "floor(multObject.slotMult4 * 10) % 10"
-									}
-								}
-							],
-							"sid": 992822363653210
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumOne",
-									"sid": 901036562719556,
-									"parameters": {
-										"instance-variable": "multNumOneID",
-										"comparison": 0,
-										"value": "5"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumDec",
-									"sid": 158173912102726,
-									"parameters": {
-										"instance-variable": "multNumDecID",
-										"comparison": 0,
-										"value": "5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumOne",
-									"sid": 662746548959157,
-									"parameters": {
-										"frame-number": "multObject.slotMult5 % 10"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumDec",
-									"sid": 767535255141248,
-									"parameters": {
-										"frame-number": "floor(multObject.slotMult5 * 10) % 10"
-									}
-								}
-							],
-							"sid": 448265852571318
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumOne",
-									"sid": 100252896808513,
-									"parameters": {
-										"instance-variable": "multNumOneID",
-										"comparison": 0,
-										"value": "6"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumDec",
-									"sid": 567440381749846,
-									"parameters": {
-										"instance-variable": "multNumDecID",
-										"comparison": 0,
-										"value": "6"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumOne",
-									"sid": 995193866463922,
-									"parameters": {
-										"frame-number": "multObject.slotMult6 % 10"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumDec",
-									"sid": 140650172073353,
-									"parameters": {
-										"frame-number": "floor(multObject.slotMult6 * 10) % 10"
-									}
-								}
-							],
-							"sid": 519986260991580
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumOne",
-									"sid": 129387357205718,
-									"parameters": {
-										"instance-variable": "multNumOneID",
-										"comparison": 0,
-										"value": "7"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "multNumDec",
-									"sid": 374798500388738,
-									"parameters": {
-										"instance-variable": "multNumDecID",
-										"comparison": 0,
-										"value": "7"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumOne",
-									"sid": 698944865181486,
-									"parameters": {
-										"frame-number": "multObject.slotMult7 % 10"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "multNumDec",
-									"sid": 117223557948998,
-									"parameters": {
-										"frame-number": "floor(multObject.slotMult7 * 10) % 10"
-									}
-								}
-							],
-							"sid": 611298024330791
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [],
-							"sid": 441368420250213
 						}
 					]
 				}
