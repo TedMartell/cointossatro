@@ -104,7 +104,12 @@
 			"baseCoin2",
 			"testText",
 			"bouncyCoin",
-			"iceCoin"
+			"iceCoin",
+			"payoutBackground",
+			"comboMeterTen",
+			"comboMeterOne",
+			"comboMeterDec",
+			"comboMeter"
 		],
 		"subfolders": []
 	},

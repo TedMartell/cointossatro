@@ -23,6 +23,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "payout",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 186282077716420
+		},
+		{
+			"eventType": "variable",
 			"name": "power",
 			"type": "number",
 			"initialValue": "1",
@@ -2371,6 +2381,18 @@
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 186319582913162,
+											"parameters": {
+												"object": "payoutBackground",
+												"layer": "\"background\"",
+												"image-point": "\"payoutBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
 										}
 									],
 									"sid": 921348530750103,
@@ -2459,6 +2481,42 @@
 														"object": "buyCoinOne",
 														"layer": "\"background\"",
 														"image-point": "\"buyCoinOne\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 998275561550110,
+													"parameters": {
+														"object": "comboMeterTen",
+														"layer": "\"background\"",
+														"image-point": "\"comboMeterTen\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 896003753969288,
+													"parameters": {
+														"object": "comboMeterOne",
+														"layer": "\"background\"",
+														"image-point": "\"comboMeterOne\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "payoutBackground",
+													"sid": 374655246031782,
+													"parameters": {
+														"object": "comboMeterDec",
+														"layer": "\"background\"",
+														"image-point": "\"comboMeterDec\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
@@ -3123,9 +3181,9 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "pajatso",
-							"sid": 350244546028767,
+							"sid": 354405595282302,
 							"parameters": {
-								"object": "bouncyCoin",
+								"object": "baseCoin1",
 								"layer": "\"action\"",
 								"image-point": "\"coinSpawn\"",
 								"create-hierarchy": false,

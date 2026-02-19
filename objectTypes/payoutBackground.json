@@ -1,0 +1,69 @@
+{
+	"name": "payoutBackground",
+	"plugin-id": "Sprite",
+	"sid": 582270642901974,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 344,
+						"height": 110,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4325645,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.25,
+								1,
+								0.25,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "comboMeterTen",
+								"x": 0.5482625482625483,
+								"y": 0.0625
+							},
+							{
+								"name": "comboMeterOne",
+								"x": 0.5984555984555985,
+								"y": 0.0625
+							},
+							{
+								"name": "ComboMeterDec",
+								"x": 0.6602316602316602,
+								"y": 0.0625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 397224483864508,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

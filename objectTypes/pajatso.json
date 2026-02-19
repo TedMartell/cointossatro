@@ -494,9 +494,9 @@
 								"y": 0.195562435500516
 							},
 							{
-								"name": "Image Point 95",
-								"x": 0.5,
-								"y": 0.5
+								"name": "payoutBackground",
+								"x": 0.3705839942321557,
+								"y": 0
 							}
 						],
 						"duration": 1,
