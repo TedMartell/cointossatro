@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4325645,
+						"imageSpriteId": 4356024,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -36,19 +36,29 @@
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
-								"name": "comboMeterTen",
-								"x": 0.5482625482625483,
-								"y": 0.0625
+								"name": "payoutK",
+								"x": 0.09011627906976744,
+								"y": 0.12727272727272726
 							},
 							{
-								"name": "comboMeterOne",
-								"x": 0.5984555984555985,
-								"y": 0.0625
+								"name": "payoutHun",
+								"x": 0.24709302325581395,
+								"y": 0.12727272727272726
 							},
 							{
-								"name": "ComboMeterDec",
-								"x": 0.6602316602316602,
-								"y": 0.0625
+								"name": "payoutTen",
+								"x": 0.40406976744186046,
+								"y": 0.12727272727272726
+							},
+							{
+								"name": "payoutOne",
+								"x": 0.561046511627907,
+								"y": 0.12727272727272726
+							},
+							{
+								"name": "payoutDec",
+								"x": 0.7616279069767442,
+								"y": 0.12727272727272726
 							}
 						],
 						"duration": 1,

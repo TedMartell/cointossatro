@@ -2393,6 +2393,18 @@
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 922637136726415,
+											"parameters": {
+												"object": "comboMeter",
+												"layer": "\"background\"",
+												"image-point": "\"comboMeterBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
 										}
 									],
 									"sid": 921348530750103,
@@ -2487,8 +2499,8 @@
 												},
 												{
 													"id": "spawn-another-object",
-													"objectClass": "payoutBackground",
-													"sid": 998275561550110,
+													"objectClass": "comboMeter",
+													"sid": 725545010431004,
 													"parameters": {
 														"object": "comboMeterTen",
 														"layer": "\"background\"",
@@ -2499,8 +2511,8 @@
 												},
 												{
 													"id": "spawn-another-object",
-													"objectClass": "payoutBackground",
-													"sid": 896003753969288,
+													"objectClass": "comboMeter",
+													"sid": 552006868302278,
 													"parameters": {
 														"object": "comboMeterOne",
 														"layer": "\"background\"",
@@ -2511,8 +2523,8 @@
 												},
 												{
 													"id": "spawn-another-object",
-													"objectClass": "payoutBackground",
-													"sid": 374655246031782,
+													"objectClass": "comboMeter",
+													"sid": 773553984549419,
 													"parameters": {
 														"object": "comboMeterDec",
 														"layer": "\"background\"",

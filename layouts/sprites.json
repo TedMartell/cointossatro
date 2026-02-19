@@ -1577,10 +1577,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 553.7861104344713,
-						"y": 946.0560676007232,
-						"width": 12,
-						"height": 17,
+						"x": 281.265748219755,
+						"y": 819.193140362838,
+						"width": 26,
+						"height": 38,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1614,10 +1614,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 588.2672187466983,
-						"y": 945.5502904007795,
-						"width": 12,
-						"height": 17,
+						"x": 335.48108965787526,
+						"y": 818.6873631628944,
+						"width": 26,
+						"height": 38,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1651,10 +1651,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 621.3253632394287,
-						"y": 944.0476320010213,
-						"width": 12,
-						"height": 17,
+						"x": 378,
+						"y": 820,
+						"width": 26,
+						"height": 38,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1688,12 +1688,49 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 195.73423312589324,
-						"y": 1076,
+						"x": 281.24924333809736,
+						"y": 879.5973941280148,
 						"width": 290,
 						"height": 90,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "creditNumHun2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"sid": 893610513639679,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 893610513639679,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 521,
+						"y": 861,
+						"width": 53,
+						"height": 82,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

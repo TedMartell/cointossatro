@@ -109,7 +109,9 @@
 			"comboMeterTen",
 			"comboMeterOne",
 			"comboMeterDec",
-			"comboMeter"
+			"comboMeter",
+			"moneyBackground",
+			"creditNumHun2"
 		],
 		"subfolders": []
 	},

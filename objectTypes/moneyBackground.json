@@ -1,7 +1,7 @@
 {
-	"name": "comboMeter",
+	"name": "moneyBackground",
 	"plugin-id": "Sprite",
-	"sid": 848528898299458,
+	"sid": 209133658177856,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,38 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 290,
-						"height": 90,
-						"originX": 0.5,
+						"width": 487,
+						"height": 262,
+						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2581290,
+						"imageSpriteId": 747449,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "comboMeterTen",
-								"x": 0.6344827586206897,
-								"y": 0.12222222222222222
-							},
-							{
-								"name": "comboMeterOne",
-								"x": 0.7275862068965517,
-								"y": 0.12222222222222222
-							},
-							{
-								"name": "comboMeterDec",
-								"x": 0.8482758620689655,
-								"y": 0.12222222222222222
-							}
-						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 391155612898935,
+				"sid": 347548797827616,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
