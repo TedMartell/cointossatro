@@ -25,11 +25,21 @@
 			"eventType": "variable",
 			"name": "payout",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "1234.5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 186282077716420
+		},
+		{
+			"eventType": "variable",
+			"name": "comboMult",
+			"type": "number",
+			"initialValue": "23.4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 338080694049456
 		},
 		{
 			"eventType": "variable",
@@ -2546,6 +2556,18 @@
 													}
 												},
 												{
+													"id": "spawn-another-object",
+													"objectClass": "comboMeter",
+													"sid": 255640029072890,
+													"parameters": {
+														"object": "comboMeterSlide",
+														"layer": "\"background\"",
+														"image-point": "\"comboMeterSlide\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
 													"type": "comment",
 													"text": "payout numbers"
 												},
@@ -3037,20 +3059,112 @@
 						{
 							"eventType": "block",
 							"conditions": [],
-							"actions": [],
-							"sid": 107915197659446
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"// Set Combometer Numbers"
+									]
+								}
+							],
+							"sid": 107915197659446,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "comboMeterTen",
+											"sid": 235413821584766,
+											"parameters": {
+												"frame-number": "floor((comboMult% 100) / 10)"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "comboMeterOne",
+											"sid": 130631161592927,
+											"parameters": {
+												"frame-number": "comboMult% 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "comboMeterDec",
+											"sid": 297065429499192,
+											"parameters": {
+												"frame-number": "floor((comboMult* 10) % 10)\r\n"
+											}
+										}
+									],
+									"sid": 720793469909138
+								}
+							]
 						},
 						{
 							"eventType": "block",
 							"conditions": [],
-							"actions": [],
-							"sid": 472643508446378
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [],
-							"sid": 900498261010739
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//Set Payout Numbers"
+									]
+								}
+							],
+							"sid": 472643508446378,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "payoutK",
+											"sid": 398407489887067,
+											"parameters": {
+												"frame-number": "floor(payout/ 1000)"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "payoutHun",
+											"sid": 331098106786947,
+											"parameters": {
+												"frame-number": "floor((payout % 1000) / 100)\r\n"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "payoutTen",
+											"sid": 731950189509458,
+											"parameters": {
+												"frame-number": "floor((payout% 100) / 10)"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "payoutOne",
+											"sid": 766349520738284,
+											"parameters": {
+												"frame-number": "payout% 10"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "payoutDec",
+											"sid": 493647357144445,
+											"parameters": {
+												"frame-number": "floor((payout* 10) % 10)\r\n"
+											}
+										}
+									],
+									"sid": 613737498954893
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -3066,6 +3180,59 @@
 								}
 							],
 							"sid": 405255091390451
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-between-values",
+									"objectClass": "System",
+									"sid": 860901957973211,
+									"parameters": {
+										"value": "comboMeterSlide.comboTimer",
+										"lower-bound": "0",
+										"upper-bound": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-width",
+									"objectClass": "comboMeterSlide",
+									"sid": 323373778001320,
+									"parameters": {
+										"width": "comboMeterSlide.comboBarOriginalWidth * (comboMeterSlide.comboTimer / comboMeterSlide.comboStartingTime)"
+									}
+								}
+							],
+							"sid": 451996128751060,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 970465294250065,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "comboMeterSlide",
+											"sid": 597070373725670,
+											"parameters": {
+												"instance-variable": "comboTimer",
+												"value": "0.1"
+											}
+										}
+									],
+									"sid": 931249014372877
+								}
+							]
 						}
 					]
 				}

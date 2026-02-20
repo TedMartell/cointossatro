@@ -115,7 +115,8 @@
 			"payoutHun",
 			"payoutTen",
 			"payoutOne",
-			"payoutDec"
+			"payoutDec",
+			"comboMeterSlide"
 		],
 		"subfolders": []
 	},
