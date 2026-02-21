@@ -53,16 +53,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "tempComboMult",
-			"type": "number",
-			"initialValue": "3",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 460517529552594
-		},
-		{
-			"eventType": "variable",
 			"name": "power",
 			"type": "number",
 			"initialValue": "1",
@@ -3588,6 +3578,75 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "comboMeter",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 667944844924137,
+											"parameters": {
+												"first-value": "comboMeterSlide.comboTimer",
+												"comparison": 3,
+												"second-value": "0"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 905933995577203
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 163651580923390,
+											"parameters": {
+												"variable": "payout",
+												"value": "payout * comboMult"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 788361628488055,
+											"parameters": {
+												"variable": "comboMult",
+												"value": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 451095188985979,
+											"parameters": {
+												"seconds": "0.5",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 336894592642803,
+											"parameters": {
+												"variable": "payoutBool",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 557452721566190
+								}
+							],
+							"sid": 629327458236323
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -3622,6 +3681,15 @@
 											"parameters": {
 												"instance-variable": "comboTimer",
 												"value": "comboMeterSlide.comboStartingTime"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 530973497994328,
+											"parameters": {
+												"variable": "comboMult",
+												"value": "0.1"
 											}
 										}
 									],
@@ -4142,65 +4210,6 @@
 									"sid": 530278920909465
 								}
 							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 679144004698827,
-									"parameters": {
-										"first-value": "comboMeterSlide.comboTimer",
-										"comparison": 3,
-										"second-value": "0"
-									}
-								},
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 832621846820128
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 377177832332843,
-									"parameters": {
-										"variable": "payout",
-										"value": "payout * comboMult"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 980437896537432,
-									"parameters": {
-										"variable": "comboMult",
-										"value": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 438797548700949,
-									"parameters": {
-										"seconds": "0.5",
-										"use-timescale": true
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 441099547334816,
-									"parameters": {
-										"variable": "payoutBool",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 289925943550088
 						},
 						{
 							"eventType": "block",
