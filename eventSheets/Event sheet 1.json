@@ -33,13 +33,33 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "tempPayout",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 561316755660645
+		},
+		{
+			"eventType": "variable",
 			"name": "comboMult",
 			"type": "number",
-			"initialValue": "23.4",
+			"initialValue": "3",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 338080694049456
+		},
+		{
+			"eventType": "variable",
+			"name": "tempComboMult",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 460517529552594
 		},
 		{
 			"eventType": "variable",
@@ -60,6 +80,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 436000906928924
+		},
+		{
+			"eventType": "variable",
+			"name": "payoutBool",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 499391696854841
 		},
 		{
 			"eventType": "variable",
@@ -2675,6 +2705,14 @@
 							"parameters": {
 								"text": "money"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "testText",
+							"sid": 248558263404196,
+							"parameters": {
+								"text": "tempPayout"
+							}
 						}
 					],
 					"sid": 761334187865273,
@@ -3470,6 +3508,34 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 373328156445815,
+							"parameters": {
+								"key": 89
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "pajatso",
+							"sid": 714588503615092,
+							"parameters": {
+								"object": "baseCoin1",
+								"layer": "\"action\"",
+								"image-point": "\"testCoin\"",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 215933534343585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 802657962911400,
@@ -3548,7 +3614,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "comboMeterSlide",
+											"sid": 796192390207023,
+											"parameters": {
+												"instance-variable": "comboTimer",
+												"value": "comboMeterSlide.comboStartingTime"
+											}
+										}
+									],
 									"sid": 164354821477123,
 									"children": [
 										{
@@ -3602,31 +3678,68 @@
 																"",
 																""
 															]
-														},
-														{
-															"id": "set-text",
-															"objectClass": "testText",
-															"sid": 232134801193957,
-															"parameters": {
-																"text": "multScore"
-															}
-														},
-														{
-															"id": "add-to-eventvar",
-															"objectClass": "System",
-															"sid": 558474626130271,
-															"parameters": {
-																"variable": "money",
-																"value": "coins.value * multScore"
-															}
-														},
-														{
-															"id": "destroy",
-															"objectClass": "coins",
-															"sid": 378442371420098
 														}
 													],
-													"sid": 647618538319965
+													"sid": 647618538319965,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-boolean-eventvar",
+																	"objectClass": "System",
+																	"sid": 907898639503362,
+																	"parameters": {
+																		"variable": "payoutBool"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 329069263975363,
+																	"parameters": {
+																		"variable": "tempPayout",
+																		"value": "coins.value * multScore"
+																	}
+																},
+																{
+																	"id": "destroy",
+																	"objectClass": "coins",
+																	"sid": 993729578278558
+																}
+															],
+															"sid": 367960007261980
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "else",
+																	"objectClass": "System",
+																	"sid": 856680301196828
+																}
+															],
+															"actions": [
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 203113153191469,
+																	"parameters": {
+																		"variable": "payout",
+																		"value": "coins.value * multScore"
+																	}
+																},
+																{
+																	"id": "destroy",
+																	"objectClass": "coins",
+																	"sid": 420837510462800
+																}
+															],
+															"sid": 253393089015308
+														}
+													]
 												},
 												{
 													"eventType": "block",
@@ -3637,23 +3750,62 @@
 															"sid": 237254758934467
 														}
 													],
-													"actions": [
+													"actions": [],
+													"sid": 554526633021239,
+													"children": [
 														{
-															"id": "add-to-eventvar",
-															"objectClass": "System",
-															"sid": 857058748017996,
-															"parameters": {
-																"variable": "money",
-																"value": "coins.value "
-															}
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-boolean-eventvar",
+																	"objectClass": "System",
+																	"sid": 299924556820397,
+																	"parameters": {
+																		"variable": "payoutBool"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 806169904495170,
+																	"parameters": {
+																		"variable": "tempPayout",
+																		"value": "coins.value "
+																	}
+																}
+															],
+															"sid": 480229060081417
 														},
 														{
-															"id": "destroy",
-															"objectClass": "coins",
-															"sid": 863443461507610
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "else",
+																	"objectClass": "System",
+																	"sid": 831708436731211
+																}
+															],
+															"actions": [
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 304013326623416,
+																	"parameters": {
+																		"variable": "payout",
+																		"value": "coins.value "
+																	}
+																},
+																{
+																	"id": "destroy",
+																	"objectClass": "coins",
+																	"sid": 331616518546611
+																}
+															],
+															"sid": 682832242372863
 														}
-													],
-													"sid": 554526633021239
+													]
 												},
 												{
 													"eventType": "block",
@@ -3720,9 +3872,9 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 210923549429508,
+											"sid": 865395312175928,
 											"parameters": {
-												"variable": "money",
+												"variable": "payout",
 												"value": "coins.value"
 											}
 										},
@@ -3988,6 +4140,269 @@
 										}
 									],
 									"sid": 530278920909465
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 679144004698827,
+									"parameters": {
+										"first-value": "comboMeterSlide.comboTimer",
+										"comparison": 3,
+										"second-value": "0"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 832621846820128
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 377177832332843,
+									"parameters": {
+										"variable": "payout",
+										"value": "payout * comboMult"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 980437896537432,
+									"parameters": {
+										"variable": "comboMult",
+										"value": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 438797548700949,
+									"parameters": {
+										"seconds": "0.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 441099547334816,
+									"parameters": {
+										"variable": "payoutBool",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 289925943550088
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 200900101994747,
+									"parameters": {
+										"variable": "payoutBool"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 906674185308931,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 275532829193561
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 483746034633530,
+											"parameters": {
+												"first-value": "payout",
+												"comparison": 4,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 221683418929599,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 435941871082534,
+													"parameters": {
+														"first-value": "payout",
+														"comparison": 4,
+														"second-value": "100"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 130378299455120,
+													"parameters": {
+														"variable": "payout",
+														"value": "10"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 365486991944982,
+													"parameters": {
+														"variable": "money",
+														"value": "10"
+													}
+												}
+											],
+											"sid": 143717384928910
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 559868630453143,
+													"parameters": {
+														"first-value": "payout",
+														"comparison": 4,
+														"second-value": "10"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 698097450810167,
+													"parameters": {
+														"variable": "payout",
+														"value": "1"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 179816048318808,
+													"parameters": {
+														"variable": "money",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 255611241884270
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 574708378281791,
+													"parameters": {
+														"first-value": "payout",
+														"comparison": 4,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 895591846101870,
+													"parameters": {
+														"variable": "payout",
+														"value": "0.1"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 178500301012180,
+													"parameters": {
+														"variable": "money",
+														"value": "0.1"
+													}
+												}
+											],
+											"sid": 739201189179682
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 620897619052436
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 834930802040579,
+											"parameters": {
+												"variable": "payoutBool",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 920023024679025,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 504939996131902
+												}
+											],
+											"actions": [
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 556803794746687,
+													"parameters": {
+														"variable": "payout",
+														"value": "tempPayout"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 260615171012337,
+													"parameters": {
+														"variable": "tempPayout",
+														"value": "0"
+													}
+												}
+											],
+											"sid": 443847636566439
+										}
+									]
 								}
 							]
 						}
