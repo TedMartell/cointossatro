@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7177090,
+						"imageSpriteId": 4516901,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
 								"name": "plexi",
 								"x": 0.8601297764960346,
-								"y": 0.21259029927760578
+								"y": 0.19762641898864808
 							},
 							{
 								"name": "slot0",
@@ -81,7 +81,7 @@
 							{
 								"name": "powerMeter",
 								"x": 0.8644556596971882,
-								"y": 0.1651186790505676
+								"y": 0.152218782249742
 							},
 							{
 								"name": "borderStick0",
@@ -346,7 +346,12 @@
 							{
 								"name": "coinSlot",
 								"x": 0.8601297764960346,
-								"y": 0.21413828689370484
+								"y": 0.19762641898864808
+							},
+							{
+								"name": "coinRamp",
+								"x": 0.9480894015861572,
+								"y": 0.24148606811145512
 							},
 							{
 								"name": "coinSpawn",
@@ -507,6 +512,11 @@
 								"name": "testCoin",
 								"x": 0.25594808940158614,
 								"y": 0.2347781217750258
+							},
+							{
+								"name": "moneyBackground",
+								"x": 0.9617880317231434,
+								"y": 0.0030959752321981426
 							}
 						],
 						"duration": 1,

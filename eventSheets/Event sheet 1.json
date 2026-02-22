@@ -23,6 +23,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "moneyLimit",
+			"type": "number",
+			"initialValue": "123456.7",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 140531078013532
+		},
+		{
+			"eventType": "variable",
 			"name": "payout",
 			"type": "number",
 			"initialValue": "1234.5",
@@ -2435,6 +2445,38 @@
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 843864811845224,
+											"parameters": {
+												"object": "coinRamp",
+												"layer": "\"background\"",
+												"image-point": "\"coinRamp\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "coinRamp",
+											"sid": 107415842447679,
+											"parameters": {
+												"angle": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 868837185352883,
+											"parameters": {
+												"object": "moneyBackground",
+												"layer": "\"background\"",
+												"image-point": "\"moneyBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
 										}
 									],
 									"sid": 921348530750103,
@@ -2650,6 +2692,206 @@
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
+												},
+												{
+													"type": "comment",
+													"text": "MoneyLimit Numbers"
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 851839534380390,
+													"parameters": {
+														"object": "moneyLimitDec",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitDec\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 863272963807115,
+													"parameters": {
+														"object": "moneyLimitOne",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitOne\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 160380255907308,
+													"parameters": {
+														"object": "moneyLimitTen",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitTen\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 499931909102912,
+													"parameters": {
+														"object": "moneyLimitHun",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitHun\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 594368397555863,
+													"parameters": {
+														"object": "moneyLimitK",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitK\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 941587182900181,
+													"parameters": {
+														"object": "moneyLimitTenK",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitTenK\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 879389229143162,
+													"parameters": {
+														"object": "moneyLimitHunK",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitHunK\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 641096453736073,
+													"parameters": {
+														"object": "moneyLimitMil",
+														"layer": "\"background\"",
+														"image-point": "\"moneyLimitMil\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"type": "comment",
+													"text": "Money Numbers"
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 887805072879560,
+													"parameters": {
+														"object": "moneyDec",
+														"layer": "\"background\"",
+														"image-point": "\"moneyDec\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 306869915456991,
+													"parameters": {
+														"object": "moneyOne",
+														"layer": "\"background\"",
+														"image-point": "\"moneyOne\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 519396423621483,
+													"parameters": {
+														"object": "moneyTen",
+														"layer": "\"background\"",
+														"image-point": "\"moneyTen\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 462476018210476,
+													"parameters": {
+														"object": "moneyHun",
+														"layer": "\"background\"",
+														"image-point": "\"moneyHun\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 242992528125889,
+													"parameters": {
+														"object": "moneyK",
+														"layer": "\"background\"",
+														"image-point": "\"moneyK\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 337684748544624,
+													"parameters": {
+														"object": "moneyTenK",
+														"layer": "\"background\"",
+														"image-point": "\"moneyTenK\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 620944674472231,
+													"parameters": {
+														"object": "moneyHunK",
+														"layer": "\"background\"",
+														"image-point": "\"moneyHunK\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 392307337629259,
+													"parameters": {
+														"object": "moneyMil",
+														"layer": "\"background\"",
+														"image-point": "\"moneyMil\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
 												}
 											],
 											"sid": 846134046889852
@@ -2699,9 +2941,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "testText",
-							"sid": 248558263404196,
+							"sid": 138239246512089,
 							"parameters": {
-								"text": "tempPayout"
+								"text": "coinRamp.Angle"
 							}
 						}
 					],
@@ -3191,6 +3433,1076 @@
 										}
 									],
 									"sid": 613737498954893
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//Set MoneyLimit Numbers"
+									]
+								}
+							],
+							"sid": 859536982158151,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 112419424761390,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 2,
+												"second-value": "1000000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitMil",
+											"sid": 265964308557182,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 612212645395613
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 488937797311938
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitMil",
+											"sid": 169116009257160,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitMil",
+											"sid": 997752843455292,
+											"parameters": {
+												"frame-number": "floor((moneyLimit % 10000000) / 1000000)"
+											}
+										}
+									],
+									"sid": 924427081965047
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 307869903039791,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 2,
+												"second-value": "100000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitMil",
+											"sid": 912096327961363,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitHunK",
+											"sid": 130169464419334,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 999358959747981
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 407755425839420
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitHunK",
+											"sid": 757379945700713,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitHunK",
+											"sid": 576725231247023,
+											"parameters": {
+												"frame-number": "floor((moneyLimit % 1000000) / 100000)"
+											}
+										}
+									],
+									"sid": 830965002449746
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 781763851899739,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 2,
+												"second-value": "10000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitHunK",
+											"sid": 881609911828918,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitTenK",
+											"sid": 143040735276516,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 770508023114602
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 178174188868728
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitTenK",
+											"sid": 752204409263946,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitTenK",
+											"sid": 989618993133284,
+											"parameters": {
+												"frame-number": "floor((moneyLimit % 100000) / 10000)"
+											}
+										}
+									],
+									"sid": 181900582661285
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 241377918181929,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 2,
+												"second-value": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitTenK",
+											"sid": 515515337584848,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitK",
+											"sid": 540281161230568,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 379190548875328
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 752555965270318
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitK",
+											"sid": 908272903305740,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitK",
+											"sid": 577940049214982,
+											"parameters": {
+												"frame-number": "floor((moneyLimit % 10000) / 1000)"
+											}
+										}
+									],
+									"sid": 746678433686144
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 603841434133246,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 2,
+												"second-value": "100"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitK",
+											"sid": 279089452685064,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitHun",
+											"sid": 245389440377953,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 939256859276116
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 489048810836270
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitHun",
+											"sid": 238756859627162,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitHun",
+											"sid": 395831119233938,
+											"parameters": {
+												"frame-number": "floor((moneyLimit% 1000) / 100)\r\n"
+											}
+										}
+									],
+									"sid": 995841106039392
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 756866131029358,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 2,
+												"second-value": "10"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitHun",
+											"sid": 390035360315955,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitTen",
+											"sid": 726327863449697,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 249801380910365
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 209232236348196
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitTen",
+											"sid": 506621201721085,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitTen",
+											"sid": 819322567167227,
+											"parameters": {
+												"frame-number": "floor((moneyLimit% 100) / 10)"
+											}
+										}
+									],
+									"sid": 186558015484380
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 499268890324389,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 2,
+												"second-value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitTen",
+											"sid": 295056863963711,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitOne",
+											"sid": 307016592042873,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 526688096177777
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 272993191828203
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitOne",
+											"sid": 724982209793702,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitOne",
+											"sid": 116067888678936,
+											"parameters": {
+												"frame-number": "moneyLimit% 10"
+											}
+										}
+									],
+									"sid": 890077282077196
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 408665205404973,
+											"parameters": {
+												"first-value": "moneyLimit",
+												"comparison": 3,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitOne",
+											"sid": 628488312845423,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitDec",
+											"sid": 626006123575569,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 271507422341006
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 904479484593759
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyLimitDec",
+											"sid": 608701113321271,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyLimitDec",
+											"sid": 599157253969944,
+											"parameters": {
+												"frame-number": "floor((moneyLimit* 10) % 10)"
+											}
+										}
+									],
+									"sid": 334426571059234
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//Set Money Numbers"
+									]
+								}
+							],
+							"sid": 800909670349768,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 310631502019795,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 2,
+												"second-value": "1000000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyMil",
+											"sid": 600987128316031,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 430693615807055
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 131215814996637
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyMil",
+											"sid": 672505556250941,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyMil",
+											"sid": 154222695869237,
+											"parameters": {
+												"frame-number": "floor((money% 10000000) / 1000000)"
+											}
+										}
+									],
+									"sid": 288855146916975
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 956613021331248,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 2,
+												"second-value": "100000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyMil",
+											"sid": 518872974235330,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyHunK",
+											"sid": 650290687312309,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 455456842808846
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 687808687351815
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyHunK",
+											"sid": 529988120387562,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyHunK",
+											"sid": 360993307363529,
+											"parameters": {
+												"frame-number": "floor((money% 1000000) / 100000)"
+											}
+										}
+									],
+									"sid": 918093327044344
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 955271897451674,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 2,
+												"second-value": "10000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyHunK",
+											"sid": 671891008327998,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyTenK",
+											"sid": 260424220216172,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 322154604809740
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 806044407862488
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyTenK",
+											"sid": 343110582525591,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyTenK",
+											"sid": 809608190096559,
+											"parameters": {
+												"frame-number": "floor((money% 100000) / 10000)"
+											}
+										}
+									],
+									"sid": 912061661219981
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 868350727972445,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 2,
+												"second-value": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyTenK",
+											"sid": 939648132893263,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyK",
+											"sid": 662114056587692,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 443674368355904
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 286121585722622
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyK",
+											"sid": 257112680813511,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyK",
+											"sid": 487000147722898,
+											"parameters": {
+												"frame-number": "floor((money% 10000) / 1000)"
+											}
+										}
+									],
+									"sid": 133019015973231
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 292096729347982,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 2,
+												"second-value": "100"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyK",
+											"sid": 852830527416512,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyHun",
+											"sid": 394229961245534,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 203954652649428
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 723889110002611
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyHun",
+											"sid": 142427909401114,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyHun",
+											"sid": 115170902414790,
+											"parameters": {
+												"frame-number": "floor((money% 1000) / 100)\r\n"
+											}
+										}
+									],
+									"sid": 877202308824934
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 440024242704178,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 2,
+												"second-value": "10"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyHun",
+											"sid": 680738719225027,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyTen",
+											"sid": 640619017176364,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 900613050777946
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 120747710209683
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyTen",
+											"sid": 502682339353167,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyTen",
+											"sid": 578696123702694,
+											"parameters": {
+												"frame-number": "floor((money% 100) / 10)"
+											}
+										}
+									],
+									"sid": 842857742218518
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 579277643375736,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 2,
+												"second-value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyTen",
+											"sid": 245943830435287,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyOne",
+											"sid": 643507849947076,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 331381904117776
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 201737440568801
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyOne",
+											"sid": 944440654700944,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyOne",
+											"sid": 461920814553957,
+											"parameters": {
+												"frame-number": "money% 10"
+											}
+										}
+									],
+									"sid": 641837601852311
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 268429281078523,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 3,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyOne",
+											"sid": 805344092403120,
+											"parameters": {
+												"animation": "\"passive\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "moneyDec",
+											"sid": 751617998589520,
+											"parameters": {
+												"animation": "\"money\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 272978540629820
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 558468946657097
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "moneyDec",
+											"sid": 232013727682052,
+											"parameters": {
+												"animation": "\"active\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "moneyDec",
+											"sid": 188656193459258,
+											"parameters": {
+												"frame-number": "floor((money* 10) % 10)"
+											}
+										}
+									],
+									"sid": 683052488704931
 								}
 							]
 						},
@@ -4407,6 +5719,15 @@
 														"variable": "tempPayout",
 														"value": "0"
 													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "comboMeterSlide",
+													"sid": 475925947026114,
+													"parameters": {
+														"instance-variable": "comboTimer",
+														"value": "comboMeterSlide.comboStartingTime"
+													}
 												}
 											],
 											"sid": 443847636566439
@@ -4622,6 +5943,74 @@
 						}
 					],
 					"sid": 574505457457447
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 431364045679728,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 166789964734704,
+							"parameters": {
+								"first-value": "coinRamp.Angle",
+								"comparison": 2,
+								"second-value": "15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "coinRamp",
+							"sid": 443575067550517,
+							"parameters": {
+								"angle": "coinRamp.Angle + 0.1"
+							}
+						}
+					],
+					"sid": 857216058462418
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 917734437659639,
+							"parameters": {
+								"key": 40
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 911528729574258,
+							"parameters": {
+								"first-value": "coinRamp.Angle",
+								"comparison": 4,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "coinRamp",
+							"sid": 578779786393850,
+							"parameters": {
+								"angle": "coinRamp.Angle - 0.1"
+							}
+						}
+					],
+					"sid": 750899571067793
 				}
 			],
 			"sid": 102080341841110
