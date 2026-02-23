@@ -1,32 +1,10 @@
 {
-	"name": "comboMeterSlide",
+	"name": "coinClip",
 	"plugin-id": "Sprite",
-	"sid": 375483314963246,
+	"sid": 764002435291976,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "comboTimer",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 310695775934654
-		},
-		{
-			"name": "comboStartingTime",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 771224857055073
-		},
-		{
-			"name": "comboBarOriginalWidth",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 211027340609586
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -34,21 +12,33 @@
 			{
 				"frames": [
 					{
-						"width": 216,
-						"height": 21,
-						"originX": 0,
+						"width": 245,
+						"height": 500,
+						"originX": 1,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3980106,
+						"imageSpriteId": 8607762,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.85,
+								0,
+								0.85
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 924300508298424,
+				"sid": 944903773405586,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

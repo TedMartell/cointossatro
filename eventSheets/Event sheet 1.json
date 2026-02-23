@@ -2477,6 +2477,18 @@
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 629447802529474,
+											"parameters": {
+												"object": "angleSetBackground",
+												"layer": "\"background\"",
+												"image-point": "\"angleSetBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
 										}
 									],
 									"sid": 921348530750103,
@@ -2892,9 +2904,78 @@
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "moneyBackground",
+													"sid": 698723637660935,
+													"parameters": {
+														"object": "powerUpsBackground",
+														"layer": "\"background\"",
+														"image-point": "\"powerUp\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
 												}
 											],
-											"sid": 846134046889852
+											"sid": 846134046889852,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "powerUpsBackground",
+															"sid": 427478963064013,
+															"parameters": {
+																"object": "coinClip",
+																"layer": "\"background\"",
+																"image-point": "\"coinClip\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "angleSetBackground",
+															"sid": 219077110656240,
+															"parameters": {
+																"object": "angleRod",
+																"layer": "\"background\"",
+																"image-point": "\"angleRod\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "angleSetBackground",
+															"sid": 215025568232230,
+															"parameters": {
+																"object": "angleSetUp",
+																"layer": "\"background\"",
+																"image-point": "\"angleSetUp\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "angleSetBackground",
+															"sid": 121259376998983,
+															"parameters": {
+																"object": "angleSetDown",
+																"layer": "\"background\"",
+																"image-point": "\"angleSetDown\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														}
+													],
+													"sid": 485628110951563
+												}
+											]
 										}
 									]
 								}
@@ -5974,6 +6055,14 @@
 							"parameters": {
 								"angle": "coinRamp.Angle + 0.1"
 							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "angleRod",
+							"sid": 397095502247777,
+							"parameters": {
+								"angle": "coinRamp.Angle + 0.1"
+							}
 						}
 					],
 					"sid": 857216058462418
@@ -6005,6 +6094,14 @@
 							"id": "set-angle",
 							"objectClass": "coinRamp",
 							"sid": 578779786393850,
+							"parameters": {
+								"angle": "coinRamp.Angle - 0.1"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "angleRod",
+							"sid": 777296881707331,
 							"parameters": {
 								"angle": "coinRamp.Angle - 0.1"
 							}

@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Camera3D",
+			"name": "3D camera",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -66,7 +73,6 @@
 			"Keyboard",
 			"powerVariable",
 			"pajatso",
-			"test_background",
 			"forceTarget",
 			"coinSlotForeground",
 			"pointsTrigger",
@@ -133,7 +139,16 @@
 			"moneyHunK",
 			"moneyMil",
 			"moneyDec",
-			"moneyLimitDec"
+			"moneyLimitDec",
+			"coinClip",
+			"3DCamera",
+			"powerUpsBackground",
+			"hackSlot",
+			"mainBackgroundTile",
+			"angleSetBackground",
+			"angleRod",
+			"angleSetUp",
+			"angleSetDown"
 		],
 		"subfolders": []
 	},

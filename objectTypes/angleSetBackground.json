@@ -1,7 +1,7 @@
 {
-	"name": "comboMeter",
+	"name": "angleSetBackground",
 	"plugin-id": "Sprite",
-	"sid": 848528898299458,
+	"sid": 327910612052313,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,43 +12,38 @@
 			{
 				"frames": [
 					{
-						"width": 290,
-						"height": 90,
-						"originX": 0.5,
+						"width": 110,
+						"height": 110,
+						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3371142,
+						"imageSpriteId": 2710300,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
-								"name": "comboMeterTen",
-								"x": 0.6344827586206897,
-								"y": 0.12222222222222222
+								"name": "angleRod",
+								"x": 0.9,
+								"y": 0.4
 							},
 							{
-								"name": "comboMeterOne",
-								"x": 0.7275862068965517,
-								"y": 0.12222222222222222
+								"name": "angleSetUp",
+								"x": 0.05454545454545454,
+								"y": 0.5727272727272728
 							},
 							{
-								"name": "comboMeterDec",
-								"x": 0.8482758620689655,
-								"y": 0.12222222222222222
-							},
-							{
-								"name": "comboMeterSlide",
-								"x": 0.1310344827586207,
-								"y": 0.6222222222222222
+								"name": "angleSetDown",
+								"x": 0.5818181818181818,
+								"y": 0.5727272727272728
 							}
 						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 391155612898935,
+				"sid": 332649430796328,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

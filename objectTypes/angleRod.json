@@ -1,32 +1,10 @@
 {
-	"name": "comboMeterSlide",
+	"name": "angleRod",
 	"plugin-id": "Sprite",
-	"sid": 375483314963246,
+	"sid": 199663122726151,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "comboTimer",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 310695775934654
-		},
-		{
-			"name": "comboStartingTime",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 771224857055073
-		},
-		{
-			"name": "comboBarOriginalWidth",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 211027340609586
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -34,21 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 216,
-						"height": 21,
-						"originX": 0,
+						"width": 85,
+						"height": 5,
+						"originX": 1,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3980106,
+						"imageSpriteId": 3593220,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 924300508298424,
+				"sid": 971732629444699,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

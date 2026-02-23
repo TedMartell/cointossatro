@@ -1,7 +1,7 @@
 {
-	"name": "powerMeter",
+	"name": "angleSetUp",
 	"plugin-id": "Sprite",
-	"sid": 694271237933824,
+	"sid": 355369035677629,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,29 +12,22 @@
 			{
 				"frames": [
 					{
-						"width": 125,
-						"height": 85,
+						"width": 40,
+						"height": 40,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1777783,
+						"imageSpriteId": 8712148,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "chargeShadow",
-								"x": 0.904,
-								"y": 0.5411764705882353
-							}
-						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 866161202912093,
-				"name": "Animation 1",
+				"sid": 670218667086596,
+				"name": "idle",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -44,22 +37,22 @@
 			{
 				"frames": [
 					{
-						"width": 125,
-						"height": 85,
-						"originX": 0,
-						"originY": 0,
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6025329,
+						"imageSpriteId": 3237319,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 818956058517837,
-				"name": "Animation 3",
+				"sid": 338637776774423,
+				"name": "pressed",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

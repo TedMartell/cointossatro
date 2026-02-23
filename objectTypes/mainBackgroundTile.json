@@ -1,22 +1,22 @@
 {
-	"name": "test_background",
+	"name": "mainBackgroundTile",
 	"plugin-id": "TiledBg",
-	"sid": 133146466528946,
+	"sid": 324963356623679,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 300,
-		"height": 300,
+		"width": 1925,
+		"height": 2155,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 1894249,
+		"imageSpriteId": 9328500,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

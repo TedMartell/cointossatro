@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4516901,
+						"imageSpriteId": 7634693,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
@@ -517,6 +517,11 @@
 								"name": "moneyBackground",
 								"x": 0.9617880317231434,
 								"y": 0.0030959752321981426
+							},
+							{
+								"name": "angleSetBackground",
+								"x": 0.8644556596971882,
+								"y": 0.2579979360165119
 							}
 						],
 						"duration": 1,
