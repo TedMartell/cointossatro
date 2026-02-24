@@ -148,7 +148,10 @@
 			"angleSetBackground",
 			"angleRod",
 			"angleSetUp",
-			"angleSetDown"
+			"angleSetDown",
+			"shopBackground",
+			"shopSign",
+			"hacksShop"
 		],
 		"subfolders": []
 	},
