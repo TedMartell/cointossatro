@@ -1,7 +1,7 @@
 {
-	"name": "hacksShop",
+	"name": "powerUpShop",
 	"plugin-id": "Sprite",
-	"sid": 822057857588565,
+	"sid": 534386754651569,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,33 @@
 			{
 				"frames": [
 					{
-						"width": 500,
-						"height": 475,
-						"originX": 0.5,
+						"width": 775,
+						"height": 265,
+						"originX": 0.4612903225806452,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9653083,
+						"imageSpriteId": 8620266,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.9225806451612903,
+								0,
+								0.9225806451612903,
+								1,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 949945782503696,
+				"sid": 736677810697270,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
