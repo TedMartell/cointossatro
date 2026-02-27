@@ -1,7 +1,7 @@
 {
-	"name": "coinClip",
+	"name": "overworldBackground",
 	"plugin-id": "Sprite",
-	"sid": 764002435291976,
+	"sid": 311535718658637,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,25 +12,25 @@
 			{
 				"frames": [
 					{
-						"width": 245,
-						"height": 500,
-						"originX": 0.5,
-						"originY": 0,
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.06510416666666667,
+						"originY": 0.11574074074074074,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8607762,
+						"imageSpriteId": 2549837,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
-								1,
+								0.13020833333333334,
 								0,
-								1,
-								0.85,
+								0.13020833333333334,
+								0.23148148148148148,
 								0,
-								0.85
+								0.23148148148148148
 							]
 						},
 						"useCollisionPoly": true,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 944903773405586,
+				"sid": 338539324647852,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

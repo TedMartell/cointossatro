@@ -154,7 +154,12 @@
 			"hacksShop",
 			"coinShop",
 			"powerUpShop",
-			"nextStageButton"
+			"nextStageButton",
+			"overworldBackground",
+			"selectLevelBackground",
+			"uiBackground",
+			"moneyBackgroundShop",
+			"shopOwnedBackground"
 		],
 		"subfolders": []
 	},

@@ -112,6 +112,37 @@
 			"sid": 401290829919308
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 557998814289062
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 636752870247002,
+					"parameters": {
+						"layer": "\"overworld\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 720491773954909,
+					"parameters": {
+						"layer": "\"shop\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 695495049036023
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "spawns",
@@ -2470,6 +2501,18 @@
 											"id": "spawn-another-object",
 											"objectClass": "pajatso",
 											"sid": 868837185352883,
+											"parameters": {
+												"object": "moneyBackground",
+												"layer": "\"background\"",
+												"image-point": "\"moneyBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 853166094125240,
 											"parameters": {
 												"object": "moneyBackground",
 												"layer": "\"background\"",

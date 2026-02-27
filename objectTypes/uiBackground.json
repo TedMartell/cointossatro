@@ -1,7 +1,7 @@
 {
-	"name": "coinClip",
+	"name": "uiBackground",
 	"plugin-id": "Sprite",
-	"sid": 764002435291976,
+	"sid": 757164898766719,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,25 +12,25 @@
 			{
 				"frames": [
 					{
-						"width": 245,
-						"height": 500,
+						"width": 384,
+						"height": 1024,
 						"originX": 0.5,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8607762,
+						"imageSpriteId": 6418285,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
-								1,
+								0.6510416666666666,
 								0,
-								1,
-								0.85,
+								0.6510416666666666,
+								0.244140625,
 								0,
-								0.85
+								0.244140625
 							]
 						},
 						"useCollisionPoly": true,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 944903773405586,
+				"sid": 771979942995227,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

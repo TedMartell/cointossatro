@@ -1,0 +1,127 @@
+{
+	"name": "moneyBackgroundShop",
+	"plugin-id": "Sprite",
+	"sid": 253731607770436,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 487,
+						"height": 171,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7939925,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "moneyLimitDec",
+								"x": 0.7700205338809035,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyLimitOne",
+								"x": 0.6591375770020534,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyLimitTen",
+								"x": 0.5749486652977412,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyLimitHun",
+								"x": 0.49075975359342916,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyLimitK",
+								"x": 0.406570841889117,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyLimitTenK",
+								"x": 0.32238193018480493,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyLimitHunK",
+								"x": 0.23819301848049282,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyLimitMil",
+								"x": 0.1540041067761807,
+								"y": 0.2982456140350877
+							},
+							{
+								"name": "moneyDec",
+								"x": 0.7700205338809035,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "moneyOne",
+								"x": 0.6591375770020534,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "moneyTen",
+								"x": 0.5749486652977412,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "moneyHun",
+								"x": 0.49075975359342916,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "moneyK",
+								"x": 0.406570841889117,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "moneyTenK",
+								"x": 0.32238193018480493,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "moneyHunK",
+								"x": 0.23819301848049282,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "moneyMil",
+								"x": 0.1540041067761807,
+								"y": 0.9941520467836257
+							},
+							{
+								"name": "powerUp",
+								"x": 0.5,
+								"y": 1.5321637426900585
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 134257759060453,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

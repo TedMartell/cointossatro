@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7081578,
+						"imageSpriteId": 4775008,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
@@ -105,7 +105,7 @@
 							},
 							{
 								"name": "powerUp",
-								"x": 1,
+								"x": 0.5,
 								"y": 1
 							}
 						],
