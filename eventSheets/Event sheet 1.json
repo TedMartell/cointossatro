@@ -25,7 +25,7 @@
 			"eventType": "variable",
 			"name": "moneyLimit",
 			"type": "number",
-			"initialValue": "123456.7",
+			"initialValue": "1000",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -133,10 +133,10 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 720491773954909,
+					"sid": 323212115136139,
 					"parameters": {
 						"layer": "\"shop\"",
-						"visibility": "visible"
+						"visibility": "invisible"
 					}
 				}
 			],
@@ -2529,6 +2529,18 @@
 												"object": "angleSetBackground",
 												"layer": "\"background\"",
 												"image-point": "\"angleSetBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 565559411925556,
+											"parameters": {
+												"object": "payoutAnimation",
+												"layer": "\"background\"",
+												"image-point": "\"payoutAnimation\"",
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
@@ -6069,88 +6081,145 @@
 					"sid": 574505457457447
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "setAngle",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 431364045679728,
-							"parameters": {
-								"key": 38
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 662288300769728,
+									"parameters": {
+										"key": 38
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 426391273846667,
+									"parameters": {
+										"first-value": "coinRamp.Angle",
+										"comparison": 2,
+										"second-value": "15"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "coinRamp",
+									"sid": 481191416919767,
+									"parameters": {
+										"angle": "coinRamp.Angle + 0.1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "angleRod",
+									"sid": 846993766184547,
+									"parameters": {
+										"angle": "coinRamp.Angle + 0.1"
+									}
+								}
+							],
+							"sid": 113321180300482
 						},
 						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 166789964734704,
-							"parameters": {
-								"first-value": "coinRamp.Angle",
-								"comparison": 2,
-								"second-value": "15"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 916023618969571,
+									"parameters": {
+										"key": 40
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 852095711811204,
+									"parameters": {
+										"first-value": "coinRamp.Angle",
+										"comparison": 4,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "coinRamp",
+									"sid": 321275100927523,
+									"parameters": {
+										"angle": "coinRamp.Angle - 0.1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "angleRod",
+									"sid": 769180304380695,
+									"parameters": {
+										"angle": "coinRamp.Angle - 0.1"
+									}
+								}
+							],
+							"sid": 181809353655975
 						}
 					],
-					"actions": [
-						{
-							"id": "set-angle",
-							"objectClass": "coinRamp",
-							"sid": 443575067550517,
-							"parameters": {
-								"angle": "coinRamp.Angle + 0.1"
-							}
-						},
-						{
-							"id": "set-angle",
-							"objectClass": "angleRod",
-							"sid": 397095502247777,
-							"parameters": {
-								"angle": "coinRamp.Angle + 0.1"
-							}
-						}
-					],
-					"sid": 857216058462418
+					"sid": 284126566613053
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 917734437659639,
-							"parameters": {
-								"key": 40
-							}
-						},
-						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 911528729574258,
+							"sid": 532419776307957,
 							"parameters": {
-								"first-value": "coinRamp.Angle",
-								"comparison": 4,
-								"second-value": "1"
+								"first-value": "money",
+								"comparison": 5,
+								"second-value": "moneyLimit"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-angle",
-							"objectClass": "coinRamp",
-							"sid": 578779786393850,
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 673132647683905,
 							"parameters": {
-								"angle": "coinRamp.Angle - 0.1"
+								"variable": "money",
+								"value": "moneyLimit"
 							}
 						},
 						{
-							"id": "set-angle",
-							"objectClass": "angleRod",
-							"sid": 777296881707331,
+							"id": "move-to-object",
+							"objectClass": "cameraObj",
+							"sid": 745859696745745,
+							"behaviorType": "MoveTo",
 							"parameters": {
-								"angle": "coinRamp.Angle - 0.1"
+								"object": "payoutAnimation",
+								"image-point": "\"center\"",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "cameraObj",
+							"sid": 445839615295214,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "enabled"
 							}
 						}
 					],
-					"sid": 750899571067793
+					"sid": 332309625345125
 				}
 			],
 			"sid": 102080341841110

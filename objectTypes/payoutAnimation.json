@@ -1,0 +1,59 @@
+{
+	"name": "payoutAnimation",
+	"plugin-id": "Sprite",
+	"sid": 841922716302188,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1280,
+						"height": 704,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8360214,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.1953125,
+								0,
+								0.1953125,
+								0.35511363636363635,
+								0,
+								0.35511363636363635
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.14204545454545456
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 884524516628493,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
