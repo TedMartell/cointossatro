@@ -641,7 +641,7 @@
 				{
 					"type": "hatch",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -678,8 +678,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 403,
-						"y": 419,
+						"x": 337.3853344417528,
+						"y": 1285.3653966641104,
 						"width": 48,
 						"height": 5,
 						"originX": 0,
@@ -1095,7 +1095,7 @@
 				{
 					"type": "pointsTriggerBottom",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1134,7 +1134,7 @@
 				{
 					"type": "coinDelete",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1997,7 +1997,13 @@
 					"sid": 399566526441372,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 399566526441372,
 						"expanded": true
@@ -2034,7 +2040,19 @@
 					"sid": 548125258024998,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 548125258024998,
 						"expanded": true
@@ -2071,7 +2089,13 @@
 					"sid": 230753253819165,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 230753253819165,
 						"expanded": true
@@ -2108,7 +2132,13 @@
 					"sid": 479121219113479,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 479121219113479,
 						"expanded": true
@@ -2145,7 +2175,13 @@
 					"sid": 703726665145898,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 703726665145898,
 						"expanded": true
@@ -2182,7 +2218,13 @@
 					"sid": 116113080259457,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 116113080259457,
 						"expanded": true
@@ -2219,7 +2261,13 @@
 					"sid": 670439542870728,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 670439542870728,
 						"expanded": true
@@ -2256,7 +2304,13 @@
 					"sid": 281953243141238,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 281953243141238,
 						"expanded": true
@@ -2293,7 +2347,13 @@
 					"sid": 391579318834114,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 391579318834114,
 						"expanded": true
@@ -2330,7 +2390,13 @@
 					"sid": 908187770966490,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 908187770966490,
 						"expanded": true
@@ -2367,7 +2433,13 @@
 					"sid": 969641769145498,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 969641769145498,
 						"expanded": true
@@ -2404,7 +2476,13 @@
 					"sid": 582613934925366,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 582613934925366,
 						"expanded": true
@@ -2441,7 +2519,13 @@
 					"sid": 325569470675448,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 325569470675448,
 						"expanded": true
@@ -2478,7 +2562,13 @@
 					"sid": 566629057598381,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 566629057598381,
 						"expanded": true
@@ -2515,7 +2605,13 @@
 					"sid": 185845106554931,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 185845106554931,
 						"expanded": true
@@ -2552,7 +2648,13 @@
 					"sid": 958135605852006,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 958135605852006,
 						"expanded": true
@@ -2589,7 +2691,13 @@
 					"sid": 870954829190047,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 870954829190047,
 						"expanded": true
@@ -2950,7 +3058,7 @@
 					"type": "payoutAnimation",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2967,12 +3075,49 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2488,
-						"y": 1175,
+						"x": 2477,
+						"y": 1177,
 						"width": 1280,
 						"height": 704,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "powerUpVolcano",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 105,
+					"sid": 430188892553538,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 430188892553538,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2618,
+						"y": 262,
+						"width": 160,
+						"height": 200,
+						"originX": 0.78125,
+						"originY": 0.625,
 						"color": [
 							1,
 							1,

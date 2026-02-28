@@ -5,7 +5,13 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 147314794939825
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

@@ -1,7 +1,7 @@
 {
-	"name": "payoutAnimation",
+	"name": "powerUpVolcano",
 	"plugin-id": "Sprite",
-	"sid": 841922716302188,
+	"sid": 394852898231965,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,41 +12,22 @@
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 704,
-						"originX": 0,
-						"originY": 0,
+						"width": 80,
+						"height": 100,
+						"originX": 1.5625,
+						"originY": 1.25,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8360214,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.1953125,
-								0,
-								0.1953125,
-								0.35511363636363635,
-								0,
-								0.35511363636363635
-							]
-						},
+						"imageSpriteId": 2799118,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "center",
-								"x": 0.5,
-								"y": 0.14204545454545456
-							}
-						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 884524516628493,
-				"name": "idle",
+				"sid": 515872201896876,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -56,41 +37,34 @@
 			{
 				"frames": [
 					{
-						"width": 1280,
-						"height": 704,
-						"originX": 0,
-						"originY": 0,
+						"width": 160,
+						"height": 200,
+						"originX": 0.78125,
+						"originY": 0.625,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9858739,
+						"imageSpriteId": 6213365,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
-								0.1953125,
+								0.5,
 								0,
-								0.1953125,
-								0.35511363636363635,
+								0.5,
+								0.5,
 								0,
-								0.35511363636363635
+								0.5
 							]
 						},
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "center",
-								"x": 0.5,
-								"y": 0.14204545454545456
-							}
-						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 718357672521166,
-				"name": "payout",
+				"sid": 546927216536773,
+				"name": "Animation 2",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

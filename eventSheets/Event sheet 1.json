@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "credit",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "15",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "money",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -25,7 +25,7 @@
 			"eventType": "variable",
 			"name": "moneyLimit",
 			"type": "number",
-			"initialValue": "1000",
+			"initialValue": "10",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "payout",
 			"type": "number",
-			"initialValue": "1234.5",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -45,7 +45,7 @@
 			"eventType": "variable",
 			"name": "tempPayout",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -55,7 +55,7 @@
 			"eventType": "variable",
 			"name": "comboMult",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -137,6 +137,24 @@
 					"parameters": {
 						"layer": "\"shop\"",
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 396957860735246,
+					"parameters": {
+						"layer": "\"shop\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 362802335088093,
+					"parameters": {
+						"layer": "\"overworld\"",
+						"interactive": false
 					}
 				}
 			],
@@ -2777,6 +2795,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitDec",
+													"sid": 274261315085783,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 863272963807115,
@@ -2786,6 +2819,21 @@
 														"image-point": "\"moneyLimitOne\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitOne",
+													"sid": 278561413480229,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -2801,6 +2849,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitTen",
+													"sid": 480178997015783,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 499931909102912,
@@ -2810,6 +2873,21 @@
 														"image-point": "\"moneyLimitHun\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitHun",
+													"sid": 113357209592959,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -2825,6 +2903,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitK",
+													"sid": 293623794772782,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 941587182900181,
@@ -2834,6 +2927,21 @@
 														"image-point": "\"moneyLimitTenK\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitTenK",
+													"sid": 365230355267877,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -2849,6 +2957,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitHunK",
+													"sid": 462772887590921,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 641096453736073,
@@ -2858,6 +2981,21 @@
 														"image-point": "\"moneyLimitMil\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyLimitMil",
+													"sid": 825856694088426,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -2877,6 +3015,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyDec",
+													"sid": 170333285815426,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 306869915456991,
@@ -2886,6 +3039,21 @@
 														"image-point": "\"moneyOne\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyOne",
+													"sid": 708195323886101,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -2901,6 +3069,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyTen",
+													"sid": 290882365359844,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 462476018210476,
@@ -2910,6 +3093,21 @@
 														"image-point": "\"moneyHun\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyHun",
+													"sid": 518570592095886,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -2925,6 +3123,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyK",
+													"sid": 718478412457519,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 337684748544624,
@@ -2934,6 +3147,21 @@
 														"image-point": "\"moneyTenK\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyTenK",
+													"sid": 345336665576257,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -2949,6 +3177,21 @@
 													}
 												},
 												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyHunK",
+													"sid": 699891228512519,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 392307337629259,
@@ -2958,6 +3201,21 @@
 														"image-point": "\"moneyMil\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "moneyMil",
+													"sid": 852707860464038,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "moneyBackground",
+														"x": true,
+														"y": true,
+														"angle": false,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
 													}
 												},
 												{
@@ -6217,9 +6475,141 @@
 							"parameters": {
 								"state": "enabled"
 							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "moneyBackground",
+							"sid": 758925678288228,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "pajatso",
+								"image-point": "\"moneyBackground2\"",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "hand",
+							"sid": 564953109617864,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "coinClip",
+							"sid": 406173182939811,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "powerUpsBackground",
+							"sid": 407975379127909,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 332309625345125
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 250190292742973,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "levelCompletedButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 367396185972813,
+							"parameters": {
+								"layer": "\"shop\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 917285754592478,
+							"parameters": {
+								"layer": "\"shop\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 696121637923062,
+							"parameters": {
+								"layer": "\"action\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 432781263294602,
+							"parameters": {
+								"layer": "\"background\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 976428541831994,
+							"parameters": {
+								"layer": "\"foreground\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "cameraObj",
+							"sid": 354191913325588,
+							"parameters": {
+								"x": "OriginalViewportWidth / 2",
+								"y": "OriginalViewportHeight / 2"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "cameraObj",
+							"sid": 296283606028898,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "coinClip",
+							"sid": 857518307908661,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "powerUpsBackground",
+							"sid": 641795313585877,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 267549037261135
 				}
 			],
 			"sid": 102080341841110
