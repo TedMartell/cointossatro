@@ -1,0 +1,17 @@
+{
+	"name": "Family1",
+	"plugin-id": "Sprite",
+	"sid": 456187599562732,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"hackBubbler",
+		"hackDiscount",
+		"hackLucky",
+		"hackFireWall",
+		"hackRandMult",
+		"hackVerottaja",
+		"hackMagnet"
+	]
+}

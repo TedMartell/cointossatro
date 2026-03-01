@@ -1,0 +1,17 @@
+{
+	"name": "powerUps",
+	"plugin-id": "Sprite",
+	"sid": 667368262972363,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"powerUpVolcano",
+		"powerUpWaterfall",
+		"powerUpEarthquake",
+		"powerUpTornado",
+		"powerUpBlizzard",
+		"powerUpLightning",
+		"powerUpAurora"
+	]
+}

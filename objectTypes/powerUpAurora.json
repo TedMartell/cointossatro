@@ -1,7 +1,7 @@
 {
-	"name": "powerUpVolcano",
+	"name": "powerUpAurora",
 	"plugin-id": "Sprite",
-	"sid": 394852898231965,
+	"sid": 489285438984930,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2799118,
+						"imageSpriteId": 3546141,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 515872201896876,
+				"sid": 986409731692480,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
@@ -45,7 +45,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2825268,
+						"imageSpriteId": 2561669,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -63,7 +63,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 546927216536773,
+				"sid": 431290627522202,
 				"name": "Animation 2",
 				"isLooping": false,
 				"isPingPong": false,

@@ -176,7 +176,27 @@
 			"levelCompletedButton",
 			"payoutAnimation",
 			"cameraObj",
-			"powerUpVolcano"
+			"powerUpVolcano",
+			"powerUpWaterfall",
+			"powerUpEarthquake",
+			"powerUpTornado",
+			"powerUpBlizzard",
+			"powerUpLightning",
+			"powerUpAurora",
+			"hackDiscount",
+			"hackRandMult",
+			"hackFireWall",
+			"hackBubbler",
+			"hackLucky",
+			"hackVerottaja",
+			"hackMagnet",
+			"bubbleCoin",
+			"fireCoin",
+			"ironCoin",
+			"flowerCoin",
+			"ghostCoin",
+			"glassCoin",
+			"octoCoin"
 		],
 		"subfolders": []
 	},
@@ -185,7 +205,9 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"coins"
+			"coins",
+			"powerUps",
+			"Family1"
 		],
 		"subfolders": []
 	},

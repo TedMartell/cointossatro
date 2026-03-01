@@ -30,6 +30,13 @@
 		"baseCoin1",
 		"baseCoin2",
 		"bouncyCoin",
-		"iceCoin"
+		"iceCoin",
+		"bubbleCoin",
+		"fireCoin",
+		"ironCoin",
+		"flowerCoin",
+		"ghostCoin",
+		"glassCoin",
+		"octoCoin"
 	]
 }
