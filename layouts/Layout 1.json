@@ -1447,7 +1447,20 @@
 		"subfolders": []
 	},
 	"sid": 576284243348768,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Array",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 127,
+			"sid": 247661700943977,
+			"tags": "",
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 3840,
 	"height": 2160,

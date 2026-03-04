@@ -6638,6 +6638,53 @@
 				}
 			],
 			"sid": 436585957534956
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "shop",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 542236510183389
+						}
+					],
+					"actions": [],
+					"sid": 803633249283531
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 642850173297785,
+							"parameters": {
+								"key": 66
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"const items = shopSpawn(3, powerUps, false)",
+								"",
+								"console.log(items)"
+							]
+						}
+					],
+					"sid": 338298988996045
+				}
+			],
+			"sid": 962096670663161
 		}
 	],
 	"sid": 878535526920507

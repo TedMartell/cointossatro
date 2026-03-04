@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -196,7 +203,8 @@
 			"flowerCoin",
 			"ghostCoin",
 			"glassCoin",
-			"octoCoin"
+			"octoCoin",
+			"Array"
 		],
 		"subfolders": []
 	},
@@ -226,7 +234,32 @@
 	},
 	"rootFileFolders": {
 		"script": {
-			"items": [],
+			"items": [
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 494867001795379,
+					"script-info": {
+						"purpose": "imports-for-events"
+					}
+				},
+				{
+					"name": "powerUps.js",
+					"type": "application/javascript",
+					"sid": 255786783800719,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shopSpawn.js",
+					"type": "application/javascript",
+					"sid": 247455477987506,
+					"script-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"sound": {
