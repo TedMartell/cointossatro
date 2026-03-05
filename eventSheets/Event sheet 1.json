@@ -3331,6 +3331,322 @@
 									]
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//SHOP"
+									]
+								}
+							],
+							"sid": 177378260552630,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"//coinShop Spawns"
+											]
+										}
+									],
+									"sid": 640041868398237,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinShop",
+													"sid": 312076118522121,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText0\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 688508195530924,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "0"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinShop",
+													"sid": 600152125107049,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText1\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 742430127043658,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinShop",
+													"sid": 132150467106314,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText2\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 556265445139841,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "2"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinShop",
+													"sid": 162594835794889,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText3\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 151544407811074,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "3"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinShop",
+													"sid": 353982000751418,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText4\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 588479061895050,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "4"
+													}
+												}
+											],
+											"sid": 702722297373600
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"//powerUpsShop Spawns"
+											]
+										}
+									],
+									"sid": 659433031672812,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "powerUpShop",
+													"sid": 158416682224366,
+													"parameters": {
+														"object": "sellPowerUpsValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellPowerUpsValueText0\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellPowerUpsValueText",
+													"sid": 887954702408654,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "0"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "powerUpShop",
+													"sid": 999258014534636,
+													"parameters": {
+														"object": "sellPowerUpsValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellPowerUpsValueText1\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellPowerUpsValueText",
+													"sid": 134118022410384,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "powerUpShop",
+													"sid": 907955098420452,
+													"parameters": {
+														"object": "sellPowerUpsValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellPowerUpsValueText2\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellPowerUpsValueText",
+													"sid": 792759581491536,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "2"
+													}
+												}
+											],
+											"sid": 801146020685077
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"//hacksShop Spawns"
+											]
+										}
+									],
+									"sid": 677160407780727,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "hacksShop",
+													"sid": 358543246741745,
+													"parameters": {
+														"object": "sellHacksValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellhacksValueText0\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellHacksValueText",
+													"sid": 161203384604813,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "0"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "hacksShop",
+													"sid": 299818026137250,
+													"parameters": {
+														"object": "sellHacksValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellhacksValueText1\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellHacksValueText",
+													"sid": 353415700004622,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "hacksShop",
+													"sid": 487190949816574,
+													"parameters": {
+														"object": "sellHacksValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellhacksValueText2\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellHacksValueText",
+													"sid": 495480568301844,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "2"
+													}
+												}
+											],
+											"sid": 356591665769513
+										}
+									]
+								}
+							]
 						}
 					]
 				}
@@ -6726,8 +7042,8 @@
 									"language": "javascript",
 									"script": [
 										"const items = shopSpawn(3, powerUps, false);",
-										"console.log(\"items\")",
 										"const puBG = runtime.objects[\"powerUpShop\"].getFirstInstance();",
+										"const textInsts = runtime.objects[\"sellPowerUpsValueText\"].getAllInstances();",
 										"",
 										"for (let i = 0; i < items.length; i++) {",
 										"    const objType = runtime.objects[items[i]];",
@@ -6735,7 +7051,16 @@
 										"    const x = puBG.getImagePointX(\"slot\"+i);",
 										"    const y = puBG.getImagePointY(\"slot\"+i);",
 										"",
-										"    objType.createInstance(\"shop\", x, y);",
+										"    const puInst = objType.createInstance(\"shop\", x, y);",
+										"",
+										"\tconst puValue = puInst.instVars.buyValue;",
+										"",
+										"\tfor (const t of textInsts) {",
+										"        if (t.instVars.id === i) {",
+										"            t.text = \"$\" + puValue;",
+										"            break; // stop once we found the correct one",
+										"        }",
+										"    }",
 										"}",
 										"",
 										""
@@ -6776,8 +7101,9 @@
 									"language": "javascript",
 									"script": [
 										"const items = shopSpawn(3, hacks, false);",
-										"console.log(\"items\")",
 										"const hacksBG = runtime.objects[\"hacksShop\"].getFirstInstance();",
+										"const textInsts = runtime.objects[\"sellHacksValueText\"].getAllInstances();",
+										"",
 										"",
 										"for (let i = 0; i < items.length; i++) {",
 										"    const objType = runtime.objects[items[i]];",
@@ -6785,7 +7111,16 @@
 										"    const x = hacksBG.getImagePointX(\"slot\"+i);",
 										"    const y = hacksBG.getImagePointY(\"slot\"+i);",
 										"",
-										"    objType.createInstance(\"shop\", x, y);",
+										"    const hackInst = objType.createInstance(\"shop\", x, y);",
+										"",
+										"\tconst hackValue = hackInst.instVars.buyValue;",
+										"",
+										"\tfor (const t of textInsts) {",
+										"        if (t.instVars.id === i) {",
+										"            t.text = \"$\" + hackValue;",
+										"            break; // stop once we found the correct one",
+										"        }",
+										"    }",
 										"}",
 										"",
 										""
@@ -6877,17 +7212,30 @@
 									"language": "javascript",
 									"script": [
 										"const items = shopSpawn(5, coins, true);",
-										"console.log(\"items\")",
 										"const coinsBG = runtime.objects[\"coinShop\"].getFirstInstance();",
+										"const textInsts = runtime.objects[\"sellCoinValueText\"].getAllInstances();",
 										"",
 										"for (let i = 0; i < items.length; i++) {",
 										"    const objType = runtime.objects[items[i]];",
 										"",
-										"    const x = coinsBG.getImagePointX(\"slot\"+i);",
-										"    const y = coinsBG.getImagePointY(\"slot\"+i);",
+										"    // 1. Spawn the coin",
+										"    const x = coinsBG.getImagePointX(\"slot\" + i);",
+										"    const y = coinsBG.getImagePointY(\"slot\" + i);",
+										"    const coinInst = objType.createInstance(\"shop\", x, y);",
 										"",
-										"    objType.createInstance(\"shop\", x, y);",
+										"    // 2. Get the coin's buyValue (family variable)",
+										"    const coinValue = coinInst.instVars.buyValue;",
+										"",
+										"    // 3. Loop through all text objects and find the one with matching id",
+										"    for (const t of textInsts) {",
+										"        if (t.instVars.id === i) {",
+										"            t.text = \"$\" + coinValue;",
+										"            break; // stop once we found the correct one",
+										"        }",
+										"    }",
 										"}",
+										"",
+										"",
 										"",
 										""
 									]

@@ -20,23 +20,38 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5389225,
+						"imageSpriteId": 9583849,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
 								"name": "slot0",
-								"x": 0.576,
-								"y": 0.12842105263157894
+								"x": 0.592,
+								"y": 0.061052631578947365
 							},
 							{
 								"name": "slot1",
-								"x": 0.576,
-								"y": 0.38526315789473686
+								"x": 0.592,
+								"y": 0.35578947368421054
 							},
 							{
 								"name": "slot2",
-								"x": 0.576,
-								"y": 0.6421052631578947
+								"x": 0.592,
+								"y": 0.6505263157894737
+							},
+							{
+								"name": "sellHacksValueText0",
+								"x": 0.678,
+								"y": 0.27157894736842103
+							},
+							{
+								"name": "sellHacksValueText1",
+								"x": 0.678,
+								"y": 0.5663157894736842
+							},
+							{
+								"name": "sellHacksValueText2",
+								"x": 0.678,
+								"y": 0.8610526315789474
 							}
 						],
 						"duration": 1,

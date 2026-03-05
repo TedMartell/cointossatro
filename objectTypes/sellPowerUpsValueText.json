@@ -1,0 +1,18 @@
+{
+	"name": "sellPowerUpsValueText",
+	"plugin-id": "Text",
+	"sid": 805806914718372,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 503593835217751
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

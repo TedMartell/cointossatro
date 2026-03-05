@@ -21,6 +21,7 @@
 					"instanceVariables": {
 						"value": 1,
 						"pushedFromStartBlock": false,
+						"buyValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -219,6 +220,7 @@
 					"instanceVariables": {
 						"value": 1,
 						"pushedFromStartBlock": false,
+						"buyValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1339,6 +1341,7 @@
 					"instanceVariables": {
 						"value": 2,
 						"pushedFromStartBlock": false,
+						"buyValue": 20,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1404,6 +1407,7 @@
 					"instanceVariables": {
 						"value": 2,
 						"pushedFromStartBlock": false,
+						"buyValue": 25,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1469,6 +1473,7 @@
 					"instanceVariables": {
 						"value": 2,
 						"pushedFromStartBlock": false,
+						"buyValue": 37,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3103,7 +3108,9 @@
 					"uid": 105,
 					"sid": 430188892553538,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 10
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 430188892553538,
@@ -3140,7 +3147,9 @@
 					"uid": 106,
 					"sid": 499256796499226,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 15
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 499256796499226,
@@ -3177,7 +3186,9 @@
 					"uid": 107,
 					"sid": 415507177990943,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 20
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 415507177990943,
@@ -3214,7 +3225,9 @@
 					"uid": 108,
 					"sid": 363504146961618,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 30
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 363504146961618,
@@ -3251,7 +3264,9 @@
 					"uid": 109,
 					"sid": 838772337953161,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 40
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 838772337953161,
@@ -3288,7 +3303,9 @@
 					"uid": 110,
 					"sid": 849867590176584,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 45
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 849867590176584,
@@ -3325,7 +3342,9 @@
 					"uid": 111,
 					"sid": 928389424244710,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 55
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 928389424244710,
@@ -3399,7 +3418,9 @@
 					"uid": 113,
 					"sid": 993494649645556,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 10
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 993494649645556,
@@ -3436,7 +3457,9 @@
 					"uid": 114,
 					"sid": 304769513414744,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 20
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 304769513414744,
@@ -3473,7 +3496,9 @@
 					"uid": 115,
 					"sid": 952740190279658,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 30
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 952740190279658,
@@ -3510,7 +3535,9 @@
 					"uid": 116,
 					"sid": 362630083773475,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 40
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 362630083773475,
@@ -3519,8 +3546,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 3197,
-						"y": 671,
+						"x": 3218,
+						"y": 668,
 						"width": 162,
 						"height": 94,
 						"originX": 0,
@@ -3547,7 +3574,9 @@
 					"uid": 117,
 					"sid": 361554546334895,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 50
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 361554546334895,
@@ -3584,7 +3613,9 @@
 					"uid": 118,
 					"sid": 798918710677733,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 60
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 798918710677733,
@@ -3621,7 +3652,9 @@
 					"uid": 119,
 					"sid": 272795165057246,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"buyValue": 70
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 272795165057246,
@@ -3661,6 +3694,7 @@
 					"instanceVariables": {
 						"value": 2,
 						"pushedFromStartBlock": false,
+						"buyValue": 36,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3726,6 +3760,7 @@
 					"instanceVariables": {
 						"value": 1,
 						"pushedFromStartBlock": false,
+						"buyValue": 30,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3791,6 +3826,7 @@
 					"instanceVariables": {
 						"value": 1,
 						"pushedFromStartBlock": false,
+						"buyValue": 40,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3856,6 +3892,7 @@
 					"instanceVariables": {
 						"value": 2,
 						"pushedFromStartBlock": false,
+						"buyValue": 45,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3921,6 +3958,7 @@
 					"instanceVariables": {
 						"value": 1,
 						"pushedFromStartBlock": false,
+						"buyValue": 46,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3986,6 +4024,7 @@
 					"instanceVariables": {
 						"value": 1,
 						"pushedFromStartBlock": false,
+						"buyValue": 47,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4051,6 +4090,7 @@
 					"instanceVariables": {
 						"value": 1,
 						"pushedFromStartBlock": false,
+						"buyValue": 50,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4091,6 +4131,171 @@
 						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sellCoinValueText",
+					"properties": {
+						"text": "$$$",
+						"enable-bbcode": true,
+						"font": "system-ui",
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 128,
+					"sid": 670825906204304,
+					"tags": "",
+					"instanceVariables": {
+						"id": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 670825906204304,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2389,
+						"y": 1055,
+						"width": 80,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sellHacksValueText",
+					"properties": {
+						"text": "$$$",
+						"enable-bbcode": true,
+						"font": "system-ui",
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 129,
+					"sid": 870711093616685,
+					"tags": "",
+					"instanceVariables": {
+						"id": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 870711093616685,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2439,
+						"y": 799,
+						"width": 80,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sellPowerUpsValueText",
+					"properties": {
+						"text": "$$$",
+						"enable-bbcode": true,
+						"font": "system-ui",
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 130,
+					"sid": 450389072954997,
+					"tags": "",
+					"instanceVariables": {
+						"id": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 450389072954997,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2351,
+						"y": 226,
+						"width": 80,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

@@ -2,7 +2,15 @@
 	"name": "powerUps",
 	"plugin-id": "Sprite",
 	"sid": 667368262972363,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "buyValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 485562000553903
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [

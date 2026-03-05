@@ -16,6 +16,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 535788419702539
+		},
+		{
+			"name": "buyValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 967435371711976
 		}
 	],
 	"behaviorTypes": [
