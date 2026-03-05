@@ -22,6 +22,23 @@
 						"fileType": "image/png",
 						"imageSpriteId": 5389225,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "slot0",
+								"x": 0.576,
+								"y": 0.12842105263157894
+							},
+							{
+								"name": "slot1",
+								"x": 0.576,
+								"y": 0.38526315789473686
+							},
+							{
+								"name": "slot2",
+								"x": 0.576,
+								"y": 0.6421052631578947
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

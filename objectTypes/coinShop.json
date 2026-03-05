@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2950760,
+						"imageSpriteId": 3843172,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -34,6 +34,33 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "slot0",
+								"x": 0.10193548387096774,
+								"y": 0.6830188679245283
+							},
+							{
+								"name": "slot1",
+								"x": 0.3006451612903226,
+								"y": 0.6830188679245283
+							},
+							{
+								"name": "slot2",
+								"x": 0.5006451612903225,
+								"y": 0.6830188679245283
+							},
+							{
+								"name": "slot3",
+								"x": 0.7019354838709677,
+								"y": 0.6830188679245283
+							},
+							{
+								"name": "slot4",
+								"x": 0.8993548387096775,
+								"y": 0.6830188679245283
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

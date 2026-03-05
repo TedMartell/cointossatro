@@ -131,9 +131,19 @@
 					}
 				},
 				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 554696820507612,
+					"parameters": {
+						"layer": "\"overworld\"",
+						"interactive": false
+					}
+				},
+				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
 					"sid": 323212115136139,
+					"disabled": true,
 					"parameters": {
 						"layer": "\"shop\"",
 						"visibility": "invisible"
@@ -143,17 +153,45 @@
 					"id": "set-layer-interactive",
 					"objectClass": "System",
 					"sid": 396957860735246,
+					"disabled": true,
 					"parameters": {
 						"layer": "\"shop\"",
 						"interactive": false
 					}
 				},
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 995424519527306,
+					"parameters": {
+						"layer": "\"action\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-layer-interactive",
 					"objectClass": "System",
-					"sid": 362802335088093,
+					"sid": 972125008337380,
 					"parameters": {
-						"layer": "\"overworld\"",
+						"layer": "\"action\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 897526277923784,
+					"parameters": {
+						"layer": "\"background\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 271974050765066,
+					"parameters": {
+						"layer": "\"background\"",
 						"interactive": false
 					}
 				}
@@ -6672,16 +6710,249 @@
 					],
 					"actions": [
 						{
-							"type": "script",
-							"language": "javascript",
-							"script": [
-								"const items = shopSpawn(3, powerUps, false)",
-								"",
-								"console.log(items)"
-							]
+							"id": "destroy",
+							"objectClass": "powerUps",
+							"sid": 795042686535122
 						}
 					],
-					"sid": 338298988996045
+					"sid": 338298988996045,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const items = shopSpawn(3, powerUps, false);",
+										"console.log(\"items\")",
+										"const puBG = runtime.objects[\"powerUpShop\"].getFirstInstance();",
+										"",
+										"for (let i = 0; i < items.length; i++) {",
+										"    const objType = runtime.objects[items[i]];",
+										"",
+										"    const x = puBG.getImagePointX(\"slot\"+i);",
+										"    const y = puBG.getImagePointY(\"slot\"+i);",
+										"",
+										"    objType.createInstance(\"shop\", x, y);",
+										"}",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 530435079342591
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 211698184124288,
+							"parameters": {
+								"key": 66
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "hacks",
+							"sid": 854785101278343
+						}
+					],
+					"sid": 326854230969313,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const items = shopSpawn(3, hacks, false);",
+										"console.log(\"items\")",
+										"const hacksBG = runtime.objects[\"hacksShop\"].getFirstInstance();",
+										"",
+										"for (let i = 0; i < items.length; i++) {",
+										"    const objType = runtime.objects[items[i]];",
+										"",
+										"    const x = hacksBG.getImagePointX(\"slot\"+i);",
+										"    const y = hacksBG.getImagePointY(\"slot\"+i);",
+										"",
+										"    objType.createInstance(\"shop\", x, y);",
+										"}",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 873055453006736
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 642324462486580,
+							"parameters": {
+								"object": "coins"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 124669399149627,
+							"parameters": {
+								"layer": "\"shop\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "coins",
+							"sid": 505871815825507,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "coins",
+							"sid": 435666023895096,
+							"parameters": {
+								"animation": "\"shop\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 597970117490392
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 358921415528917,
+							"parameters": {
+								"key": 66
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "coins",
+							"sid": 806630625736451
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "coins",
+							"sid": 510010127104208,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "disabled"
+							}
+						}
+					],
+					"sid": 275035037989124,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const items = shopSpawn(5, coins, true);",
+										"console.log(\"items\")",
+										"const coinsBG = runtime.objects[\"coinShop\"].getFirstInstance();",
+										"",
+										"for (let i = 0; i < items.length; i++) {",
+										"    const objType = runtime.objects[items[i]];",
+										"",
+										"    const x = coinsBG.getImagePointX(\"slot\"+i);",
+										"    const y = coinsBG.getImagePointY(\"slot\"+i);",
+										"",
+										"    objType.createInstance(\"shop\", x, y);",
+										"}",
+										"",
+										""
+									]
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "coins",
+									"sid": 576659999714709,
+									"parameters": {
+										"animation": "\"shop\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 941707751819850
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 586873762512608
+						}
+					],
+					"actions": [],
+					"sid": 886426180788118,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "coins",
+									"sid": 140487415345539,
+									"parameters": {
+										"animation": "\"shop\""
+									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "coins",
+									"sid": 572210667177772,
+									"parameters": {
+										"animation": "\"slotted\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "coins",
+									"sid": 489059085040736,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "disabled"
+									}
+								}
+							],
+							"sid": 276049090578931,
+							"isOrBlock": true
+						}
+					]
 				}
 			],
 			"sid": 962096670663161
