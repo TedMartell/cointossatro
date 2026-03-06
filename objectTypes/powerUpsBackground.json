@@ -4,7 +4,29 @@
 	"sid": 169819407770733,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "slotBusy0",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 359060963506657
+		},
+		{
+			"name": "slotBusy1",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 620941572777542
+		},
+		{
+			"name": "slotBusy2",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 271622453024573
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

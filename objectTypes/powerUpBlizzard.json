@@ -12,6 +12,31 @@
 			{
 				"frames": [
 					{
+						"width": 160,
+						"height": 200,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8810552,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 892874622716019,
+				"name": "shop",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
 						"width": 80,
 						"height": 100,
 						"originX": 1.5625,
@@ -27,7 +52,7 @@
 					}
 				],
 				"sid": 822099955066826,
-				"name": "Animation 1",
+				"name": "slotted",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -45,26 +70,14 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8810552,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.5,
-								0,
-								0.5,
-								0.5,
-								0,
-								0.5
-							]
-						},
+						"imageSpriteId": 4387554,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 892874622716019,
-				"name": "Animation 2",
+				"sid": 243069661924794,
+				"name": "focusedShop",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

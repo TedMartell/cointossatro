@@ -7301,6 +7301,53 @@
 							"isOrBlock": true
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 698004276364402,
+							"parameters": {
+								"object": "powerUps"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "powerUps",
+							"sid": 107835492524124,
+							"parameters": {
+								"animation": "\"focusedShop\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 253180164765362
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 805621094188142
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "powerUps",
+							"sid": 261223047703727,
+							"parameters": {
+								"animation": "\"shop\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 114792516671659
 				}
 			],
 			"sid": 962096670663161

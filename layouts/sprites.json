@@ -22,6 +22,8 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 0,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -221,6 +223,8 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 0,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1342,6 +1346,8 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 20,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1408,6 +1414,8 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 25,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1474,6 +1482,8 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 37,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -2812,7 +2822,11 @@
 					"uid": 62,
 					"sid": 318713231469824,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"slotBusy0": false,
+						"slotBusy1": false,
+						"slotBusy2": false
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 318713231469824,
@@ -3100,7 +3114,7 @@
 					"type": "powerUpVolcano",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3109,9 +3123,19 @@
 					"sid": 430188892553538,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 10
+						"buyValue": 10,
+						"slotted": false,
+						"purchased": false
 					},
-					"behaviors": {},
+					"behaviors": {
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 430188892553538,
 						"expanded": true
@@ -3139,7 +3163,7 @@
 					"type": "powerUpWaterfall",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3148,9 +3172,19 @@
 					"sid": 499256796499226,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 15
+						"buyValue": 15,
+						"slotted": false,
+						"purchased": false
 					},
-					"behaviors": {},
+					"behaviors": {
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 499256796499226,
 						"expanded": true
@@ -3178,7 +3212,7 @@
 					"type": "powerUpEarthquake",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3187,9 +3221,19 @@
 					"sid": 415507177990943,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 20
+						"buyValue": 20,
+						"slotted": false,
+						"purchased": false
 					},
-					"behaviors": {},
+					"behaviors": {
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 415507177990943,
 						"expanded": true
@@ -3217,7 +3261,7 @@
 					"type": "powerUpTornado",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3226,9 +3270,19 @@
 					"sid": 363504146961618,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 30
+						"buyValue": 30,
+						"slotted": false,
+						"purchased": false
 					},
-					"behaviors": {},
+					"behaviors": {
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 363504146961618,
 						"expanded": true
@@ -3256,7 +3310,7 @@
 					"type": "powerUpBlizzard",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3265,9 +3319,19 @@
 					"sid": 838772337953161,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 40
+						"buyValue": 40,
+						"slotted": false,
+						"purchased": false
 					},
-					"behaviors": {},
+					"behaviors": {
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 838772337953161,
 						"expanded": true
@@ -3295,7 +3359,7 @@
 					"type": "powerUpLightning",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3304,9 +3368,19 @@
 					"sid": 849867590176584,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 45
+						"buyValue": 45,
+						"slotted": false,
+						"purchased": false
 					},
-					"behaviors": {},
+					"behaviors": {
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 849867590176584,
 						"expanded": true
@@ -3334,7 +3408,7 @@
 					"type": "powerUpAurora",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 2",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3343,9 +3417,19 @@
 					"sid": 928389424244710,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 55
+						"buyValue": 55,
+						"slotted": false,
+						"purchased": false
 					},
-					"behaviors": {},
+					"behaviors": {
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 928389424244710,
 						"expanded": true
@@ -3695,6 +3779,8 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 36,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3761,6 +3847,8 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 30,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3827,6 +3915,8 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 40,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3893,6 +3983,8 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 45,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3959,6 +4051,8 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 46,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4025,6 +4119,8 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 47,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4091,6 +4187,8 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 50,
+						"coinClipped": 0,
+						"focused": false,
 						"pushed": false
 					},
 					"behaviors": {

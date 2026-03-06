@@ -842,8 +842,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 864,
-						"y": 640,
+						"x": 862,
+						"y": 605,
 						"width": 500,
 						"height": 475,
 						"originX": 0.5,
@@ -879,8 +879,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1471,
-						"y": 497,
+						"x": 1479,
+						"y": 908,
 						"width": 775,
 						"height": 265,
 						"originX": 0.4612903225806452,
@@ -916,8 +916,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1472,
-						"y": 800,
+						"x": 1482,
+						"y": 563,
 						"width": 775,
 						"height": 265,
 						"originX": 0.4612903225806452,
@@ -981,7 +981,11 @@
 					"uid": 79,
 					"sid": 314509236513013,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"slotBusy0": false,
+						"slotBusy1": false,
+						"slotBusy2": false
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 314509236513013,

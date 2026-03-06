@@ -9,9 +9,29 @@
 			"desc": "",
 			"show": true,
 			"sid": 485562000553903
+		},
+		{
+			"name": "slotted",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 625106927968988
+		},
+		{
+			"name": "purchased",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 164470593101741
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "shadowcaster",
+			"name": "ShadowCaster",
+			"sid": 585931527618436
+		}
+	],
 	"effectTypes": [],
 	"members": [
 		"powerUpVolcano",
