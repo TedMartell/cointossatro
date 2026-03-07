@@ -1,0 +1,133 @@
+{
+	"name": "hacksBackground",
+	"plugin-id": "Sprite",
+	"sid": 850332968284035,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "slotBusy0",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 380493920026868
+		},
+		{
+			"name": "slotBusy1",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 876306521928619
+		},
+		{
+			"name": "slotBusy2",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 910687832819149
+		},
+		{
+			"name": "freeSpace",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 316754988798874
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 600,
+						"originX": 1,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3829238,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.4166666666666667,
+								0,
+								0.4166666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "hackSlot0",
+								"x": 0.06,
+								"y": 0.013333333333333334
+							},
+							{
+								"name": "hackSlot1",
+								"x": 0.06,
+								"y": 0.21
+							},
+							{
+								"name": "hackSlot2",
+								"x": 0.06,
+								"y": 0.4066666666666667
+							},
+							{
+								"name": "hackSlot3",
+								"x": 0.06,
+								"y": 0.6033333333333334
+							},
+							{
+								"name": "hackSlot4",
+								"x": 0.06,
+								"y": 0.8
+							},
+							{
+								"name": "slot0",
+								"x": 0.06,
+								"y": 0.02666666666666667
+							},
+							{
+								"name": "slot1",
+								"x": 0.06,
+								"y": 0.22333333333333333
+							},
+							{
+								"name": "slot2",
+								"x": 0.06,
+								"y": 0.42
+							},
+							{
+								"name": "slot3",
+								"x": 0.06,
+								"y": 0.6166666666666667
+							},
+							{
+								"name": "slot4",
+								"x": 0.06,
+								"y": 0.8133333333333334
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 929157076188337,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -25,6 +25,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -227,6 +228,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1351,6 +1353,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1420,6 +1423,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1489,6 +1493,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3519,7 +3524,9 @@
 					"uid": 112,
 					"sid": 516215813087349,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"slotID": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 516215813087349,
@@ -3548,7 +3555,7 @@
 					"type": "hackDiscount",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3557,7 +3564,10 @@
 					"sid": 993494649645556,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 10
+						"buyValue": 10,
+						"purchased": false,
+						"slotted": false,
+						"slotID": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3567,8 +3577,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2655,
-						"y": 658,
+						"x": 2614.5368361861288,
+						"y": 664.6578031407822,
 						"width": 162,
 						"height": 94,
 						"originX": 0,
@@ -3587,7 +3597,7 @@
 					"type": "hackRandMult",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3596,7 +3606,10 @@
 					"sid": 304769513414744,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 20
+						"buyValue": 20,
+						"purchased": false,
+						"slotted": false,
+						"slotID": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3626,7 +3639,7 @@
 					"type": "hackFireWall",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3635,7 +3648,10 @@
 					"sid": 952740190279658,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 30
+						"buyValue": 30,
+						"purchased": false,
+						"slotted": false,
+						"slotID": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3665,7 +3681,7 @@
 					"type": "hackBubbler",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3674,7 +3690,10 @@
 					"sid": 362630083773475,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 40
+						"buyValue": 40,
+						"purchased": false,
+						"slotted": false,
+						"slotID": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3704,7 +3723,7 @@
 					"type": "hackLucky",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3713,7 +3732,10 @@
 					"sid": 361554546334895,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 50
+						"buyValue": 50,
+						"purchased": false,
+						"slotted": false,
+						"slotID": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3743,7 +3765,7 @@
 					"type": "hackVerottaja",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3752,7 +3774,10 @@
 					"sid": 798918710677733,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 60
+						"buyValue": 60,
+						"purchased": false,
+						"slotted": false,
+						"slotID": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3782,7 +3807,7 @@
 					"type": "hackMagnet",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "shop",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -3791,7 +3816,10 @@
 					"sid": 272795165057246,
 					"tags": "",
 					"instanceVariables": {
-						"buyValue": 70
+						"buyValue": 70,
+						"purchased": false,
+						"slotted": false,
+						"slotID": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3836,6 +3864,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3905,6 +3934,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3974,6 +4004,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4043,6 +4074,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4112,6 +4144,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4181,6 +4214,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4250,6 +4284,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
+						"slotID": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4539,6 +4574,85 @@
 						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "hacksBackground",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 63,
+					"sid": 508950555510173,
+					"tags": "",
+					"instanceVariables": {
+						"slotBusy0": false,
+						"slotBusy1": false,
+						"slotBusy2": false,
+						"freeSpace": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 508950555510173,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2384,
+						"y": 1373,
+						"width": 200,
+						"height": 600,
+						"originX": 1,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "hackSold",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "shop",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 64,
+					"sid": 917770656120359,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 917770656120359,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3090,
+						"y": 776,
+						"width": 162,
+						"height": 94,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

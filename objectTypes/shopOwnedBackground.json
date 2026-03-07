@@ -34,6 +34,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "hacksBackground",
+								"x": 0.3805147058823529,
+								"y": 0.15046296296296297
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

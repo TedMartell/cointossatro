@@ -4,7 +4,15 @@
 	"sid": 940854177406003,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "slotID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 649467609490845
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

@@ -216,7 +216,9 @@
 			"sellHacksValueText",
 			"sellPowerUpsValueText",
 			"powerUpSold",
-			"coinSold"
+			"coinSold",
+			"hacksBackground",
+			"hackSold"
 		],
 		"subfolders": []
 	},

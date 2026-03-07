@@ -9,6 +9,27 @@
 			"desc": "",
 			"show": true,
 			"sid": 518743298661888
+		},
+		{
+			"name": "purchased",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 747097034751187
+		},
+		{
+			"name": "slotted",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 700939149328295
+		},
+		{
+			"name": "slotID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 714812753790239
 		}
 	],
 	"behaviorTypes": [],

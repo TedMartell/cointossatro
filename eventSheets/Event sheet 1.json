@@ -2600,6 +2600,35 @@
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
+										},
+										{
+											"type": "comment",
+											"text": "DEN RIKTIGA ÄR DENNA MED HACKS BG!"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 720206939096663,
+											"disabled": true,
+											"parameters": {
+												"object": "hacksBackground",
+												"layer": "\"background\"",
+												"image-point": "\"hacksBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "shopOwnedBackground",
+											"sid": 939418942665924,
+											"parameters": {
+												"object": "hacksBackground",
+												"layer": "\"shop\"",
+												"image-point": "\"hacksBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
 										}
 									],
 									"sid": 921348530750103,
@@ -3272,6 +3301,73 @@
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
+												},
+												{
+													"type": "comment",
+													"text": "hackSlot Spawns OBS! HackSlot spawnar på fel LAYER!"
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "hacksBackground",
+													"sid": 886886886321134,
+													"parameters": {
+														"object": "hackSlot",
+														"layer": "\"shop\"",
+														"image-point": "\"hackSlot0\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "hackSlot",
+													"sid": 841654996736790,
+													"parameters": {
+														"instance-variable": "slotID",
+														"value": "0"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "hacksBackground",
+													"sid": 683591413200443,
+													"parameters": {
+														"object": "hackSlot",
+														"layer": "\"shop\"",
+														"image-point": "\"hackSlot1\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "hackSlot",
+													"sid": 190887357114120,
+													"parameters": {
+														"instance-variable": "slotID",
+														"value": "1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "hacksBackground",
+													"sid": 626001893102778,
+													"parameters": {
+														"object": "hackSlot",
+														"layer": "\"shop\"",
+														"image-point": "\"hackSlot2\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "hackSlot",
+													"sid": 731226915287128,
+													"parameters": {
+														"instance-variable": "slotID",
+														"value": "2"
+													}
 												}
 											],
 											"sid": 846134046889852,
@@ -3281,9 +3377,14 @@
 													"conditions": [],
 													"actions": [
 														{
+															"type": "comment",
+															"text": "KOM IHÅG DENNA MED!!!!"
+														},
+														{
 															"id": "spawn-another-object",
 															"objectClass": "powerUpsBackground",
 															"sid": 427478963064013,
+															"disabled": true,
 															"parameters": {
 																"object": "coinClip",
 																"layer": "\"background\"",
@@ -7140,13 +7241,30 @@
 									"children": [
 										{
 											"eventType": "block",
-											"conditions": [],
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "hacks",
+													"sid": 528156915215657,
+													"parameters": {
+														"instance-variable": "slotted"
+													},
+													"isInverted": true
+												}
+											],
 											"actions": [
 												{
 													"id": "destroy",
 													"objectClass": "hacks",
-													"sid": 701209823298307
-												},
+													"sid": 831625507652958
+												}
+											],
+											"sid": 205913392727855
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
 												{
 													"type": "script",
 													"language": "javascript",
@@ -7207,13 +7325,30 @@
 									"children": [
 										{
 											"eventType": "block",
-											"conditions": [],
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "coins",
+													"sid": 367762412456101,
+													"parameters": {
+														"instance-variable": "slotted"
+													},
+													"isInverted": true
+												}
+											],
 											"actions": [
 												{
 													"id": "destroy",
 													"objectClass": "coins",
-													"sid": 503263933090131
-												},
+													"sid": 698323165895138
+												}
+											],
+											"sid": 101376189757375
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
 												{
 													"type": "script",
 													"language": "javascript",
@@ -7246,26 +7381,11 @@
 														"",
 														""
 													]
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "coins",
-													"sid": 624133371581714,
-													"parameters": {
-														"animation": "\"shop\"",
-														"from": "beginning"
-													}
 												}
 											],
 											"sid": 252104713101332
 										}
 									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [],
-									"sid": 950624771212041
 								}
 							]
 						}
@@ -7393,178 +7513,6 @@
 												}
 											],
 											"sid": 293890206399398
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "powerUpsBackground",
-													"sid": 654266353790080,
-													"parameters": {
-														"instance-variable": "slotBusy0"
-													},
-													"isInverted": true
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "powerUps",
-													"sid": 295087193250104,
-													"parameters": {
-														"animation": "\"slotted\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "powerUps",
-													"sid": 488455971014417,
-													"parameters": {
-														"object": "powerUpsBackground",
-														"image-point-optional": "\"slot0\""
-													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "powerUpsBackground",
-													"sid": 975430877546556,
-													"parameters": {
-														"instance-variable": "slotBusy0",
-														"value": "true"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "powerUps",
-													"sid": 655634038171565,
-													"parameters": {
-														"instance-variable": "slotID",
-														"value": "0"
-													}
-												}
-											],
-											"sid": 201793416864747,
-											"disabled": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "else",
-													"objectClass": "System",
-													"sid": 219749486478763
-												},
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "powerUpsBackground",
-													"sid": 981971246909957,
-													"parameters": {
-														"instance-variable": "slotBusy1"
-													},
-													"isInverted": true
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "powerUps",
-													"sid": 168392694448681,
-													"parameters": {
-														"animation": "\"slotted\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "powerUps",
-													"sid": 704304447955789,
-													"parameters": {
-														"object": "powerUpsBackground",
-														"image-point-optional": "\"slot1\""
-													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "powerUpsBackground",
-													"sid": 152600210149510,
-													"parameters": {
-														"instance-variable": "slotBusy1",
-														"value": "true"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "powerUps",
-													"sid": 708007069801853,
-													"parameters": {
-														"instance-variable": "slotID",
-														"value": "1"
-													}
-												}
-											],
-											"sid": 274725307866201,
-											"disabled": true
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "else",
-													"objectClass": "System",
-													"sid": 737381498571780
-												},
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "powerUpsBackground",
-													"sid": 856292819452435,
-													"parameters": {
-														"instance-variable": "slotBusy2"
-													},
-													"isInverted": true
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "powerUps",
-													"sid": 304293189892421,
-													"parameters": {
-														"animation": "\"slotted\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "powerUps",
-													"sid": 655685944720922,
-													"parameters": {
-														"object": "powerUpsBackground",
-														"image-point-optional": "\"slot2\""
-													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "powerUpsBackground",
-													"sid": 889840139796353,
-													"parameters": {
-														"instance-variable": "slotBusy2",
-														"value": "true"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "powerUps",
-													"sid": 362625938459000,
-													"parameters": {
-														"instance-variable": "slotID",
-														"value": "2"
-													}
-												}
-											],
-											"sid": 686773069396253,
-											"disabled": true
 										}
 									]
 								},
@@ -7999,9 +7947,536 @@
 									"sid": 407714468281252
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"// Check if there is free space to add coin to clip",
+										"",
+										"const coinClip = runtime.objects[\"coinClip\"].getFirstInstance();",
+										"",
+										"coinClip.instVars[\"freeSpace\"] = false;",
+										"",
+										"for (let i = 0; i < 32; i++) {",
+										"    if (!coinClip.instVars[\"slotBusy\" + i]) {",
+										"        coinClip.instVars.freeSpace = true;",
+										"        break;",
+										"    }",
+										"}",
+										""
+									]
+								}
+							],
+							"sid": 811714443315124
 						}
 					],
 					"sid": 165694977138684
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "sellCoins",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 737842084668750,
+									"parameters": {
+										"layer": "\"shop\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 112884684614926,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 116458565450178,
+											"parameters": {
+												"object": "coins"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "coins",
+											"sid": 600847805130944,
+											"parameters": {
+												"animation": "\"slotted\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 865287532103148,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 156532537919807,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "coins"
+													}
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 919210748044818,
+													"parameters": {
+														"key": 17
+													}
+												}
+											],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const coinClip = runtime.objects[\"coinClip\"].getFirstInstance();",
+														"const coins = runtime.objects[\"coins\"].getFirstPickedInstance();",
+														"",
+														"// Get slot ID from the power-up family instance",
+														"const slotID = coins.instVars.slotID;",
+														"",
+														"// Set the matching slotBusy boolean to false",
+														"coinClip.instVars[\"slotBusy\" + slotID] = false;",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 778814621939449,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "destroy",
+															"objectClass": "coins",
+															"sid": 876621581052160
+														}
+													],
+													"sid": 820747933644207
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 206491445917601
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "buyHacks",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 214432692641887,
+									"parameters": {
+										"layer": "\"shop\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 723088949692462,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 149978220647684,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "hacks"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "hacks",
+											"sid": 574581724912683,
+											"parameters": {
+												"animation": "\"focusedShop\""
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 827092299324569,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 5,
+												"second-value": "hacks.buyValue"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "hacksBackground",
+											"sid": 804383551767503,
+											"parameters": {
+												"instance-variable": "freeSpace"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "hacks",
+											"sid": 953851265266603,
+											"parameters": {
+												"object": "hackSold",
+												"layer": "\"shop\"",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "hacks",
+											"sid": 106977100561657,
+											"parameters": {
+												"instance-variable": "purchased",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "hacks",
+											"sid": 297145872590612,
+											"parameters": {
+												"instance-variable": "slotted",
+												"value": "true"
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 836198062849746,
+											"parameters": {
+												"variable": "money",
+												"value": "hacks.buyValue"
+											}
+										}
+									],
+									"sid": 218316961963155,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const hacksBG = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+														"const hack = runtime.objects[\"hacks\"].getFirstPickedInstance();",
+														"",
+														"slotAllocation(hacksBG, hack, 3) //Change slot ammount to variable later "
+													]
+												}
+											],
+											"sid": 920130934366046
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "hacks",
+									"sid": 988804005058128,
+									"parameters": {
+										"instance-variable": "purchased"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 167433235631729,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 852128764983004,
+											"parameters": {
+												"object": "hacks"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "hacks",
+											"sid": 784696405550884,
+											"parameters": {
+												"animation": "\"focusedShop\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 122263138333582
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 501439308115526
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "hacks",
+											"sid": 862088425274976,
+											"parameters": {
+												"animation": "\"shop\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 218505369666628
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "hacksBackground",
+									"sid": 212240694416695,
+									"parameters": {
+										"instance-variable": "slotBusy0"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "hacksBackground",
+									"sid": 524231401037277,
+									"parameters": {
+										"instance-variable": "slotBusy1"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "hacksBackground",
+									"sid": 607202567995923,
+									"parameters": {
+										"instance-variable": "slotBusy2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "hacksBackground",
+									"sid": 187661839602675,
+									"parameters": {
+										"instance-variable": "freeSpace",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 481827548981506,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 303292128183949
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "hacksBackground",
+									"sid": 253038509895513,
+									"parameters": {
+										"instance-variable": "freeSpace",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 784052644079023,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"// Check if there is free space to add coin to clip",
+										"",
+										"const hacksBG = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+										"",
+										"hacksBG.instVars[\"freeSpace\"] = false;",
+										"",
+										"for (let i = 0; i < 3; i++) { //change to slot amount variable later!",
+										"    if (!hacksBG.instVars[\"slotBusy\" + i]) {",
+										"        hacksBG.instVars.freeSpace = true;",
+										"        break;",
+										"    }",
+										"}",
+										""
+									]
+								}
+							],
+							"sid": 734714247601828
+						}
+					],
+					"sid": 269639485557643
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "sellHacks",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 833392771651627,
+									"parameters": {
+										"layer": "\"shop\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 641872639838302,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 117385480429648,
+											"parameters": {
+												"object": "hacks"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "hacks",
+											"sid": 266134248523851,
+											"parameters": {
+												"animation": "\"slotted\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 404187894016194,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 216350937520613,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "hacks"
+													}
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 412626608471456,
+													"parameters": {
+														"key": 17
+													}
+												}
+											],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const hacksBG = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+														"const hack = runtime.objects[\"hacks\"].getFirstPickedInstance();",
+														"",
+														"// Get slot ID from the power-up family instance",
+														"const slotID = hack.instVars.slotID;",
+														"",
+														"// Set the matching slotBusy boolean to false",
+														"hacksBG.instVars[\"slotBusy\" + slotID] = false;",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 654086175398815,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "destroy",
+															"objectClass": "hacks",
+															"sid": 635422310093426
+														}
+													],
+													"sid": 228673388884573
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 605379727473283
 				},
 				{
 					"eventType": "block",
