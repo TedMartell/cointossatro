@@ -51,6 +51,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 571445136534809
+		},
+		{
+			"name": "sellValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 373426698801925
 		}
 	],
 	"behaviorTypes": [

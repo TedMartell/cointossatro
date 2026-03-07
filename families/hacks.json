@@ -30,6 +30,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 714812753790239
+		},
+		{
+			"name": "sellValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 608669617167075
 		}
 	],
 	"behaviorTypes": [],

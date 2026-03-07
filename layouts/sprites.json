@@ -26,6 +26,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -229,6 +230,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1354,6 +1356,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1424,6 +1427,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1494,6 +1498,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3567,7 +3572,8 @@
 						"buyValue": 10,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0
+						"slotID": 0,
+						"sellValue": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3609,7 +3615,8 @@
 						"buyValue": 20,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0
+						"slotID": 0,
+						"sellValue": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3651,7 +3658,8 @@
 						"buyValue": 30,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0
+						"slotID": 0,
+						"sellValue": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3693,7 +3701,8 @@
 						"buyValue": 40,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0
+						"slotID": 0,
+						"sellValue": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3735,7 +3744,8 @@
 						"buyValue": 50,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0
+						"slotID": 0,
+						"sellValue": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3777,7 +3787,8 @@
 						"buyValue": 60,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0
+						"slotID": 0,
+						"sellValue": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3819,7 +3830,8 @@
 						"buyValue": 70,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0
+						"slotID": 0,
+						"sellValue": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -3865,6 +3877,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3935,6 +3948,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4005,6 +4019,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4075,6 +4090,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4145,6 +4161,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4215,6 +4232,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4285,6 +4303,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
+						"sellValue": 0,
 						"pushed": false
 					},
 					"behaviors": {

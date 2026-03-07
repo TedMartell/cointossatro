@@ -7732,6 +7732,15 @@
 														"",
 														""
 													]
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 904658544064499,
+													"parameters": {
+														"variable": "money",
+														"value": "powerUps.sellValue"
+													}
 												}
 											],
 											"sid": 703578764671949,
@@ -8060,6 +8069,15 @@
 														"",
 														""
 													]
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 401807745031324,
+													"parameters": {
+														"variable": "money",
+														"value": "coins.sellValue"
+													}
 												}
 											],
 											"sid": 778814621939449,
@@ -8278,71 +8296,6 @@
 						},
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "hacksBackground",
-									"sid": 212240694416695,
-									"parameters": {
-										"instance-variable": "slotBusy0"
-									}
-								},
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "hacksBackground",
-									"sid": 524231401037277,
-									"parameters": {
-										"instance-variable": "slotBusy1"
-									}
-								},
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "hacksBackground",
-									"sid": 607202567995923,
-									"parameters": {
-										"instance-variable": "slotBusy2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "hacksBackground",
-									"sid": 187661839602675,
-									"parameters": {
-										"instance-variable": "freeSpace",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 481827548981506,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 303292128183949
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "hacksBackground",
-									"sid": 253038509895513,
-									"parameters": {
-										"instance-variable": "freeSpace",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 784052644079023,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
 							"conditions": [],
 							"actions": [
 								{
@@ -8453,6 +8406,15 @@
 														"",
 														""
 													]
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 857521486693502,
+													"parameters": {
+														"variable": "money",
+														"value": "hacks.sellValue"
+													}
 												}
 											],
 											"sid": 654086175398815,
