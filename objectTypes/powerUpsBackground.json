@@ -25,6 +25,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 271622453024573
+		},
+		{
+			"name": "freeSpace",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 368004255109117
 		}
 	],
 	"behaviorTypes": [],
@@ -63,17 +70,17 @@
 								"y": 1
 							},
 							{
-								"name": "0",
+								"name": "slot0",
 								"x": 0.06,
 								"y": 0.4
 							},
 							{
-								"name": "1",
+								"name": "slot1",
 								"x": 0.36666666666666664,
 								"y": 0.4
 							},
 							{
-								"name": "2",
+								"name": "slot2",
 								"x": 0.6733333333333333,
 								"y": 0.4
 							}

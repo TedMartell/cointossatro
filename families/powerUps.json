@@ -23,6 +23,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 164470593101741
+		},
+		{
+			"name": "sellValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 349292687313721
+		},
+		{
+			"name": "slotID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 150025166344925
 		}
 	],
 	"behaviorTypes": [

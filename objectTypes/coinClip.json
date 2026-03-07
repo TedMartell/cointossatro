@@ -4,7 +4,239 @@
 	"sid": 764002435291976,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "freeSpace",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 378162082396150
+		},
+		{
+			"name": "slotBusy0",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 128947006597721
+		},
+		{
+			"name": "slotBusy1",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 346385625352872
+		},
+		{
+			"name": "slotBusy2",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 592079946700890
+		},
+		{
+			"name": "slotBusy3",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 645744982954206
+		},
+		{
+			"name": "slotBusy4",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 184711154807561
+		},
+		{
+			"name": "slotBusy5",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 169276025638809
+		},
+		{
+			"name": "slotBusy6",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 202003338085386
+		},
+		{
+			"name": "slotBusy7",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 908093535311034
+		},
+		{
+			"name": "slotBusy8",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 730430030780153
+		},
+		{
+			"name": "slotBusy9",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 336393739524672
+		},
+		{
+			"name": "slotBusy10",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 410511665884536
+		},
+		{
+			"name": "slotBusy11",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 895625101322679
+		},
+		{
+			"name": "slotBusy12",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 457621271010363
+		},
+		{
+			"name": "slotBusy13",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 904055931021065
+		},
+		{
+			"name": "slotBusy14",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 754082289681787
+		},
+		{
+			"name": "slotBusy15",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 434984414007086
+		},
+		{
+			"name": "slotBusy16",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 184572422106738
+		},
+		{
+			"name": "slotBusy17",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 544822856202309
+		},
+		{
+			"name": "slotBusy18",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 601366724303287
+		},
+		{
+			"name": "slotBusy19",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 560657612223922
+		},
+		{
+			"name": "slotBusy20",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 733041506858154
+		},
+		{
+			"name": "slotBusy21",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 969343790771143
+		},
+		{
+			"name": "slotBusy22",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 330608927817262
+		},
+		{
+			"name": "slotBusy23",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 226638598148927
+		},
+		{
+			"name": "slotBusy24",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 153636601229988
+		},
+		{
+			"name": "slotBusy25",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 603415302449960
+		},
+		{
+			"name": "slotBusy26",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 962614562232574
+		},
+		{
+			"name": "slotBusy27",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 168909853037415
+		},
+		{
+			"name": "slotBusy28",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 243365386191845
+		},
+		{
+			"name": "slotBusy29",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 325111783119768
+		},
+		{
+			"name": "slotBusy30",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 835482669825354
+		},
+		{
+			"name": "slotBusy31",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 977812780746726
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -34,6 +266,168 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "slot0",
+								"x": 0.17551020408163265,
+								"y": 0.206
+							},
+							{
+								"name": "slot1",
+								"x": 0.39183673469387753,
+								"y": 0.206
+							},
+							{
+								"name": "slot2",
+								"x": 0.6122448979591837,
+								"y": 0.206
+							},
+							{
+								"name": "slot3",
+								"x": 0.8204081632653061,
+								"y": 0.206
+							},
+							{
+								"name": "slot4",
+								"x": 0.17142857142857143,
+								"y": 0.312
+							},
+							{
+								"name": "slot5",
+								"x": 0.39183673469387753,
+								"y": 0.312
+							},
+							{
+								"name": "slot6",
+								"x": 0.6081632653061224,
+								"y": 0.314
+							},
+							{
+								"name": "slot7",
+								"x": 0.8163265306122449,
+								"y": 0.314
+							},
+							{
+								"name": "slot8",
+								"x": 0.17142857142857143,
+								"y": 0.42
+							},
+							{
+								"name": "slot9",
+								"x": 0.39183673469387753,
+								"y": 0.418
+							},
+							{
+								"name": "slot10",
+								"x": 0.6081632653061224,
+								"y": 0.42
+							},
+							{
+								"name": "slot11",
+								"x": 0.8244897959183674,
+								"y": 0.42
+							},
+							{
+								"name": "slot12",
+								"x": 0.17551020408163265,
+								"y": 0.524
+							},
+							{
+								"name": "slot13",
+								"x": 0.39591836734693875,
+								"y": 0.524
+							},
+							{
+								"name": "slot14",
+								"x": 0.6122448979591837,
+								"y": 0.526
+							},
+							{
+								"name": "slot15",
+								"x": 0.8244897959183674,
+								"y": 0.526
+							},
+							{
+								"name": "slot16",
+								"x": 0.17959183673469387,
+								"y": 0.632
+							},
+							{
+								"name": "slot17",
+								"x": 0.39591836734693875,
+								"y": 0.632
+							},
+							{
+								"name": "slot18",
+								"x": 0.6122448979591837,
+								"y": 0.632
+							},
+							{
+								"name": "slot19",
+								"x": 0.8244897959183674,
+								"y": 0.632
+							},
+							{
+								"name": "slot20",
+								"x": 0.17142857142857143,
+								"y": 0.738
+							},
+							{
+								"name": "slot21",
+								"x": 0.39183673469387753,
+								"y": 0.738
+							},
+							{
+								"name": "slot22",
+								"x": 0.6040816326530613,
+								"y": 0.738
+							},
+							{
+								"name": "slot23",
+								"x": 0.8204081632653061,
+								"y": 0.738
+							},
+							{
+								"name": "slot24",
+								"x": 0.17551020408163265,
+								"y": 0.844
+							},
+							{
+								"name": "slot25",
+								"x": 0.39183673469387753,
+								"y": 0.844
+							},
+							{
+								"name": "slot26",
+								"x": 0.6081632653061224,
+								"y": 0.846
+							},
+							{
+								"name": "slot27",
+								"x": 0.8204081632653061,
+								"y": 0.844
+							},
+							{
+								"name": "slot28",
+								"x": 0.17959183673469387,
+								"y": 0.95
+							},
+							{
+								"name": "slot29",
+								"x": 0.39591836734693875,
+								"y": 0.95
+							},
+							{
+								"name": "slot30",
+								"x": 0.6081632653061224,
+								"y": 0.95
+							},
+							{
+								"name": "slot31",
+								"x": 0.8204081632653061,
+								"y": 0.95
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

@@ -22,8 +22,9 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 0,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -223,8 +224,9 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 0,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1346,8 +1348,9 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 20,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1414,8 +1417,9 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 25,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1482,8 +1486,9 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 37,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -2825,7 +2830,8 @@
 					"instanceVariables": {
 						"slotBusy0": false,
 						"slotBusy1": false,
-						"slotBusy2": false
+						"slotBusy2": false,
+						"freeSpace": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -2863,7 +2869,41 @@
 					"uid": 59,
 					"sid": 205320002915328,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"freeSpace": true,
+						"slotBusy0": false,
+						"slotBusy1": false,
+						"slotBusy2": false,
+						"slotBusy3": false,
+						"slotBusy4": false,
+						"slotBusy5": false,
+						"slotBusy6": false,
+						"slotBusy7": false,
+						"slotBusy8": false,
+						"slotBusy9": false,
+						"slotBusy10": false,
+						"slotBusy11": false,
+						"slotBusy12": false,
+						"slotBusy13": false,
+						"slotBusy14": false,
+						"slotBusy15": false,
+						"slotBusy16": false,
+						"slotBusy17": false,
+						"slotBusy18": false,
+						"slotBusy19": false,
+						"slotBusy20": false,
+						"slotBusy21": false,
+						"slotBusy22": false,
+						"slotBusy23": false,
+						"slotBusy24": false,
+						"slotBusy25": false,
+						"slotBusy26": false,
+						"slotBusy27": false,
+						"slotBusy28": false,
+						"slotBusy29": false,
+						"slotBusy30": false,
+						"slotBusy31": false
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 205320002915328,
@@ -3125,7 +3165,9 @@
 					"instanceVariables": {
 						"buyValue": 10,
 						"slotted": false,
-						"purchased": false
+						"purchased": false,
+						"sellValue": 0,
+						"slotID": 0
 					},
 					"behaviors": {
 						"ShadowCaster": {
@@ -3174,7 +3216,9 @@
 					"instanceVariables": {
 						"buyValue": 15,
 						"slotted": false,
-						"purchased": false
+						"purchased": false,
+						"sellValue": 0,
+						"slotID": 0
 					},
 					"behaviors": {
 						"ShadowCaster": {
@@ -3223,7 +3267,9 @@
 					"instanceVariables": {
 						"buyValue": 20,
 						"slotted": false,
-						"purchased": false
+						"purchased": false,
+						"sellValue": 0,
+						"slotID": 0
 					},
 					"behaviors": {
 						"ShadowCaster": {
@@ -3272,7 +3318,9 @@
 					"instanceVariables": {
 						"buyValue": 30,
 						"slotted": false,
-						"purchased": false
+						"purchased": false,
+						"sellValue": 0,
+						"slotID": 0
 					},
 					"behaviors": {
 						"ShadowCaster": {
@@ -3321,7 +3369,9 @@
 					"instanceVariables": {
 						"buyValue": 40,
 						"slotted": false,
-						"purchased": false
+						"purchased": false,
+						"sellValue": 0,
+						"slotID": 0
 					},
 					"behaviors": {
 						"ShadowCaster": {
@@ -3370,7 +3420,9 @@
 					"instanceVariables": {
 						"buyValue": 45,
 						"slotted": false,
-						"purchased": false
+						"purchased": false,
+						"sellValue": 0,
+						"slotID": 0
 					},
 					"behaviors": {
 						"ShadowCaster": {
@@ -3419,7 +3471,9 @@
 					"instanceVariables": {
 						"buyValue": 55,
 						"slotted": false,
-						"purchased": false
+						"purchased": false,
+						"sellValue": 0,
+						"slotID": 0
 					},
 					"behaviors": {
 						"ShadowCaster": {
@@ -3779,8 +3833,9 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 36,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3847,8 +3902,9 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 30,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3915,8 +3971,9 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 40,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3983,8 +4040,9 @@
 						"value": 2,
 						"pushedFromStartBlock": false,
 						"buyValue": 45,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4051,8 +4109,9 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 46,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4087,8 +4146,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2644,
-						"y": 1097,
+						"x": 2647.9007150159114,
+						"y": 1091.9290734553247,
 						"width": 40,
 						"height": 40,
 						"originX": 0.5,
@@ -4119,8 +4178,9 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 47,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4187,8 +4247,9 @@
 						"value": 1,
 						"pushedFromStartBlock": false,
 						"buyValue": 50,
-						"coinClipped": 0,
+						"slotted": false,
 						"focused": false,
+						"purchased": false,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4394,6 +4455,90 @@
 						"height": 34,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "powerUpSold",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "sold",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 132,
+					"sid": 950740372603811,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 950740372603811,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2926,
+						"y": 381,
+						"width": 160,
+						"height": 200,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coinSold",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 133,
+					"sid": 343735319995295,
+					"tags": "",
+					"instanceVariables": {
+						"pushed": false
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 343735319995295,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2711.5329728838274,
+						"y": 1087.8193582037723,
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

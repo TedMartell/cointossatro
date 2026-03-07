@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "money",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "100",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -25,7 +25,7 @@
 			"eventType": "variable",
 			"name": "moneyLimit",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "1000",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -3257,9 +3257,14 @@
 													}
 												},
 												{
+													"type": "comment",
+													"text": "KOM IHÅG DENNA ATT SPAWNA "
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
 													"sid": 698723637660935,
+													"disabled": true,
 													"parameters": {
 														"object": "powerUpsBackground",
 														"layer": "\"background\"",
@@ -7001,258 +7006,1002 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 542236510183389
-						}
-					],
-					"actions": [],
-					"sid": 803633249283531
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 642850173297785,
-							"parameters": {
-								"key": 66
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "powerUps",
-							"sid": 795042686535122
-						}
-					],
-					"sid": 338298988996045,
+					"eventType": "group",
+					"disabled": false,
+					"title": "reroll",
+					"description": "",
+					"isActiveOnStart": true,
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [],
-							"actions": [
+							"conditions": [
 								{
-									"type": "script",
-									"language": "javascript",
-									"script": [
-										"const items = shopSpawn(3, powerUps, false);",
-										"const puBG = runtime.objects[\"powerUpShop\"].getFirstInstance();",
-										"const textInsts = runtime.objects[\"sellPowerUpsValueText\"].getAllInstances();",
-										"",
-										"for (let i = 0; i < items.length; i++) {",
-										"    const objType = runtime.objects[items[i]];",
-										"",
-										"    const x = puBG.getImagePointX(\"slot\"+i);",
-										"    const y = puBG.getImagePointY(\"slot\"+i);",
-										"",
-										"    const puInst = objType.createInstance(\"shop\", x, y);",
-										"",
-										"\tconst puValue = puInst.instVars.buyValue;",
-										"",
-										"\tfor (const t of textInsts) {",
-										"        if (t.instVars.id === i) {",
-										"            t.text = \"$\" + puValue;",
-										"            break; // stop once we found the correct one",
-										"        }",
-										"    }",
-										"}",
-										"",
-										""
-									]
-								}
-							],
-							"sid": 530435079342591
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 211698184124288,
-							"parameters": {
-								"key": 66
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "hacks",
-							"sid": 854785101278343
-						}
-					],
-					"sid": 326854230969313,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"type": "script",
-									"language": "javascript",
-									"script": [
-										"const items = shopSpawn(3, hacks, false);",
-										"const hacksBG = runtime.objects[\"hacksShop\"].getFirstInstance();",
-										"const textInsts = runtime.objects[\"sellHacksValueText\"].getAllInstances();",
-										"",
-										"",
-										"for (let i = 0; i < items.length; i++) {",
-										"    const objType = runtime.objects[items[i]];",
-										"",
-										"    const x = hacksBG.getImagePointX(\"slot\"+i);",
-										"    const y = hacksBG.getImagePointY(\"slot\"+i);",
-										"",
-										"    const hackInst = objType.createInstance(\"shop\", x, y);",
-										"",
-										"\tconst hackValue = hackInst.instVars.buyValue;",
-										"",
-										"\tfor (const t of textInsts) {",
-										"        if (t.instVars.id === i) {",
-										"            t.text = \"$\" + hackValue;",
-										"            break; // stop once we found the correct one",
-										"        }",
-										"    }",
-										"}",
-										"",
-										""
-									]
-								}
-							],
-							"sid": 873055453006736
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 642324462486580,
-							"parameters": {
-								"object": "coins"
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 124669399149627,
-							"parameters": {
-								"layer": "\"shop\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "coins",
-							"sid": 505871815825507,
-							"behaviorType": "Physics",
-							"parameters": {
-								"mode": "disabled"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "coins",
-							"sid": 435666023895096,
-							"parameters": {
-								"animation": "\"shop\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 597970117490392
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 358921415528917,
-							"parameters": {
-								"key": 66
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "coins",
-							"sid": 806630625736451
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "coins",
-							"sid": 510010127104208,
-							"behaviorType": "Physics",
-							"parameters": {
-								"mode": "disabled"
-							}
-						}
-					],
-					"sid": 275035037989124,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"type": "script",
-									"language": "javascript",
-									"script": [
-										"const items = shopSpawn(5, coins, true);",
-										"const coinsBG = runtime.objects[\"coinShop\"].getFirstInstance();",
-										"const textInsts = runtime.objects[\"sellCoinValueText\"].getAllInstances();",
-										"",
-										"for (let i = 0; i < items.length; i++) {",
-										"    const objType = runtime.objects[items[i]];",
-										"",
-										"    // 1. Spawn the coin",
-										"    const x = coinsBG.getImagePointX(\"slot\" + i);",
-										"    const y = coinsBG.getImagePointY(\"slot\" + i);",
-										"    const coinInst = objType.createInstance(\"shop\", x, y);",
-										"",
-										"    // 2. Get the coin's buyValue (family variable)",
-										"    const coinValue = coinInst.instVars.buyValue;",
-										"",
-										"    // 3. Loop through all text objects and find the one with matching id",
-										"    for (const t of textInsts) {",
-										"        if (t.instVars.id === i) {",
-										"            t.text = \"$\" + coinValue;",
-										"            break; // stop once we found the correct one",
-										"        }",
-										"    }",
-										"}",
-										"",
-										"",
-										"",
-										""
-									]
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "coins",
-									"sid": 576659999714709,
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 253382086475611,
 									"parameters": {
-										"animation": "\"shop\"",
-										"from": "beginning"
+										"layer": "\"shop\""
 									}
 								}
 							],
-							"sid": 941707751819850
+							"actions": [],
+							"sid": 919376720659228,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 216046748290548,
+											"parameters": {
+												"key": 66
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"// reroll POWERUPS"
+											]
+										}
+									],
+									"sid": 455954335764278,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "powerUps",
+													"sid": 672425771669352,
+													"parameters": {
+														"instance-variable": "slotted"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "powerUps",
+													"sid": 721801534505764
+												}
+											],
+											"sid": 191808199718599
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "powerUpSold",
+													"sid": 420847286643094
+												},
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const items = shopSpawn(3, powerUps, false);",
+														"const puBG = runtime.objects[\"powerUpShop\"].getFirstInstance();",
+														"const textInsts = runtime.objects[\"sellPowerUpsValueText\"].getAllInstances();",
+														"",
+														"for (let i = 0; i < items.length; i++) {",
+														"    const objType = runtime.objects[items[i]];",
+														"",
+														"    const x = puBG.getImagePointX(\"slot\"+i);",
+														"    const y = puBG.getImagePointY(\"slot\"+i);",
+														"",
+														"    const puInst = objType.createInstance(\"shop\", x, y);",
+														"",
+														"\tconst puValue = puInst.instVars.buyValue;",
+														"",
+														"\tfor (const t of textInsts) {",
+														"        if (t.instVars.id === i) {",
+														"            t.text = \"$\" + puValue;",
+														"            break; // stop once we found the correct one",
+														"        }",
+														"    }",
+														"}",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 257973183200363
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 528019094712393,
+											"parameters": {
+												"key": 66
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"//reroll HACKS"
+											]
+										}
+									],
+									"sid": 554316252778752,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "hacks",
+													"sid": 701209823298307
+												},
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const items = shopSpawn(3, hacks, false);",
+														"const hacksBG = runtime.objects[\"hacksShop\"].getFirstInstance();",
+														"const textInsts = runtime.objects[\"sellHacksValueText\"].getAllInstances();",
+														"",
+														"",
+														"for (let i = 0; i < items.length; i++) {",
+														"    const objType = runtime.objects[items[i]];",
+														"",
+														"    const x = hacksBG.getImagePointX(\"slot\"+i);",
+														"    const y = hacksBG.getImagePointY(\"slot\"+i);",
+														"",
+														"    const hackInst = objType.createInstance(\"shop\", x, y);",
+														"",
+														"\tconst hackValue = hackInst.instVars.buyValue;",
+														"",
+														"\tfor (const t of textInsts) {",
+														"        if (t.instVars.id === i) {",
+														"            t.text = \"$\" + hackValue;",
+														"            break; // stop once we found the correct one",
+														"        }",
+														"    }",
+														"}",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 545509942380174
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 893050228441584,
+											"parameters": {
+												"key": 66
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"//reroll COINS"
+											]
+										}
+									],
+									"sid": 306803787947230,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "coins",
+													"sid": 503263933090131
+												},
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const items = shopSpawn(5, coins, true);",
+														"const coinsBG = runtime.objects[\"coinShop\"].getFirstInstance();",
+														"const textInsts = runtime.objects[\"sellCoinValueText\"].getAllInstances();",
+														"",
+														"for (let i = 0; i < items.length; i++) {",
+														"    const objType = runtime.objects[items[i]];",
+														"",
+														"    // 1. Spawn the coin",
+														"    const x = coinsBG.getImagePointX(\"slot\" + i);",
+														"    const y = coinsBG.getImagePointY(\"slot\" + i);",
+														"    const coinInst = objType.createInstance(\"shop\", x, y);",
+														"",
+														"    // 2. Get the coin's buyValue (family variable)",
+														"    const coinValue = coinInst.instVars.buyValue;",
+														"",
+														"    // 3. Loop through all text objects and find the one with matching id",
+														"    for (const t of textInsts) {",
+														"        if (t.instVars.id === i) {",
+														"            t.text = \"$\" + coinValue;",
+														"            break; // stop once we found the correct one",
+														"        }",
+														"    }",
+														"}",
+														"",
+														"",
+														"",
+														""
+													]
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "coins",
+													"sid": 624133371581714,
+													"parameters": {
+														"animation": "\"shop\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 252104713101332
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 950624771212041
+								}
+							]
 						}
-					]
+					],
+					"sid": 517871569900893
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "buyPowerUps",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 927673821575987,
+									"parameters": {
+										"layer": "\"shop\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 439167571941981,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 890946628086426,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "powerUps"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "powerUps",
+											"sid": 389883106192763,
+											"parameters": {
+												"animation": "\"focusedShop\""
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 135422959409165,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 5,
+												"second-value": "powerUps.buyValue"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "powerUpsBackground",
+											"sid": 131556793040479,
+											"parameters": {
+												"instance-variable": "freeSpace"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "powerUps",
+											"sid": 338506741090293,
+											"parameters": {
+												"object": "powerUpSold",
+												"layer": "\"shop\"",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "powerUps",
+											"sid": 244522696858896,
+											"parameters": {
+												"instance-variable": "purchased",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "powerUps",
+											"sid": 642783866166003,
+											"parameters": {
+												"instance-variable": "slotted",
+												"value": "true"
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 133178345090364,
+											"parameters": {
+												"variable": "money",
+												"value": "powerUps.buyValue"
+											}
+										}
+									],
+									"sid": 902769908600385,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const powerUpBG = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
+														"const powerUpObj = runtime.objects[\"powerUps\"].getFirstPickedInstance();",
+														"",
+														"slotAllocation(powerUpBG, powerUpObj, 3)"
+													]
+												}
+											],
+											"sid": 293890206399398
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "powerUpsBackground",
+													"sid": 654266353790080,
+													"parameters": {
+														"instance-variable": "slotBusy0"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "powerUps",
+													"sid": 295087193250104,
+													"parameters": {
+														"animation": "\"slotted\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "powerUps",
+													"sid": 488455971014417,
+													"parameters": {
+														"object": "powerUpsBackground",
+														"image-point-optional": "\"slot0\""
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "powerUpsBackground",
+													"sid": 975430877546556,
+													"parameters": {
+														"instance-variable": "slotBusy0",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "powerUps",
+													"sid": 655634038171565,
+													"parameters": {
+														"instance-variable": "slotID",
+														"value": "0"
+													}
+												}
+											],
+											"sid": 201793416864747,
+											"disabled": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 219749486478763
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "powerUpsBackground",
+													"sid": 981971246909957,
+													"parameters": {
+														"instance-variable": "slotBusy1"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "powerUps",
+													"sid": 168392694448681,
+													"parameters": {
+														"animation": "\"slotted\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "powerUps",
+													"sid": 704304447955789,
+													"parameters": {
+														"object": "powerUpsBackground",
+														"image-point-optional": "\"slot1\""
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "powerUpsBackground",
+													"sid": 152600210149510,
+													"parameters": {
+														"instance-variable": "slotBusy1",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "powerUps",
+													"sid": 708007069801853,
+													"parameters": {
+														"instance-variable": "slotID",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 274725307866201,
+											"disabled": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 737381498571780
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "powerUpsBackground",
+													"sid": 856292819452435,
+													"parameters": {
+														"instance-variable": "slotBusy2"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "powerUps",
+													"sid": 304293189892421,
+													"parameters": {
+														"animation": "\"slotted\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "powerUps",
+													"sid": 655685944720922,
+													"parameters": {
+														"object": "powerUpsBackground",
+														"image-point-optional": "\"slot2\""
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "powerUpsBackground",
+													"sid": 889840139796353,
+													"parameters": {
+														"instance-variable": "slotBusy2",
+														"value": "true"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "powerUps",
+													"sid": 362625938459000,
+													"parameters": {
+														"instance-variable": "slotID",
+														"value": "2"
+													}
+												}
+											],
+											"sid": 686773069396253,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "powerUps",
+											"sid": 447521381569983,
+											"parameters": {
+												"instance-variable": "purchased"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 379904651535220,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 825826273047237,
+													"parameters": {
+														"object": "powerUps"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "powerUps",
+													"sid": 341128611697555,
+													"parameters": {
+														"animation": "\"focusedShop\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 718478984319029
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 540214134922006
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "powerUps",
+													"sid": 138766811181512,
+													"parameters": {
+														"animation": "\"shop\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 174647350900551
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "powerUpsBackground",
+											"sid": 381256220145005,
+											"parameters": {
+												"instance-variable": "slotBusy0"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "powerUpsBackground",
+											"sid": 540677502516755,
+											"parameters": {
+												"instance-variable": "slotBusy1"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "powerUpsBackground",
+											"sid": 782765868055762,
+											"parameters": {
+												"instance-variable": "slotBusy2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "powerUpsBackground",
+											"sid": 619171107179919,
+											"parameters": {
+												"instance-variable": "freeSpace",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 670484441306234
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 223679729331024
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "powerUpsBackground",
+											"sid": 812466111806055,
+											"parameters": {
+												"instance-variable": "freeSpace",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 655624560096658
+								}
+							]
+						}
+					],
+					"sid": 212681463553238
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "sellPowerUps",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 807412821598487,
+									"parameters": {
+										"layer": "\"shop\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 160177964266157,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 519433370011016,
+											"parameters": {
+												"object": "powerUps"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "powerUps",
+											"sid": 591019071284530,
+											"parameters": {
+												"animation": "\"slotted\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 270934581354664,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-object-clicked",
+													"objectClass": "Mouse",
+													"sid": 436127480886444,
+													"parameters": {
+														"mouse-button": "left",
+														"click-type": "clicked",
+														"object-clicked": "powerUps"
+													}
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 998384233095962,
+													"parameters": {
+														"key": 17
+													}
+												}
+											],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const powerUpBG = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
+														"const powerUpObj = runtime.objects[\"powerUps\"].getFirstPickedInstance();",
+														"",
+														"// Get slot ID from the power-up family instance",
+														"const slotID = powerUpObj.instVars.slotID;",
+														"",
+														"// Set the matching slotBusy boolean to false",
+														"powerUpBG.instVars[\"slotBusy\" + slotID] = false;",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 703578764671949,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "destroy",
+															"objectClass": "powerUps",
+															"sid": 879409762912056
+														}
+													],
+													"sid": 685735001613152
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 765389773818095
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "buyCoins",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 172356925034043,
+									"parameters": {
+										"layer": "\"shop\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 102048421254898,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 405484573817891,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "coins"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "coins",
+											"sid": 356458105386722,
+											"parameters": {
+												"animation": "\"focusedShop\""
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 170694632115232,
+											"parameters": {
+												"first-value": "money",
+												"comparison": 5,
+												"second-value": "coins.buyValue"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "coinClip",
+											"sid": 517582929719946,
+											"parameters": {
+												"instance-variable": "freeSpace"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "coins",
+											"sid": 972386440341326,
+											"parameters": {
+												"object": "coinSold",
+												"layer": "\"shop\"",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "coins",
+											"sid": 896447019586231,
+											"parameters": {
+												"instance-variable": "purchased",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "coins",
+											"sid": 781829261134136,
+											"parameters": {
+												"instance-variable": "slotted",
+												"value": "true"
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 662169002781758,
+											"parameters": {
+												"variable": "money",
+												"value": "coins.buyValue"
+											}
+										}
+									],
+									"sid": 505561462778019,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const coinClip = runtime.objects[\"coinClip\"].getFirstInstance();",
+														"const coins = runtime.objects[\"coins\"].getFirstPickedInstance();",
+														"",
+														"slotAllocation(coinClip, coins, 32)"
+													]
+												}
+											],
+											"sid": 691651404561427
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "coins",
+									"sid": 794408740319038,
+									"parameters": {
+										"instance-variable": "purchased"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 739108047476797,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 302590742631959,
+											"parameters": {
+												"object": "coins"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "coins",
+											"sid": 843459437898628,
+											"parameters": {
+												"animation": "\"focusedShop\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 272284110660107
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 797954546423041
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "coins",
+											"sid": 376175454258857,
+											"parameters": {
+												"animation": "\"shop\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 407714468281252
+								}
+							]
+						}
+					],
+					"sid": 165694977138684
 				},
 				{
 					"eventType": "block",
@@ -7260,11 +8009,20 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 586873762512608
+							"sid": 735695890346080
 						}
 					],
-					"actions": [],
-					"sid": 886426180788118,
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "testText",
+							"sid": 110547006922240,
+							"parameters": {
+								"text": "money"
+							}
+						}
+					],
+					"sid": 263888454788462,
 					"children": [
 						{
 							"eventType": "block",
@@ -7272,7 +8030,7 @@
 								{
 									"id": "is-animation-playing",
 									"objectClass": "coins",
-									"sid": 140487415345539,
+									"sid": 434253294405586,
 									"parameters": {
 										"animation": "\"shop\""
 									}
@@ -7280,7 +8038,7 @@
 								{
 									"id": "is-animation-playing",
 									"objectClass": "coins",
-									"sid": 572210667177772,
+									"sid": 650651401414355,
 									"parameters": {
 										"animation": "\"slotted\""
 									}
@@ -7290,14 +8048,14 @@
 								{
 									"id": "set-enabled",
 									"objectClass": "coins",
-									"sid": 489059085040736,
+									"sid": 256232091768210,
 									"behaviorType": "Physics",
 									"parameters": {
 										"mode": "disabled"
 									}
 								}
 							],
-							"sid": 276049090578931,
+							"sid": 397822057760773,
 							"isOrBlock": true
 						}
 					]
@@ -7306,48 +8064,51 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 698004276364402,
-							"parameters": {
-								"object": "powerUps"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "powerUps",
-							"sid": 107835492524124,
-							"parameters": {
-								"animation": "\"focusedShop\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 253180164765362
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
+							"id": "layer-is-visible",
 							"objectClass": "System",
-							"sid": 805621094188142
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "powerUps",
-							"sid": 261223047703727,
+							"sid": 897846341031436,
 							"parameters": {
-								"animation": "\"shop\"",
-								"from": "beginning"
+								"layer": "\"shop\""
 							}
 						}
 					],
-					"sid": 114792516671659
+					"actions": [],
+					"sid": 912833847033776,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 860174267035222,
+									"parameters": {
+										"object": "coins"
+									}
+								},
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 275323274623725,
+									"parameters": {
+										"layer": "\"shop\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "coins",
+									"sid": 582082946960083,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "disabled"
+									}
+								}
+							],
+							"sid": 896475800425962
+						}
+					]
 				}
 			],
 			"sid": 962096670663161

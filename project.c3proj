@@ -214,7 +214,9 @@
 			"Array",
 			"sellCoinValueText",
 			"sellHacksValueText",
-			"sellPowerUpsValueText"
+			"sellPowerUpsValueText",
+			"powerUpSold",
+			"coinSold"
 		],
 		"subfolders": []
 	},
@@ -281,6 +283,14 @@
 					"name": "coins.js",
 					"type": "application/javascript",
 					"sid": 705446791623573,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "slotAllo.js",
+					"type": "application/javascript",
+					"sid": 253101961766130,
 					"script-info": {
 						"purpose": "none"
 					}
