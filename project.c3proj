@@ -78,13 +78,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "shadowcaster",
-			"name": "Shadow caster",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -218,7 +211,8 @@
 			"powerUpSold",
 			"coinSold",
 			"hacksBackground",
-			"hackSold"
+			"hackSold",
+			"overworldNextStageButton"
 		],
 		"subfolders": []
 	},

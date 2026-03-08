@@ -46,6 +46,11 @@
 								"enabled": true
 							}
 						},
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
 						"Solid": {
 							"properties": {
 								"enabled": true,
@@ -228,9 +233,9 @@
 						"buyValue": 0,
 						"slotted": false,
 						"focused": false,
-						"purchased": false,
+						"purchased": true,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -248,6 +253,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": false
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -1356,7 +1366,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1374,6 +1384,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -1427,7 +1442,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1445,6 +1460,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -1498,7 +1518,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1516,6 +1536,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -3176,15 +3201,13 @@
 						"buyValue": 10,
 						"slotted": false,
 						"purchased": false,
-						"sellValue": 0,
+						"sellValue": 5,
 						"slotID": 0
 					},
 					"behaviors": {
-						"ShadowCaster": {
+						"Pin": {
 							"properties": {
-								"height": 100,
-								"tag": "",
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -3227,15 +3250,13 @@
 						"buyValue": 15,
 						"slotted": false,
 						"purchased": false,
-						"sellValue": 0,
+						"sellValue": 5,
 						"slotID": 0
 					},
 					"behaviors": {
-						"ShadowCaster": {
+						"Pin": {
 							"properties": {
-								"height": 100,
-								"tag": "",
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -3278,15 +3299,13 @@
 						"buyValue": 20,
 						"slotted": false,
 						"purchased": false,
-						"sellValue": 0,
+						"sellValue": 5,
 						"slotID": 0
 					},
 					"behaviors": {
-						"ShadowCaster": {
+						"Pin": {
 							"properties": {
-								"height": 100,
-								"tag": "",
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -3329,15 +3348,13 @@
 						"buyValue": 30,
 						"slotted": false,
 						"purchased": false,
-						"sellValue": 0,
+						"sellValue": 5,
 						"slotID": 0
 					},
 					"behaviors": {
-						"ShadowCaster": {
+						"Pin": {
 							"properties": {
-								"height": 100,
-								"tag": "",
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -3380,15 +3397,13 @@
 						"buyValue": 40,
 						"slotted": false,
 						"purchased": false,
-						"sellValue": 0,
+						"sellValue": 5,
 						"slotID": 0
 					},
 					"behaviors": {
-						"ShadowCaster": {
+						"Pin": {
 							"properties": {
-								"height": 100,
-								"tag": "",
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -3431,15 +3446,13 @@
 						"buyValue": 45,
 						"slotted": false,
 						"purchased": false,
-						"sellValue": 0,
+						"sellValue": 5,
 						"slotID": 0
 					},
 					"behaviors": {
-						"ShadowCaster": {
+						"Pin": {
 							"properties": {
-								"height": 100,
-								"tag": "",
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -3482,15 +3495,13 @@
 						"buyValue": 55,
 						"slotted": false,
 						"purchased": false,
-						"sellValue": 0,
+						"sellValue": 5,
 						"slotID": 0
 					},
 					"behaviors": {
-						"ShadowCaster": {
+						"Pin": {
 							"properties": {
-								"height": 100,
-								"tag": "",
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -3532,7 +3543,13 @@
 					"instanceVariables": {
 						"slotID": 0
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 516215813087349,
 						"expanded": true
@@ -3573,9 +3590,15 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 0,
-						"sellValue": 0
+						"sellValue": 10
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 993494649645556,
 						"expanded": true
@@ -3616,9 +3639,15 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 0,
-						"sellValue": 0
+						"sellValue": 10
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 304769513414744,
 						"expanded": true
@@ -3659,9 +3688,15 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 0,
-						"sellValue": 0
+						"sellValue": 10
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 952740190279658,
 						"expanded": true
@@ -3702,9 +3737,15 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 0,
-						"sellValue": 0
+						"sellValue": 10
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 362630083773475,
 						"expanded": true
@@ -3745,9 +3786,15 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 0,
-						"sellValue": 0
+						"sellValue": 10
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 361554546334895,
 						"expanded": true
@@ -3788,9 +3835,15 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 0,
-						"sellValue": 0
+						"sellValue": 10
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 798918710677733,
 						"expanded": true
@@ -3831,9 +3884,15 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 0,
-						"sellValue": 0
+						"sellValue": 10
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 272795165057246,
 						"expanded": true
@@ -3877,7 +3936,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3895,6 +3954,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -3948,7 +4012,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3966,6 +4030,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -4019,7 +4088,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4037,6 +4106,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -4090,7 +4164,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4108,6 +4182,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -4161,7 +4240,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4179,6 +4258,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -4232,7 +4316,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4250,6 +4334,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {
@@ -4303,7 +4392,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 0,
-						"sellValue": 0,
+						"sellValue": 1,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4321,6 +4410,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						},
 						"Solid": {

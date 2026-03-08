@@ -625,8 +625,8 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 140,
-								"y": 329,
+								"x": 160,
+								"y": 325,
 								"width": 544,
 								"height": 864,
 								"originX": 0.22977941176470587,
@@ -912,119 +912,6 @@
 					}
 				},
 				{
-					"type": "powerUpsBackground",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 79,
-					"sid": 314509236513013,
-					"tags": "",
-					"instanceVariables": {
-						"slotBusy0": false,
-						"slotBusy1": false,
-						"slotBusy2": false,
-						"freeSpace": false
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 314509236513013,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 416,
-						"y": 320,
-						"width": 300,
-						"height": 200,
-						"originX": 0.5,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "coinClip",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 81,
-					"sid": 533035417142647,
-					"tags": "",
-					"instanceVariables": {
-						"freeSpace": true,
-						"slotBusy0": false,
-						"slotBusy1": false,
-						"slotBusy2": false,
-						"slotBusy3": false,
-						"slotBusy4": false,
-						"slotBusy5": false,
-						"slotBusy6": false,
-						"slotBusy7": false,
-						"slotBusy8": false,
-						"slotBusy9": false,
-						"slotBusy10": false,
-						"slotBusy11": false,
-						"slotBusy12": false,
-						"slotBusy13": false,
-						"slotBusy14": false,
-						"slotBusy15": false,
-						"slotBusy16": false,
-						"slotBusy17": false,
-						"slotBusy18": false,
-						"slotBusy19": false,
-						"slotBusy20": false,
-						"slotBusy21": false,
-						"slotBusy22": false,
-						"slotBusy23": false,
-						"slotBusy24": false,
-						"slotBusy25": false,
-						"slotBusy26": false,
-						"slotBusy27": false,
-						"slotBusy28": false,
-						"slotBusy29": false,
-						"slotBusy30": false,
-						"slotBusy31": false
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 533035417142647,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 416,
-						"y": 544,
-						"width": 245,
-						"height": 500,
-						"originX": 0.5,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "moneyBackgroundShop",
 					"properties": {
 						"initially-visible": true,
@@ -1160,6 +1047,43 @@
 						"height": 1000,
 						"originX": 0.16129032258064516,
 						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "overworldNextStageButton",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 65,
+					"sid": 104272193445713,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 104272193445713,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 301,
+						"y": 552,
+						"width": 510,
+						"height": 210,
+						"originX": 0.24509803921568626,
+						"originY": 0.5952380952380952,
 						"color": [
 							1,
 							1,

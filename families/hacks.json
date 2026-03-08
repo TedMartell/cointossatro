@@ -39,7 +39,13 @@
 			"sid": 608669617167075
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 324940726267120
+		}
+	],
 	"effectTypes": [],
 	"members": [
 		"hackBubbler",

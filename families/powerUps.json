@@ -41,9 +41,9 @@
 	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "shadowcaster",
-			"name": "ShadowCaster",
-			"sid": 585931527618436
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 500376529067089
 		}
 	],
 	"effectTypes": [],

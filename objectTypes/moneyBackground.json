@@ -110,7 +110,7 @@
 								"y": 0.648854961832061
 							},
 							{
-								"name": "powerUp",
+								"name": "powerUpsBackground",
 								"x": 0.5,
 								"y": 1
 							}
@@ -209,6 +209,11 @@
 								"name": "moneyMil",
 								"x": 0.1540041067761807,
 								"y": 0.648854961832061
+							},
+							{
+								"name": "powerUpsBackground",
+								"x": 0.5,
+								"y": 1
 							}
 						],
 						"duration": 1,
@@ -305,6 +310,11 @@
 								"name": "moneyMil",
 								"x": 0.1540041067761807,
 								"y": 0.648854961832061
+							},
+							{
+								"name": "powerUpsBackground",
+								"x": 0.5,
+								"y": 1
 							}
 						],
 						"duration": 1,
@@ -401,6 +411,11 @@
 								"name": "moneyMil",
 								"x": 0.1540041067761807,
 								"y": 0.648854961832061
+							},
+							{
+								"name": "powerUpsBackground",
+								"x": 0.5,
+								"y": 1
 							}
 						],
 						"duration": 1,

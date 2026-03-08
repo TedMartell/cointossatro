@@ -65,6 +65,11 @@
 			"behaviorId": "Physics",
 			"name": "Physics",
 			"sid": 628010920889168
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 602859621620008
 		}
 	],
 	"effectTypes": [],
