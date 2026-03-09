@@ -212,7 +212,9 @@
 			"coinSold",
 			"hacksBackground",
 			"hackSold",
-			"overworldNextStageButton"
+			"overworldNextStageButton",
+			"shopInformation",
+			"shopBackgroundGrey"
 		],
 		"subfolders": []
 	},

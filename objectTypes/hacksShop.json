@@ -65,6 +65,63 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 775,
+						"height": 265,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8944339,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "slot0",
+								"x": 0.05935483870967742,
+								"y": 0.3283018867924528
+							},
+							{
+								"name": "slot1",
+								"x": 0.3961290322580645,
+								"y": 0.3283018867924528
+							},
+							{
+								"name": "slot2",
+								"x": 0.7316129032258064,
+								"y": 0.3283018867924528
+							},
+							{
+								"name": "sellHacksValueText0",
+								"x": 0.11483870967741935,
+								"y": 0.7056603773584905
+							},
+							{
+								"name": "sellHacksValueText1",
+								"x": 0.45161290322580644,
+								"y": 0.7056603773584905
+							},
+							{
+								"name": "sellHacksValueText2",
+								"x": 0.7870967741935484,
+								"y": 0.7056603773584905
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 790209351026952,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

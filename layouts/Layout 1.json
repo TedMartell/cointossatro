@@ -605,7 +605,7 @@
 							}
 						},
 						{
-							"type": "shopOwnedBackground",
+							"type": "shopBackgroundGrey",
 							"properties": {
 								"initially-visible": true,
 								"initial-animation": "Animation 1",
@@ -613,24 +613,24 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 101,
-							"sid": 395917623972080,
+							"uid": 92,
+							"sid": 782640647809570,
 							"tags": "",
 							"instanceVariables": {},
 							"behaviors": {},
 							"instanceFolderItem": {
-								"sid": 395917623972080,
+								"sid": 782640647809570,
 								"expanded": true
 							},
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 160,
-								"y": 325,
-								"width": 544,
-								"height": 864,
-								"originX": 0.22977941176470587,
-								"originY": 0.14467592592592593,
+								"x": 1501,
+								"y": 552,
+								"width": 826,
+								"height": 904,
+								"originX": 0.5,
+								"originY": 0.5,
 								"color": [
 									1,
 									1,
@@ -642,48 +642,69 @@
 							}
 						},
 						{
-							"type": "testText",
+							"type": "shopBackgroundGrey",
 							"properties": {
-								"text": "Text",
-								"enable-bbcode": true,
-								"font": "Arial",
-								"size": 28,
-								"line-height": 0,
-								"bold": true,
-								"italic": false,
-								"color": [
-									0,
-									0,
-									0,
-									1
-								],
-								"horizontal-alignment": "left",
-								"vertical-alignment": "top",
-								"wrapping": "word",
-								"text-direction": "ltr",
-								"icon-set": -1,
 								"initially-visible": true,
-								"origin": "top-left",
-								"read-aloud": false
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
 							},
-							"uid": 131,
-							"sid": 689782566625997,
+							"uid": 94,
+							"sid": 184687861400089,
 							"tags": "",
 							"instanceVariables": {},
 							"behaviors": {},
 							"instanceFolderItem": {
-								"sid": 689782566625997,
+								"sid": 184687861400089,
 								"expanded": true
 							},
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 1430,
-								"y": 303,
-								"width": 287,
-								"height": 62,
-								"originX": 0,
-								"originY": 0,
+								"x": 801,
+								"y": 552,
+								"width": 529,
+								"height": 903.6908277418415,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "shopBackgroundGrey",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 98,
+							"sid": 523259104295307,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 523259104295307,
+								"expanded": true
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": 272,
+								"y": 543,
+								"width": 487,
+								"height": 1016,
+								"originX": 0.5,
+								"originY": 0.5,
 								"color": [
 									1,
 									1,
@@ -747,85 +768,11 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 960,
-						"y": 160,
-						"width": 695,
-						"height": 305,
+						"x": 272,
+						"y": 181,
+						"width": 430,
+						"height": 243,
 						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "hacksShop",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 94,
-					"sid": 810559929171009,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 810559929171009,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 862,
-						"y": 605,
-						"width": 500,
-						"height": 475,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "coinShop",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 95,
-					"sid": 674747339034731,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 674747339034731,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1479,
-						"y": 908,
-						"width": 775,
-						"height": 265,
-						"originX": 0.4612903225806452,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -858,8 +805,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1482,
-						"y": 563,
+						"x": 1472,
+						"y": 548,
 						"width": 775,
 						"height": 265,
 						"originX": 0.4612903225806452,
@@ -895,12 +842,86 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1472,
-						"y": 160,
-						"width": 510,
-						"height": 210,
+						"x": 158,
+						"y": 423,
+						"width": 430,
+						"height": 134,
 						"originX": 0.24509803921568626,
 						"originY": 0.5952380952380952,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "coinShop",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 79,
+					"sid": 322291417964899,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 322291417964899,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1473,
+						"y": 262,
+						"width": 775,
+						"height": 265,
+						"originX": 0.4612903225806452,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "shopInformation",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 81,
+					"sid": 415313126267836,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 415313126267836,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 269,
+						"y": 772,
+						"width": 430,
+						"height": 490,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -920,24 +941,151 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 100,
-					"sid": 555829292871485,
+					"uid": 87,
+					"sid": 512447185484380,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 555829292871485,
+						"sid": 512447185484380,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 64,
-						"y": 32,
-						"width": 487,
+						"x": 74,
+						"y": 562,
+						"width": 380,
 						"height": 171,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "testText",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 28,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 90,
+					"sid": 646851186106647,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 646851186106647,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 165,
+						"y": 740,
+						"width": 241,
+						"height": 93,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "hacksShop",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 91,
+					"sid": 874433164983854,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 874433164983854,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1500,
+						"y": 840,
+						"width": 775,
+						"height": 265,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "shopOwnedBackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 101,
+					"sid": 395917623972080,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 395917623972080,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 670,
+						"y": 257,
+						"width": 474,
+						"height": 844,
+						"originX": 0.22977941176470587,
+						"originY": 0.14467592592592593,
 						"color": [
 							1,
 							1,
