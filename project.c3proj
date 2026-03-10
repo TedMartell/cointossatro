@@ -179,7 +179,7 @@
 			"selectLevelBackground",
 			"uiBackground",
 			"moneyBackgroundShop",
-			"shopOwnedBackground",
+			"shopInventoryBackground",
 			"levelCompletedButton",
 			"payoutAnimation",
 			"cameraObj",

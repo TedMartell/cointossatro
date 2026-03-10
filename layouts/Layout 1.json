@@ -109,8 +109,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 704,
-						"y": 960,
+						"x": 702,
+						"y": 994,
 						"width": 1387,
 						"height": 1938,
 						"originX": 0.5,
@@ -146,8 +146,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1344,
-						"y": 608,
+						"x": 1348,
+						"y": 643,
 						"width": 350,
 						"height": 800,
 						"originX": 0.375,
@@ -165,7 +165,7 @@
 				{
 					"type": "multObject",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -192,8 +192,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1544,
-						"y": 51,
+						"x": 286,
+						"y": 64,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -625,8 +625,8 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 1501,
-								"y": 552,
+								"x": 1498,
+								"y": 595,
 								"width": 826,
 								"height": 904,
 								"originX": 0.5,
@@ -662,8 +662,8 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 801,
-								"y": 552,
+								"x": 803,
+								"y": 595,
 								"width": 529,
 								"height": 903.6908277418415,
 								"originX": 0.5,
@@ -805,8 +805,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1472,
-						"y": 548,
+						"x": 1465,
+						"y": 602,
 						"width": 775,
 						"height": 265,
 						"originX": 0.4612903225806452,
@@ -879,8 +879,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1473,
-						"y": 262,
+						"x": 1469,
+						"y": 311,
 						"width": 775,
 						"height": 265,
 						"originX": 0.4612903225806452,
@@ -1043,8 +1043,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1500,
-						"y": 840,
+						"x": 1496,
+						"y": 894,
 						"width": 775,
 						"height": 265,
 						"originX": 0.5,
@@ -1060,10 +1060,10 @@
 					}
 				},
 				{
-					"type": "shopOwnedBackground",
+					"type": "shopInventoryBackground",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "coins",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1080,8 +1080,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 670,
-						"y": 257,
+						"x": 673,
+						"y": 302,
 						"width": 474,
 						"height": 844,
 						"originX": 0.22977941176470587,

@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7634693,
+						"imageSpriteId": 3513731,
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
@@ -506,7 +506,7 @@
 							{
 								"name": "comboMeterBackground",
 								"x": 0.5,
-								"y": 0.010319917440660475
+								"y": 0.022703818369453045
 							},
 							{
 								"name": "testCoin",
@@ -515,7 +515,7 @@
 							},
 							{
 								"name": "moneyBackground",
-								"x": 1.0237923576063446,
+								"x": 1.0201874549387167,
 								"y": 0.0030959752321981426
 							},
 							{
@@ -537,6 +537,11 @@
 								"name": "hacksBackground",
 								"x": 0.13482335976928622,
 								"y": 0.15015479876160992
+							},
+							{
+								"name": "powerUpsBackground",
+								"x": 0.6308579668348955,
+								"y": 0.0030959752321981426
 							}
 						],
 						"duration": 1,

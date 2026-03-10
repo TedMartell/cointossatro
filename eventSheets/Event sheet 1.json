@@ -2621,7 +2621,19 @@
 										},
 										{
 											"id": "spawn-another-object",
-											"objectClass": "shopOwnedBackground",
+											"objectClass": "pajatso",
+											"sid": 525571056899551,
+											"parameters": {
+												"object": "powerUpsBackground",
+												"layer": "\"background\"",
+												"image-point": "\"powerUpsBackground\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "shopInventoryBackground",
 											"sid": 939418942665924,
 											"disabled": true,
 											"parameters": {
@@ -3290,11 +3302,11 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "moneyBackground",
-													"sid": 666663744854299,
+													"sid": 794314288291798,
 													"parameters": {
-														"object": "powerUpsBackground",
+														"object": "coinClip",
 														"layer": "\"background\"",
-														"image-point": "\"powerUpsBackground\"",
+														"image-point": "\"coinClip\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
@@ -3418,6 +3430,7 @@
 															"id": "spawn-another-object",
 															"objectClass": "powerUpsBackground",
 															"sid": 427478963064013,
+															"disabled": true,
 															"parameters": {
 																"object": "coinClip",
 																"layer": "\"background\"",
@@ -8725,7 +8738,7 @@
 											"objectClass": "coinClip",
 											"sid": 519804609141611,
 											"parameters": {
-												"object": "shopOwnedBackground",
+												"object": "shopInventoryBackground",
 												"image-point-optional": "\"coinClip\""
 											}
 										},
@@ -8742,7 +8755,7 @@
 											"objectClass": "powerUpsBackground",
 											"sid": 264402413897776,
 											"parameters": {
-												"object": "shopOwnedBackground",
+												"object": "shopInventoryBackground",
 												"image-point-optional": "\"powerUpsBackground\""
 											}
 										},
@@ -8759,7 +8772,7 @@
 											"objectClass": "hacksBackground",
 											"sid": 346311419997487,
 											"parameters": {
-												"object": "shopOwnedBackground",
+												"object": "shopInventoryBackground",
 												"image-point-optional": "\"hacksBackground\""
 											}
 										},
@@ -9008,9 +9021,9 @@
 										{
 											"id": "set-position-to-another-object",
 											"objectClass": "powerUpsBackground",
-											"sid": 391587981351495,
+											"sid": 750111230518904,
 											"parameters": {
-												"object": "moneyBackground",
+												"object": "pajatso",
 												"image-point-optional": "\"powerUpsBackground\""
 											}
 										},
@@ -9025,9 +9038,9 @@
 										{
 											"id": "set-position-to-another-object",
 											"objectClass": "coinClip",
-											"sid": 927723387456747,
+											"sid": 826124432552992,
 											"parameters": {
-												"object": "powerUpsBackground",
+												"object": "moneyBackground",
 												"image-point-optional": "\"coinClip\""
 											}
 										},

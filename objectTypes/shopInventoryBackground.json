@@ -1,5 +1,5 @@
 {
-	"name": "shopOwnedBackground",
+	"name": "shopInventoryBackground",
 	"plugin-id": "Sprite",
 	"sid": 336233705998119,
 	"isGlobal": false,
@@ -12,15 +12,15 @@
 			{
 				"frames": [
 					{
-						"width": 544,
-						"height": 864,
+						"width": 474,
+						"height": 844,
 						"originX": 0.22977941176470587,
 						"originY": 0.14467592592592593,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7437944,
+						"imageSpriteId": 9413480,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -56,7 +56,7 @@
 					}
 				],
 				"sid": 228316632131712,
-				"name": "Animation 1",
+				"name": "coins",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
