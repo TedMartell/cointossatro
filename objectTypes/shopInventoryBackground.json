@@ -62,6 +62,114 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 474,
+						"height": 844,
+						"originX": 0.22977941176470587,
+						"originY": 0.14467592592592593,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 891704,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.45955882352941174,
+								0,
+								0.45955882352941174,
+								0.28935185185185186,
+								0,
+								0.28935185185185186
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "hacksBackground",
+								"x": 0.3805147058823529,
+								"y": 0.15046296296296297
+							},
+							{
+								"name": "powerUpsBackground",
+								"x": 0.6966911764705882,
+								"y": 0.16203703703703703
+							},
+							{
+								"name": "coinClip",
+								"x": 0.7022058823529411,
+								"y": 0.4050925925925926
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 562775277154634,
+				"name": "hacks",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 474,
+						"height": 844,
+						"originX": 0.22977941176470587,
+						"originY": 0.14467592592592593,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6284963,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.45955882352941174,
+								0,
+								0.45955882352941174,
+								0.28935185185185186,
+								0,
+								0.28935185185185186
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "hacksBackground",
+								"x": 0.3805147058823529,
+								"y": 0.15046296296296297
+							},
+							{
+								"name": "powerUpsBackground",
+								"x": 0.6966911764705882,
+								"y": 0.16203703703703703
+							},
+							{
+								"name": "coinClip",
+								"x": 0.7022058823529411,
+								"y": 0.4050925925925926
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 968132831276754,
+				"name": "powerUps",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []
