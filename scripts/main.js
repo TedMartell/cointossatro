@@ -6,7 +6,7 @@ import { coins } from "./coins.js";
 export { coins };
 import { shopSpawn } from "./shopSpawn.js";
 export { shopSpawn };
-import { slotAllocation } from "./slotAllo.js";
-export { slotAllocation };
+import { slotAllocation, moveInventory } from "./slotAllo.js";
+export { slotAllocation, moveInventory };
 
 

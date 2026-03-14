@@ -30,3 +30,28 @@ export function slotAllocation(slotObj, toSlotObj, numSlots) {
 
     return -1; // all slots full
 }
+
+export function moveInventory(moveFrom, moveTo, numSlots, moveableObj) {
+    for (let i = 0; i < numSlots; i++) {
+
+        // Only move if THIS object belongs in slot i
+        /*if (moveableObj.instVars.slotID !== i)
+            continue;*/
+
+        // And only if the source slot is busy
+        if (moveFrom.instVars["slotBusy" + i] === true && moveableObj.instVars.slotID === i ) {
+            console.log("object moved")
+
+            const x = moveTo.getImagePointX("slot" + i);
+            const y = moveTo.getImagePointY("slot" + i);
+
+            moveableObj.setPosition(x, y);
+
+            moveFrom.instVars["slotBusy" + i] = false;
+            moveTo.instVars["slotBusy" + i] = true;
+
+            break;
+        }
+    }
+}
+
