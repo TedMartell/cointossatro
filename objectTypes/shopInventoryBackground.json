@@ -4,7 +4,106 @@
 	"sid": 336233705998119,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "freeSpace",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 280618015588397
+		},
+		{
+			"name": "slotBusy0",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 271289628069839
+		},
+		{
+			"name": "slotBusy1",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 938726406721255
+		},
+		{
+			"name": "slotBusy2",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 909424935003649
+		},
+		{
+			"name": "slotBusy3",
+			"type": "boolean",
+			"desc": "",
+			"show": false,
+			"sid": 688151618429493
+		},
+		{
+			"name": "slotBusy4",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 930134004441274
+		},
+		{
+			"name": "slotBusy5",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 756943014271011
+		},
+		{
+			"name": "slotBusy6",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 732818529773820
+		},
+		{
+			"name": "slotBusy7",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 862127041166262
+		},
+		{
+			"name": "slotBusy8",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 918118880058268
+		},
+		{
+			"name": "slotBusy9",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 599200486681834
+		},
+		{
+			"name": "slotBusy10",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 370543067341516
+		},
+		{
+			"name": "slotBusy11",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 931455199021532
+		},
+		{
+			"name": "slotBusy12",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 432828279530873
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -49,6 +148,66 @@
 								"name": "coinClip",
 								"x": 0.7022058823529411,
 								"y": 0.4050925925925926
+							},
+							{
+								"name": "slot0",
+								"x": 0.1729957805907173,
+								"y": 0.23696682464454977
+							},
+							{
+								"name": "slot1",
+								"x": 0.4957805907172996,
+								"y": 0.23696682464454977
+							},
+							{
+								"name": "slot2",
+								"x": 0.8248945147679325,
+								"y": 0.23696682464454977
+							},
+							{
+								"name": "slot3",
+								"x": 0.1729957805907173,
+								"y": 0.4561611374407583
+							},
+							{
+								"name": "slot4",
+								"x": 0.4978902953586498,
+								"y": 0.45734597156398105
+							},
+							{
+								"name": "slot5",
+								"x": 0.8291139240506329,
+								"y": 0.4561611374407583
+							},
+							{
+								"name": "slot6",
+								"x": 0.17721518987341772,
+								"y": 0.6729857819905213
+							},
+							{
+								"name": "slot7",
+								"x": 0.5021097046413502,
+								"y": 0.6741706161137441
+							},
+							{
+								"name": "slot8",
+								"x": 0.8291139240506329,
+								"y": 0.6741706161137441
+							},
+							{
+								"name": "slot9",
+								"x": 0.17721518987341772,
+								"y": 0.8921800947867299
+							},
+							{
+								"name": "slot10",
+								"x": 0.5,
+								"y": 0.8933649289099526
+							},
+							{
+								"name": "slot11",
+								"x": 0.8270042194092827,
+								"y": 0.8957345971563981
 							}
 						],
 						"duration": 1,

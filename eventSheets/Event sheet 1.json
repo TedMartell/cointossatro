@@ -7900,10 +7900,10 @@
 													"type": "script",
 													"language": "javascript",
 													"script": [
-														"const coinClip = runtime.objects[\"coinClip\"].getFirstInstance();",
+														"const coinInv = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
 														"const coins = runtime.objects[\"coins\"].getFirstPickedInstance();",
 														"",
-														"slotAllocation(coinClip, coins, 32)"
+														"slotAllocation(coinInv, coins, 12)"
 													]
 												},
 												{
@@ -8007,7 +8007,7 @@
 										"",
 										"coinClip.instVars[\"freeSpace\"] = false;",
 										"",
-										"for (let i = 0; i < 32; i++) {",
+										"for (let i = 0; i < 12; i++) {",
 										"    if (!coinClip.instVars[\"slotBusy\" + i]) {",
 										"        coinClip.instVars.freeSpace = true;",
 										"        break;",
@@ -8729,6 +8729,49 @@
 							],
 							"sid": 658892462153510,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "coinClip",
+											"sid": 860084952121805,
+											"parameters": {
+												"instance-variable": "slotBusy0"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "coins",
+											"sid": 372334258123531,
+											"parameters": {
+												"instance-variable": "slotID",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-layer",
+											"objectClass": "coins",
+											"sid": 856201248419649,
+											"parameters": {
+												"layer": "\"shop\""
+											}
+										},
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "coins",
+											"sid": 155410900016233,
+											"parameters": {
+												"object": "shopInventoryBackground",
+												"image-point-optional": "\"slot0\""
+											}
+										}
+									],
+									"sid": 959620396788313
+								},
 								{
 									"eventType": "block",
 									"conditions": [],
