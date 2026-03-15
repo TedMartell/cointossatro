@@ -214,7 +214,10 @@
 			"hackSold",
 			"overworldNextStageButton",
 			"shopInformation",
-			"shopBackgroundGrey"
+			"shopBackgroundGrey",
+			"coinsUpsPageShopButton",
+			"hacksPageShopButton",
+			"powerUpsPageShopButton"
 		],
 		"subfolders": []
 	},
