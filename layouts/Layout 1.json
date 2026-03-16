@@ -1087,10 +1087,9 @@
 						"slotBusy6": false,
 						"slotBusy7": false,
 						"slotBusy8": false,
-						"slotBusy9": 0,
-						"slotBusy10": 0,
-						"slotBusy11": 0,
-						"slotBusy12": 0
+						"slotBusy9": false,
+						"slotBusy10": false,
+						"slotBusy11": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {

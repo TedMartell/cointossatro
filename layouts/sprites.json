@@ -25,7 +25,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 0,
 						"pushed": false
 					},
@@ -234,7 +234,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": true,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -1365,7 +1365,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -1441,7 +1441,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -1517,7 +1517,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -3589,7 +3589,7 @@
 						"buyValue": 10,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0,
+						"slotID": 99,
 						"sellValue": 10
 					},
 					"behaviors": {
@@ -3638,7 +3638,7 @@
 						"buyValue": 20,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0,
+						"slotID": 99,
 						"sellValue": 10
 					},
 					"behaviors": {
@@ -3687,7 +3687,7 @@
 						"buyValue": 30,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0,
+						"slotID": 99,
 						"sellValue": 10
 					},
 					"behaviors": {
@@ -3736,7 +3736,7 @@
 						"buyValue": 40,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0,
+						"slotID": 99,
 						"sellValue": 10
 					},
 					"behaviors": {
@@ -3785,7 +3785,7 @@
 						"buyValue": 50,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0,
+						"slotID": 99,
 						"sellValue": 10
 					},
 					"behaviors": {
@@ -3834,7 +3834,7 @@
 						"buyValue": 60,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0,
+						"slotID": 99,
 						"sellValue": 10
 					},
 					"behaviors": {
@@ -3883,7 +3883,7 @@
 						"buyValue": 70,
 						"purchased": false,
 						"slotted": false,
-						"slotID": 0,
+						"slotID": 99,
 						"sellValue": 10
 					},
 					"behaviors": {
@@ -3935,7 +3935,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -4011,7 +4011,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -4087,7 +4087,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -4163,7 +4163,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -4239,7 +4239,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -4315,7 +4315,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},
@@ -4391,7 +4391,7 @@
 						"slotted": false,
 						"focused": false,
 						"purchased": false,
-						"slotID": 99,
+						"slotID": 88,
 						"sellValue": 1,
 						"pushed": false
 					},

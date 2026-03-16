@@ -77,31 +77,24 @@
 		},
 		{
 			"name": "slotBusy9",
-			"type": "number",
+			"type": "boolean",
 			"desc": "",
 			"show": true,
 			"sid": 599200486681834
 		},
 		{
 			"name": "slotBusy10",
-			"type": "number",
+			"type": "boolean",
 			"desc": "",
 			"show": true,
 			"sid": 370543067341516
 		},
 		{
 			"name": "slotBusy11",
-			"type": "number",
+			"type": "boolean",
 			"desc": "",
 			"show": true,
 			"sid": 931455199021532
-		},
-		{
-			"name": "slotBusy12",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 432828279530873
 		}
 	],
 	"behaviorTypes": [],
