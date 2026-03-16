@@ -205,9 +205,9 @@
 			"glassCoin",
 			"octoCoin",
 			"Array",
-			"sellCoinValueText",
-			"sellHacksValueText",
-			"sellPowerUpsValueText",
+			"buyCoinValueText",
+			"buyHacksValueText",
+			"buyPowerUpsValueText",
 			"powerUpSold",
 			"coinSold",
 			"hacksBackground",
@@ -217,7 +217,8 @@
 			"shopBackgroundGrey",
 			"coinsUpsPageShopButton",
 			"hacksPageShopButton",
-			"powerUpsPageShopButton"
+			"powerUpsPageShopButton",
+			"sellCoinValueText"
 		],
 		"subfolders": []
 	},

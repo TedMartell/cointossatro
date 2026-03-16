@@ -4449,7 +4449,7 @@
 					}
 				},
 				{
-					"type": "sellCoinValueText",
+					"type": "buyCoinValueText",
 					"properties": {
 						"text": "$$$",
 						"enable-bbcode": true,
@@ -4504,7 +4504,7 @@
 					}
 				},
 				{
-					"type": "sellHacksValueText",
+					"type": "buyHacksValueText",
 					"properties": {
 						"text": "$$$",
 						"enable-bbcode": true,
@@ -4559,7 +4559,7 @@
 					}
 				},
 				{
-					"type": "sellPowerUpsValueText",
+					"type": "buyPowerUpsValueText",
 					"properties": {
 						"text": "$$$",
 						"enable-bbcode": true,
@@ -4764,6 +4764,61 @@
 						"y": 776,
 						"width": 162,
 						"height": 94,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "sellCoinValueText",
+					"properties": {
+						"text": "SELL",
+						"enable-bbcode": true,
+						"font": "system-ui",
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 131,
+					"sid": 414690719447480,
+					"tags": "",
+					"instanceVariables": {
+						"id": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 414690719447480,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2814,
+						"y": 943,
+						"width": 80,
+						"height": 34,
 						"originX": 0,
 						"originY": 0,
 						"color": [

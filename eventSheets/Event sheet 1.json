@@ -3540,18 +3540,18 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "coinShop",
-													"sid": 312076118522121,
+													"sid": 158949961632879,
 													"parameters": {
-														"object": "sellCoinValueText",
+														"object": "buyCoinValueText",
 														"layer": "\"shop\"",
-														"image-point": "\"sellCoinValueText0\"",
+														"image-point": "\"buyCoinValueText0\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellCoinValueText",
+													"objectClass": "buyCoinValueText",
 													"sid": 688508195530924,
 													"parameters": {
 														"instance-variable": "id",
@@ -3561,18 +3561,18 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "coinShop",
-													"sid": 600152125107049,
+													"sid": 572808458689393,
 													"parameters": {
-														"object": "sellCoinValueText",
+														"object": "buyCoinValueText",
 														"layer": "\"shop\"",
-														"image-point": "\"sellCoinValueText1\"",
+														"image-point": "\"buyCoinValueText1\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellCoinValueText",
+													"objectClass": "buyCoinValueText",
 													"sid": 742430127043658,
 													"parameters": {
 														"instance-variable": "id",
@@ -3582,18 +3582,18 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "coinShop",
-													"sid": 132150467106314,
+													"sid": 590553035745649,
 													"parameters": {
-														"object": "sellCoinValueText",
+														"object": "buyCoinValueText",
 														"layer": "\"shop\"",
-														"image-point": "\"sellCoinValueText2\"",
+														"image-point": "\"buyCoinValueText2\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellCoinValueText",
+													"objectClass": "buyCoinValueText",
 													"sid": 556265445139841,
 													"parameters": {
 														"instance-variable": "id",
@@ -3603,18 +3603,18 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "coinShop",
-													"sid": 162594835794889,
+													"sid": 574493663367974,
 													"parameters": {
-														"object": "sellCoinValueText",
+														"object": "buyCoinValueText",
 														"layer": "\"shop\"",
-														"image-point": "\"sellCoinValueText3\"",
+														"image-point": "\"buyCoinValueText3\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellCoinValueText",
+													"objectClass": "buyCoinValueText",
 													"sid": 151544407811074,
 													"parameters": {
 														"instance-variable": "id",
@@ -3624,18 +3624,18 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "coinShop",
-													"sid": 353982000751418,
+													"sid": 284761273297786,
 													"parameters": {
-														"object": "sellCoinValueText",
+														"object": "buyCoinValueText",
 														"layer": "\"shop\"",
-														"image-point": "\"sellCoinValueText4\"",
+														"image-point": "\"buyCoinValueText4\"",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellCoinValueText",
+													"objectClass": "buyCoinValueText",
 													"sid": 588479061895050,
 													"parameters": {
 														"instance-variable": "id",
@@ -3670,7 +3670,7 @@
 													"objectClass": "powerUpShop",
 													"sid": 158416682224366,
 													"parameters": {
-														"object": "sellPowerUpsValueText",
+														"object": "buyPowerUpsValueText",
 														"layer": "\"shop\"",
 														"image-point": "\"sellPowerUpsValueText0\"",
 														"create-hierarchy": false,
@@ -3679,7 +3679,7 @@
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellPowerUpsValueText",
+													"objectClass": "buyPowerUpsValueText",
 													"sid": 887954702408654,
 													"parameters": {
 														"instance-variable": "id",
@@ -3691,7 +3691,7 @@
 													"objectClass": "powerUpShop",
 													"sid": 999258014534636,
 													"parameters": {
-														"object": "sellPowerUpsValueText",
+														"object": "buyPowerUpsValueText",
 														"layer": "\"shop\"",
 														"image-point": "\"sellPowerUpsValueText1\"",
 														"create-hierarchy": false,
@@ -3700,7 +3700,7 @@
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellPowerUpsValueText",
+													"objectClass": "buyPowerUpsValueText",
 													"sid": 134118022410384,
 													"parameters": {
 														"instance-variable": "id",
@@ -3712,7 +3712,7 @@
 													"objectClass": "powerUpShop",
 													"sid": 907955098420452,
 													"parameters": {
-														"object": "sellPowerUpsValueText",
+														"object": "buyPowerUpsValueText",
 														"layer": "\"shop\"",
 														"image-point": "\"sellPowerUpsValueText2\"",
 														"create-hierarchy": false,
@@ -3721,7 +3721,7 @@
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellPowerUpsValueText",
+													"objectClass": "buyPowerUpsValueText",
 													"sid": 792759581491536,
 													"parameters": {
 														"instance-variable": "id",
@@ -3756,7 +3756,7 @@
 													"objectClass": "hacksShop",
 													"sid": 358543246741745,
 													"parameters": {
-														"object": "sellHacksValueText",
+														"object": "buyHacksValueText",
 														"layer": "\"shop\"",
 														"image-point": "\"sellhacksValueText0\"",
 														"create-hierarchy": false,
@@ -3765,7 +3765,7 @@
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellHacksValueText",
+													"objectClass": "buyHacksValueText",
 													"sid": 161203384604813,
 													"parameters": {
 														"instance-variable": "id",
@@ -3777,7 +3777,7 @@
 													"objectClass": "hacksShop",
 													"sid": 299818026137250,
 													"parameters": {
-														"object": "sellHacksValueText",
+														"object": "buyHacksValueText",
 														"layer": "\"shop\"",
 														"image-point": "\"sellhacksValueText1\"",
 														"create-hierarchy": false,
@@ -3786,7 +3786,7 @@
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellHacksValueText",
+													"objectClass": "buyHacksValueText",
 													"sid": 353415700004622,
 													"parameters": {
 														"instance-variable": "id",
@@ -3798,7 +3798,7 @@
 													"objectClass": "hacksShop",
 													"sid": 487190949816574,
 													"parameters": {
-														"object": "sellHacksValueText",
+														"object": "buyHacksValueText",
 														"layer": "\"shop\"",
 														"image-point": "\"sellhacksValueText2\"",
 														"create-hierarchy": false,
@@ -3807,7 +3807,7 @@
 												},
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sellHacksValueText",
+													"objectClass": "buyHacksValueText",
 													"sid": 495480568301844,
 													"parameters": {
 														"instance-variable": "id",
@@ -3816,6 +3816,281 @@
 												}
 											],
 											"sid": 356591665769513
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"//Shop Inventory BG SPAWNS"
+											]
+										}
+									],
+									"sid": 574693606250391,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 789706121092304,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText0\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 903865703304781,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "0"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 858996512469746,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText1\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 498182894173498,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 526706805230685,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText2\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 962999680214622,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "2"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 216529190154804,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText3\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 657022452375260,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "3"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 996654346741587,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText4\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 512304659531970,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "4"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 611124881645187,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText5\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 373963145074307,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "5"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 971987136257860,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText6\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 685017056560823,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "6"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 389365877720976,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText7\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 712141050093315,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "7"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 437178659132984,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText8\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 876959152717208,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "8"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 444132566404835,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText9\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 588261750479519,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "9"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 545553165114185,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText10\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 926144566876324,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "10"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInventoryBackground",
+													"sid": 964348132293644,
+													"parameters": {
+														"object": "sellCoinValueText",
+														"layer": "\"shop\"",
+														"image-point": "\"sellCoinValueText11\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "sellCoinValueText",
+													"sid": 629402142416612,
+													"parameters": {
+														"instance-variable": "id",
+														"value": "11"
+													}
+												}
+											],
+											"sid": 888187787696095
 										}
 									]
 								}
@@ -7495,7 +7770,7 @@
 													"script": [
 														"const items = shopSpawn(3, powerUps, false);",
 														"const puBG = runtime.objects[\"powerUpShop\"].getFirstInstance();",
-														"const textInsts = runtime.objects[\"sellPowerUpsValueText\"].getAllInstances();",
+														"const textInsts = runtime.objects[\"buyPowerUpsValueText\"].getAllInstances();",
 														"",
 														"for (let i = 0; i < items.length; i++) {",
 														"    const objType = runtime.objects[items[i]];",
@@ -7564,6 +7839,11 @@
 													"id": "destroy",
 													"objectClass": "hacks",
 													"sid": 831625507652958
+												},
+												{
+													"id": "destroy",
+													"objectClass": "hackSold",
+													"sid": 253701430687621
 												}
 											],
 											"sid": 205913392727855
@@ -7578,7 +7858,7 @@
 													"script": [
 														"const items = shopSpawn(3, hacks, false);",
 														"const hacksBG = runtime.objects[\"hacksShop\"].getFirstInstance();",
-														"const textInsts = runtime.objects[\"sellHacksValueText\"].getAllInstances();",
+														"const textInsts = runtime.objects[\"buyHacksValueText\"].getAllInstances();",
 														"",
 														"",
 														"for (let i = 0; i < items.length; i++) {",
@@ -7648,6 +7928,11 @@
 													"id": "destroy",
 													"objectClass": "coins",
 													"sid": 698323165895138
+												},
+												{
+													"id": "destroy",
+													"objectClass": "coinSold",
+													"sid": 843008036193172
 												}
 											],
 											"sid": 101376189757375
@@ -7662,7 +7947,7 @@
 													"script": [
 														"const items = shopSpawn(5, coins, true);",
 														"const coinsBG = runtime.objects[\"coinShop\"].getFirstInstance();",
-														"const textInsts = runtime.objects[\"sellCoinValueText\"].getAllInstances();",
+														"const textInsts = runtime.objects[\"buyCoinValueText\"].getAllInstances();",
 														"",
 														"for (let i = 0; i < items.length; i++) {",
 														"    const objType = runtime.objects[items[i]];",
@@ -8904,44 +9189,7 @@
 							}
 						}
 					],
-					"sid": 263888454788462,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-animation-playing",
-									"objectClass": "coins",
-									"sid": 434253294405586,
-									"parameters": {
-										"animation": "\"shop\""
-									}
-								},
-								{
-									"id": "is-animation-playing",
-									"objectClass": "coins",
-									"sid": 650651401414355,
-									"parameters": {
-										"animation": "\"slotted\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-enabled",
-									"objectClass": "coins",
-									"sid": 256232091768210,
-									"behaviorType": "Physics",
-									"parameters": {
-										"mode": "disabled"
-									}
-								}
-							],
-							"sid": 397822057760773,
-							"disabled": true,
-							"isOrBlock": true
-						}
-					]
+					"sid": 263888454788462
 				},
 				{
 					"eventType": "block",
@@ -9883,28 +10131,6 @@
 							],
 							"sid": 541528396160132,
 							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 441586701153250
-								}
-							],
-							"actions": [
-								{
-									"id": "set-enabled",
-									"objectClass": "coins",
-									"sid": 547537464113476,
-									"behaviorType": "Physics",
-									"parameters": {
-										"mode": "enabled"
-									}
-								}
-							],
-							"sid": 497936640251687
 						}
 					]
 				}

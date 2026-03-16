@@ -61,27 +61,27 @@
 								"y": 0.6830188679245283
 							},
 							{
-								"name": "sellCoinValueText0",
+								"name": "buyCoinValueText0",
 								"x": 0.05032258064516129,
 								"y": 0.2830188679245283
 							},
 							{
-								"name": "sellCoinValueText1",
+								"name": "buyCoinValueText1",
 								"x": 0.24903225806451612,
 								"y": 0.28679245283018867
 							},
 							{
-								"name": "sellCoinValueText2",
+								"name": "buyCoinValueText2",
 								"x": 0.447741935483871,
 								"y": 0.28679245283018867
 							},
 							{
-								"name": "sellCoinValueText3",
+								"name": "buyCoinValueText3",
 								"x": 0.6464516129032258,
 								"y": 0.28679245283018867
 							},
 							{
-								"name": "sellCoinValueText4",
+								"name": "buyCoinValueText4",
 								"x": 0.8451612903225807,
 								"y": 0.28679245283018867
 							}

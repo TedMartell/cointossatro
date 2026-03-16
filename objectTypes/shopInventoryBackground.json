@@ -113,18 +113,6 @@
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 9413480,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.45955882352941174,
-								0,
-								0.45955882352941174,
-								0.28935185185185186,
-								0,
-								0.28935185185185186
-							]
-						},
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
@@ -201,6 +189,66 @@
 								"name": "slot11",
 								"x": 0.8270042194092827,
 								"y": 0.8957345971563981
+							},
+							{
+								"name": "sellCoinValueText0",
+								"x": 0.08860759493670886,
+								"y": 0.11018957345971564
+							},
+							{
+								"name": "sellCoinValueText1",
+								"x": 0.41350210970464135,
+								"y": 0.11018957345971564
+							},
+							{
+								"name": "sellCoinValueText2",
+								"x": 0.7383966244725738,
+								"y": 0.11018957345971564
+							},
+							{
+								"name": "sellCoinValueText3",
+								"x": 0.08860759493670886,
+								"y": 0.3293838862559242
+							},
+							{
+								"name": "sellCoinValueText4",
+								"x": 0.41350210970464135,
+								"y": 0.3293838862559242
+							},
+							{
+								"name": "sellCoinValueText5",
+								"x": 0.7383966244725738,
+								"y": 0.3293838862559242
+							},
+							{
+								"name": "sellCoinValueText6",
+								"x": 0.08860759493670886,
+								"y": 0.5485781990521327
+							},
+							{
+								"name": "sellCoinValueText7",
+								"x": 0.41350210970464135,
+								"y": 0.5485781990521327
+							},
+							{
+								"name": "sellCoinValueText8",
+								"x": 0.7383966244725738,
+								"y": 0.5485781990521327
+							},
+							{
+								"name": "sellCoinValueText9",
+								"x": 0.08860759493670886,
+								"y": 0.7677725118483413
+							},
+							{
+								"name": "sellCoinValueText10",
+								"x": 0.41350210970464135,
+								"y": 0.7677725118483413
+							},
+							{
+								"name": "sellCoinValueText11",
+								"x": 0.7383966244725738,
+								"y": 0.7677725118483413
 							}
 						],
 						"duration": 1,
@@ -227,18 +275,6 @@
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 891704,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.45955882352941174,
-								0,
-								0.45955882352941174,
-								0.28935185185185186,
-								0,
-								0.28935185185185186
-							]
-						},
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
@@ -311,18 +347,6 @@
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 6284963,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.45955882352941174,
-								0,
-								0.45955882352941174,
-								0.28935185185185186,
-								0,
-								0.28935185185185186
-							]
-						},
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{

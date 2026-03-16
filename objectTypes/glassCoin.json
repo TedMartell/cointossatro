@@ -347,15 +347,15 @@
 			{
 				"frames": [
 					{
-						"width": 40,
-						"height": 40,
+						"width": 131,
+						"height": 131,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9700638,
+						"imageSpriteId": 5226968,
 						"collisionPoly": {
 							"points": [
 								0.42424242424242425,
@@ -443,7 +443,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 154554541535340,
+				"sid": 651065587848246,
 				"name": "focusedShop",
 				"isLooping": false,
 				"isPingPong": false,

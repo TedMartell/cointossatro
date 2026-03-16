@@ -1,7 +1,7 @@
 {
-	"name": "sellPowerUpsValueText",
+	"name": "buyCoinValueText",
 	"plugin-id": "Text",
-	"sid": 805806914718372,
+	"sid": 469227668305250,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 503593835217751
+			"sid": 626345994431215
 		}
 	],
 	"behaviorTypes": [],
