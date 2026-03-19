@@ -5783,135 +5783,227 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "shootCoins",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 955711114496436,
-							"parameters": {
-								"key": 32
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 892874320625641,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 692876842324496,
+									"parameters": {
+										"variable": "startBlocked"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//Set power to apply to coin"
+									]
+								}
+							],
+							"sid": 131009809334782,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 202859081397042,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 999942599770559,
+											"parameters": {
+												"variable": "power",
+												"value": "0.45"
+											}
+										}
+									],
+									"sid": 816885549979310
+								}
+							]
 						},
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 476248307017849,
-							"parameters": {
-								"variable": "startBlocked"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 199907829871067,
-					"children": [
-						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "every-x-seconds",
-									"objectClass": "System",
-									"sid": 889690481262930,
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 238340137695357,
 									"parameters": {
-										"interval-seconds": "0.1"
+										"key": 32
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 838627272099860,
-									"parameters": {
-										"variable": "power",
-										"value": "0.45"
-									}
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//apply power to coin ie. shoot the coin"
+									]
 								}
 							],
-							"sid": 668033746173287
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-released",
-							"objectClass": "Keyboard",
-							"sid": 848872064514804,
-							"parameters": {
-								"key": 32
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "hand",
-							"sid": 180501485364014,
-							"parameters": {
-								"animation": "\"pressed\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 662324680407357,
-					"children": [
+							"sid": 413597717332089,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "hand",
+											"sid": 516164730642965,
+											"parameters": {
+												"animation": "\"pressed\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 399018409220217,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "coins",
+													"sid": 497738951346926,
+													"parameters": {
+														"instance-variable": "pushedFromStartBlock"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "apply-impulse-towards-position",
+													"objectClass": "coins",
+													"sid": 829073178023336,
+													"behaviorType": "Physics",
+													"parameters": {
+														"impulse": "power",
+														"x": "forceTarget.X",
+														"y": "forceTarget.Y",
+														"image-point": "0"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 645350865115096,
+													"parameters": {
+														"variable": "power",
+														"value": "1"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 869484345737671,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "hand",
+													"sid": 797027718743465,
+													"parameters": {
+														"animation": "\"idle\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 210218632060782
+										}
+									]
+								}
+							]
+						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-boolean-instance-variable-set",
+									"id": "is-overlapping-another-object",
 									"objectClass": "coins",
-									"sid": 222644572002789,
+									"sid": 677414900038089,
 									"parameters": {
-										"instance-variable": "pushedFromStartBlock"
-									},
-									"isInverted": true
+										"object": "coinStart"
+									}
 								}
 							],
 							"actions": [
 								{
-									"id": "apply-impulse-towards-position",
-									"objectClass": "coins",
-									"sid": 927830630446412,
-									"behaviorType": "Physics",
-									"parameters": {
-										"impulse": "power",
-										"x": "forceTarget.X",
-										"y": "forceTarget.Y",
-										"image-point": "0"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 741751896622108,
-									"parameters": {
-										"variable": "power",
-										"value": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 147787409785491,
-									"parameters": {
-										"seconds": "0.2",
-										"use-timescale": true
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "hand",
-									"sid": 436713919418886,
-									"parameters": {
-										"animation": "\"idle\"",
-										"from": "beginning"
-									}
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//Enable coin when in startblock"
+									]
 								}
 							],
-							"sid": 535335266536646
+							"sid": 358208208654334,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 865663020896605,
+											"parameters": {
+												"variable": "startBlocked",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "coins",
+											"sid": 986997527735591,
+											"parameters": {
+												"instance-variable": "pushedFromStartBlock",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "coins",
+											"sid": 652920618578266,
+											"behaviorType": "Physics",
+											"parameters": {
+												"mode": "enabled"
+											}
+										}
+									],
+									"sid": 890355968417514
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -5919,88 +6011,97 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 561187787559168
+									"sid": 437974280828181
 								}
 							],
 							"actions": [
 								{
-									"id": "set-animation",
-									"objectClass": "hand",
-									"sid": 107993822339659,
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 587569044755906,
 									"parameters": {
-										"animation": "\"idle\"",
-										"from": "beginning"
+										"variable": "startBlocked",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "coins",
+									"sid": 365412475978956,
+									"parameters": {
+										"instance-variable": "pushedFromStartBlock",
+										"value": "true"
 									}
 								}
 							],
-							"sid": 475012552534264
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "coins",
-							"sid": 711505690166929,
-							"parameters": {
-								"object": "coinStart"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 452612424434727,
-							"parameters": {
-								"variable": "startBlocked",
-								"value": "true"
-							}
+							"sid": 156124127683773
 						},
 						{
-							"id": "set-boolean-instvar",
-							"objectClass": "coins",
-							"sid": 894462657148335,
-							"parameters": {
-								"instance-variable": "pushedFromStartBlock",
-								"value": "false"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 461660977140839,
+									"parameters": {
+										"variable": "startBlocked"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 142451000711159,
+									"parameters": {
+										"first-value": "credit",
+										"comparison": 5,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"//spawn coin at startblock if credits"
+									]
+								}
+							],
+							"sid": 127492201631696,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "pajatso",
+											"sid": 240238596777885,
+											"parameters": {
+												"object": "baseCoin1",
+												"layer": "\"action\"",
+												"image-point": "\"coinSpawn\"",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 205257836369093,
+											"parameters": {
+												"variable": "credit",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 765197265866732
+								}
+							]
 						}
 					],
-					"sid": 346931212309429
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 665415979936050
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 544452034186694,
-							"parameters": {
-								"variable": "startBlocked",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "coins",
-							"sid": 514900118235234,
-							"parameters": {
-								"instance-variable": "pushedFromStartBlock",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 342386957858259
+					"sid": 596564877201527
 				},
 				{
 					"eventType": "block",
@@ -6029,54 +6130,6 @@
 						}
 					],
 					"sid": 215933534343585
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 802657962911400,
-							"parameters": {
-								"variable": "startBlocked"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 144753792116059,
-							"parameters": {
-								"first-value": "credit",
-								"comparison": 5,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "pajatso",
-							"sid": 354405595282302,
-							"parameters": {
-								"object": "baseCoin1",
-								"layer": "\"action\"",
-								"image-point": "\"coinSpawn\"",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 189757574742940,
-							"parameters": {
-								"variable": "credit",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 784050947203620
 				},
 				{
 					"eventType": "group",
@@ -6177,199 +6230,209 @@
 									"isActiveOnStart": true,
 									"children": [
 										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "on-object-clicked",
-													"objectClass": "Mouse",
-													"sid": 963313502858459,
-													"parameters": {
-														"mouse-button": "left",
-														"click-type": "clicked",
-														"object-clicked": "buyCoinHun"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 520906118771485,
+											"eventType": "group",
+											"disabled": false,
+											"title": "buyCredits",
+											"description": "",
+											"isActiveOnStart": true,
 											"children": [
 												{
 													"eventType": "block",
 													"conditions": [
 														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 736377269494792,
+															"id": "on-object-clicked",
+															"objectClass": "Mouse",
+															"sid": 797415262463741,
 															"parameters": {
-																"first-value": "money",
-																"comparison": 5,
-																"second-value": "100"
-															}
-														},
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 646577784648836,
-															"parameters": {
-																"first-value": "credit",
-																"comparison": 3,
-																"second-value": "899"
+																"mouse-button": "left",
+																"click-type": "clicked",
+																"object-clicked": "buyCoinHun"
 															}
 														}
 													],
-													"actions": [
+													"actions": [],
+													"sid": 739498296247858,
+													"children": [
 														{
-															"id": "add-to-eventvar",
-															"objectClass": "System",
-															"sid": 197563378777460,
-															"parameters": {
-																"variable": "credit",
-																"value": "100"
-															}
-														},
-														{
-															"id": "subtract-from-eventvar",
-															"objectClass": "System",
-															"sid": 657104126688711,
-															"parameters": {
-																"variable": "money",
-																"value": "100"
-															}
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 620455553862208,
+																	"parameters": {
+																		"first-value": "money",
+																		"comparison": 5,
+																		"second-value": "100"
+																	}
+																},
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 155326313828193,
+																	"parameters": {
+																		"first-value": "credit",
+																		"comparison": 3,
+																		"second-value": "899"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 133460351815887,
+																	"parameters": {
+																		"variable": "credit",
+																		"value": "100"
+																	}
+																},
+																{
+																	"id": "subtract-from-eventvar",
+																	"objectClass": "System",
+																	"sid": 819114492765822,
+																	"parameters": {
+																		"variable": "money",
+																		"value": "100"
+																	}
+																}
+															],
+															"sid": 180519142565923
 														}
-													],
-													"sid": 564845652607530
-												}
-											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "on-object-clicked",
-													"objectClass": "Mouse",
-													"sid": 200682390506026,
-													"parameters": {
-														"mouse-button": "left",
-														"click-type": "clicked",
-														"object-clicked": "buyCoinTen"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 324478215483521,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 300052251252518,
-															"parameters": {
-																"first-value": "money",
-																"comparison": 5,
-																"second-value": "10"
-															}
-														},
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 225253292291185,
-															"parameters": {
-																"first-value": "credit",
-																"comparison": 3,
-																"second-value": "989"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "add-to-eventvar",
-															"objectClass": "System",
-															"sid": 858255817335365,
-															"parameters": {
-																"variable": "credit",
-																"value": "10"
-															}
-														},
-														{
-															"id": "subtract-from-eventvar",
-															"objectClass": "System",
-															"sid": 582424920362812,
-															"parameters": {
-																"variable": "money",
-																"value": "10"
-															}
-														}
-													],
-													"sid": 198761414049453
-												}
-											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "on-object-clicked",
-													"objectClass": "Mouse",
-													"sid": 124781800613840,
-													"parameters": {
-														"mouse-button": "left",
-														"click-type": "clicked",
-														"object-clicked": "buyCoinOne"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 181887320092904,
-											"children": [
+													]
+												},
 												{
 													"eventType": "block",
 													"conditions": [
 														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 723233888422602,
+															"id": "on-object-clicked",
+															"objectClass": "Mouse",
+															"sid": 328185724867932,
 															"parameters": {
-																"first-value": "credit",
-																"comparison": 3,
-																"second-value": "998"
-															}
-														},
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 558997487693006,
-															"parameters": {
-																"first-value": "money",
-																"comparison": 5,
-																"second-value": "1"
+																"mouse-button": "left",
+																"click-type": "clicked",
+																"object-clicked": "buyCoinTen"
 															}
 														}
 													],
-													"actions": [
+													"actions": [],
+													"sid": 551504334624374,
+													"children": [
 														{
-															"id": "add-to-eventvar",
-															"objectClass": "System",
-															"sid": 657724830256983,
-															"parameters": {
-																"variable": "credit",
-																"value": "1"
-															}
-														},
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 608993127380005,
+																	"parameters": {
+																		"first-value": "money",
+																		"comparison": 5,
+																		"second-value": "10"
+																	}
+																},
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 815596922148193,
+																	"parameters": {
+																		"first-value": "credit",
+																		"comparison": 3,
+																		"second-value": "989"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 674093140287833,
+																	"parameters": {
+																		"variable": "credit",
+																		"value": "10"
+																	}
+																},
+																{
+																	"id": "subtract-from-eventvar",
+																	"objectClass": "System",
+																	"sid": 186416000716870,
+																	"parameters": {
+																		"variable": "money",
+																		"value": "10"
+																	}
+																}
+															],
+															"sid": 980487572645987
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
 														{
-															"id": "subtract-from-eventvar",
-															"objectClass": "System",
-															"sid": 623601718836502,
+															"id": "on-object-clicked",
+															"objectClass": "Mouse",
+															"sid": 596461924264966,
 															"parameters": {
-																"variable": "money",
-																"value": "1"
+																"mouse-button": "left",
+																"click-type": "clicked",
+																"object-clicked": "buyCoinOne"
 															}
 														}
 													],
-													"sid": 981907134761034
+													"actions": [],
+													"sid": 846184497555412,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 374872320998210,
+																	"parameters": {
+																		"first-value": "credit",
+																		"comparison": 3,
+																		"second-value": "998"
+																	}
+																},
+																{
+																	"id": "compare-two-values",
+																	"objectClass": "System",
+																	"sid": 660327403363035,
+																	"parameters": {
+																		"first-value": "money",
+																		"comparison": 5,
+																		"second-value": "1"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 279729840171948,
+																	"parameters": {
+																		"variable": "credit",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "subtract-from-eventvar",
+																	"objectClass": "System",
+																	"sid": 699206189772580,
+																	"parameters": {
+																		"variable": "money",
+																		"value": "1"
+																	}
+																}
+															],
+															"sid": 710573995294314
+														}
+													]
 												}
-											]
+											],
+											"sid": 597876795180812
 										}
 									],
 									"sid": 792726303869570
@@ -7245,12 +7308,6 @@
 											]
 										}
 									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [],
-									"sid": 189611237779266
 								},
 								{
 									"eventType": "block",
@@ -9263,7 +9320,15 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"//Move from ACTION to SHOP"
+							]
+						}
+					],
 					"sid": 590243750620216,
 					"children": [
 						{
@@ -9280,96 +9345,106 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 813630972673026,
-									"parameters": {
-										"layer": "\"shop\"",
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-layer-interactive",
-									"objectClass": "System",
-									"sid": 388576016444123,
-									"parameters": {
-										"layer": "\"shop\"",
-										"interactive": true
-									}
-								},
-								{
-									"id": "set-layer-interactive",
-									"objectClass": "System",
-									"sid": 629483403960795,
-									"parameters": {
-										"layer": "\"background\"",
-										"interactive": false
-									}
-								},
-								{
-									"id": "set-layer-interactive",
-									"objectClass": "System",
-									"sid": 791019403561034,
-									"parameters": {
-										"layer": "\"foreground\"",
-										"interactive": false
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "cameraObj",
-									"sid": 711154334113528,
-									"parameters": {
-										"x": "OriginalViewportWidth / 2",
-										"y": "OriginalViewportHeight / 2"
-									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "cameraObj",
-									"sid": 282664910366238,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"enabled": false
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "coinClip",
-									"sid": 907296507216490,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "powerUpsBackground",
-									"sid": 569847367352853,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "powerUps",
-									"sid": 791566834909496,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "coins",
-									"sid": 646313448573454,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 658892462153510,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 634115465351495,
+											"parameters": {
+												"layer": "\"shop\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 805950428938449,
+											"parameters": {
+												"layer": "\"shop\"",
+												"interactive": true
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 526642165829588,
+											"parameters": {
+												"layer": "\"background\"",
+												"interactive": false
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 884745591492667,
+											"parameters": {
+												"layer": "\"foreground\"",
+												"interactive": false
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "cameraObj",
+											"sid": 789896280372998,
+											"parameters": {
+												"x": "OriginalViewportWidth / 2",
+												"y": "OriginalViewportHeight / 2"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "cameraObj",
+											"sid": 679141043918271,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"enabled": false
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "coinClip",
+											"sid": 308707788045067,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "powerUpsBackground",
+											"sid": 421341653781172,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "powerUps",
+											"sid": 772962702884355,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "coins",
+											"sid": 271151369449828,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"callFunction": "rerollEntireShop",
+											"sid": 588146722368079
+										}
+									],
+									"sid": 508531810445453
+								},
 								{
 									"eventType": "comment",
 									"text": "Move Coins to Shop Layer"
@@ -9460,7 +9535,7 @@
 							"type": "script",
 							"language": "javascript",
 							"script": [
-								"///THIS TRANSITION DOESN WORK???"
+								"///Move from SHOP to OVERWORLD"
 							]
 						}
 					],
@@ -9839,7 +9914,15 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": [
+								"///Move from OVERWORLD to ACTION"
+							]
+						}
+					],
 					"sid": 176430781757704,
 					"children": [
 						{
@@ -10135,6 +10218,225 @@
 					]
 				}
 			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "functions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "rerollEntireShop",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 510049002163000,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "powerUps",
+									"sid": 483479009797260,
+									"parameters": {
+										"instance-variable": "slotted"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "powerUps",
+									"sid": 331294665828546
+								}
+							],
+							"sid": 508674188835645
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "hacks",
+									"sid": 631606765325699,
+									"parameters": {
+										"instance-variable": "slotted"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "hacks",
+									"sid": 240944161007574
+								},
+								{
+									"id": "destroy",
+									"objectClass": "hackSold",
+									"sid": 779582599427990
+								}
+							],
+							"sid": 804980941722956
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "coins",
+									"sid": 172603347037991,
+									"parameters": {
+										"instance-variable": "slotted"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "coins",
+									"sid": 924136185046007
+								},
+								{
+									"id": "destroy",
+									"objectClass": "coinSold",
+									"sid": 705882539318577
+								}
+							],
+							"sid": 358766256402851
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "powerUpSold",
+									"sid": 146871660676992
+								},
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const items = shopSpawn(3, powerUps, false);",
+										"const puBG = runtime.objects[\"powerUpShop\"].getFirstInstance();",
+										"const textInsts = runtime.objects[\"buyPowerUpsValueText\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < items.length; i++) {",
+										"    const objType = runtime.objects[items[i]];",
+										"",
+										"    const x = puBG.getImagePointX(\"slot\"+i);",
+										"    const y = puBG.getImagePointY(\"slot\"+i);",
+										"",
+										"    const puInst = objType.createInstance(\"shop\", x, y);",
+										"",
+										"\tconst puValue = puInst.instVars.buyValue;",
+										"",
+										"\tfor (const t of textInsts) {",
+										"        if (t.instVars.id === i) {",
+										"            t.text = \"$\" + puValue;",
+										"            break; // stop once we found the correct one",
+										"        }",
+										"    }",
+										"}",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 492985669420372
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const items = shopSpawn(3, hacks, false);",
+										"const hacksBG = runtime.objects[\"hacksShop\"].getFirstInstance();",
+										"const textInsts = runtime.objects[\"buyHacksValueText\"].getAllInstances();",
+										"",
+										"",
+										"for (let i = 0; i < items.length; i++) {",
+										"    const objType = runtime.objects[items[i]];",
+										"",
+										"    const x = hacksBG.getImagePointX(\"slot\"+i);",
+										"    const y = hacksBG.getImagePointY(\"slot\"+i);",
+										"",
+										"    const hackInst = objType.createInstance(\"shop\", x, y);",
+										"",
+										"\tconst hackValue = hackInst.instVars.buyValue;",
+										"",
+										"\tfor (const t of textInsts) {",
+										"        if (t.instVars.id === i) {",
+										"            t.text = \"$\" + hackValue;",
+										"            break; // stop once we found the correct one",
+										"        }",
+										"    }",
+										"}",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 274070807928105
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const items = shopSpawn(5, coins, true);",
+										"const coinsBG = runtime.objects[\"coinShop\"].getFirstInstance();",
+										"const textInsts = runtime.objects[\"buyCoinValueText\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < items.length; i++) {",
+										"    const objType = runtime.objects[items[i]];",
+										"",
+										"    // 1. Spawn the coin",
+										"    const x = coinsBG.getImagePointX(\"slot\" + i);",
+										"    const y = coinsBG.getImagePointY(\"slot\" + i);",
+										"    const coinInst = objType.createInstance(\"shop\", x, y);",
+										"",
+										"    // 2. Get the coin's buyValue (family variable)",
+										"    const coinValue = coinInst.instVars.buyValue;",
+										"",
+										"    // 3. Loop through all text objects and find the one with matching id",
+										"    for (const t of textInsts) {",
+										"        if (t.instVars.id === i) {",
+										"            t.text = \"$\" + coinValue;",
+										"            break; // stop once we found the correct one",
+										"        }",
+										"    }",
+										"}",
+										"",
+										"",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 747717908905773
+						}
+					]
+				}
+			],
+			"sid": 431149782417312
 		}
 	],
 	"sid": 878535526920507
