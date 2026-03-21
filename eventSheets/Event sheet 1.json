@@ -7510,6 +7510,22 @@
 												"animation": "\"coins\"",
 												"from": "beginning"
 											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "sellCoinValueText",
+											"sid": 207516155351554,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "sellHackValueText",
+											"sid": 277168819293022,
+											"parameters": {
+												"visibility": "invisible"
+											}
 										}
 									],
 									"sid": 125964559784350,
@@ -7646,10 +7662,195 @@
 												"animation": "\"hacks\"",
 												"from": "beginning"
 											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "sellCoinValueText",
+											"sid": 377626307934811,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "sellHackValueText",
+											"sid": 462897020384011,
+											"parameters": {
+												"visibility": "visible"
+											}
 										}
 									],
 									"sid": 230030118438095,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "shopInventoryBackground",
+													"sid": 862355994707110,
+													"parameters": {
+														"instance-variable": "hacksSpawned"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 193044754582832,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "shopInventoryBackground",
+															"sid": 383490328165003,
+															"parameters": {
+																"object": "sellHackValueText",
+																"layer": "\"shop\"",
+																"image-point": "\"sellHackValueText0\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "sellHackValueText",
+															"sid": 703593818758523,
+															"parameters": {
+																"instance-variable": "id",
+																"value": "0"
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "shopInventoryBackground",
+															"sid": 689769225495682,
+															"parameters": {
+																"object": "sellHackValueText",
+																"layer": "\"shop\"",
+																"image-point": "\"sellHackValueText1\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "sellHackValueText",
+															"sid": 318755690433451,
+															"parameters": {
+																"instance-variable": "id",
+																"value": "1"
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "shopInventoryBackground",
+															"sid": 857939280544514,
+															"parameters": {
+																"object": "sellHackValueText",
+																"layer": "\"shop\"",
+																"image-point": "\"sellHackValueText2\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "sellHackValueText",
+															"sid": 581713225280913,
+															"parameters": {
+																"instance-variable": "id",
+																"value": "2"
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "shopInventoryBackground",
+															"sid": 701486280397165,
+															"parameters": {
+																"object": "sellHackValueText",
+																"layer": "\"shop\"",
+																"image-point": "\"sellHackValueText3\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "sellHackValueText",
+															"sid": 693996622444728,
+															"parameters": {
+																"instance-variable": "id",
+																"value": "3"
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "shopInventoryBackground",
+															"sid": 511076987790408,
+															"parameters": {
+																"object": "sellHackValueText",
+																"layer": "\"shop\"",
+																"image-point": "\"sellHackValueText4\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "sellHackValueText",
+															"sid": 565286030014666,
+															"parameters": {
+																"instance-variable": "id",
+																"value": "4"
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "shopInventoryBackground",
+															"sid": 937351177629792,
+															"parameters": {
+																"object": "sellHackValueText",
+																"layer": "\"shop\"",
+																"image-point": "\"sellHackValueText5\"",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "sellHackValueText",
+															"sid": 291500087589073,
+															"parameters": {
+																"instance-variable": "id",
+																"value": "5"
+															}
+														}
+													],
+													"sid": 548375408858441,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 973451327611010,
+																	"parameters": {
+																		"instance-variable": "hacksSpawned",
+																		"value": "true"
+																	}
+																}
+															],
+															"sid": 988177964715421
+														}
+													]
+												}
+											]
+										},
 										{
 											"eventType": "comment",
 											"text": "Move Coins to Action Layer"
@@ -8568,6 +8769,10 @@
 														"",
 														"slotAllocation(coinInv, coins, 12)"
 													]
+												},
+												{
+													"callFunction": "updateCoinSellValueText",
+													"sid": 165433759177331
 												}
 											],
 											"sid": 691651404561427
@@ -8599,6 +8804,10 @@
 													"parameters": {
 														"layer": "\"background\""
 													}
+												},
+												{
+													"callFunction": "updateCoinSellValueText",
+													"sid": 199794428310405
 												}
 											],
 											"sid": 131565508647450
@@ -8776,12 +8985,19 @@
 													"script": [
 														"const shopInv = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
 														"const coins = runtime.objects[\"coins\"].getFirstPickedInstance();",
+														"const textInst = runtime.objects[\"sellCoinValueText\"].getAllInstances();",
 														"",
-														"// Get slot ID from the power-up family instance",
+														"// Get slot ID from the coins family instance",
 														"const slotID = coins.instVars.slotID;",
 														"",
 														"// Set the matching slotBusy boolean to false",
 														"shopInv.instVars[\"slotBusy\" + slotID] = false;",
+														"//Update sell value text ",
+														"for (const t of textInst) {",
+														"\tif (t.instVars.id === slotID) {",
+														"\t\tt.text = \"SOLD\"",
+														"\t}",
+														"}",
 														"",
 														""
 													]
@@ -9184,12 +9400,20 @@
 													"script": [
 														"const hacksBG = runtime.objects[\"hacksBackground\"].getFirstInstance();",
 														"const hack = runtime.objects[\"hacks\"].getFirstPickedInstance();",
+														"const textInst = runtime.objects[\"sellHackValueText\"].getAllInstances();",
 														"",
 														"// Get slot ID from the power-up family instance",
 														"const slotID = hack.instVars.slotID;",
 														"",
 														"// Set the matching slotBusy boolean to false",
 														"hacksBG.instVars[\"slotBusy\" + slotID] = false;",
+														"",
+														"//Update sell value text ",
+														"for (const t of textInst) {",
+														"\tif (t.instVars.id === slotID) {",
+														"\t\tt.text = \"SOLD\"",
+														"\t}",
+														"}",
 														"",
 														""
 													]
@@ -10432,6 +10656,92 @@
 								}
 							],
 							"sid": 747717908905773
+						}
+					]
+				},
+				{
+					"functionName": "updateCoinSellValueText",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 904266984385823,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const textInsts = runtime.objects[\"sellCoinValueText\"].getAllInstances();",
+										"const coins = runtime.objects[\"coins\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < coins.length; i++) {",
+										"\tconst coinValue = coins[i].instVars.sellValue",
+										"\tconst coinSlotId = coins[i].instVars.slotID",
+										"",
+										"\tfor (const t of textInsts) {",
+										"\t\tif (t.instVars.id === coinSlotId && coins[i].instVars.purchased === true) {",
+										"\t\t\tt.text = \"$\" + coinValue",
+										"\t\t}",
+										"\t}",
+										"}",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 693429418263857
+						}
+					]
+				},
+				{
+					"functionName": "updateHackSellValueText",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 586431291887318,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const textInsts = runtime.objects[\"sellHackValueText\"].getAllInstances();",
+										"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < hacks.length; i++) {",
+										"\tconst hackValue = hacks[i].instVars.sellValue",
+										"\tconst hackSlotId = hacks[i].instVars.slotID",
+										"",
+										"\tfor (const t of textInsts) {",
+										"\t\tif (t.instVars.id === hackSlotId && hacks[i].instVars.purchased === true) {",
+										"\t\t\tt.text = \"$\" + hackValue",
+										"\t\t}",
+										"\t}",
+										"}",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 147899722310514
 						}
 					]
 				}

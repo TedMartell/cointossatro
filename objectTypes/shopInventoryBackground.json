@@ -95,6 +95,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 931455199021532
+		},
+		{
+			"name": "hacksSpawned",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 772765958938468
 		}
 	],
 	"behaviorTypes": [],
@@ -321,6 +328,36 @@
 								"name": "slot5",
 								"x": 0.5717299578059072,
 								"y": 0.7393364928909952
+							},
+							{
+								"name": "sellHackValueText0",
+								"x": 0.1751054852320675,
+								"y": 0.3566350710900474
+							},
+							{
+								"name": "sellHackValueText1",
+								"x": 0.6624472573839663,
+								"y": 0.3566350710900474
+							},
+							{
+								"name": "sellHackValueText2",
+								"x": 0.1751054852320675,
+								"y": 0.6066350710900474
+							},
+							{
+								"name": "sellHackValueText3",
+								"x": 0.6624472573839663,
+								"y": 0.6066350710900474
+							},
+							{
+								"name": "sellHackValueText4",
+								"x": 0.1751054852320675,
+								"y": 0.8566350710900474
+							},
+							{
+								"name": "sellHackValueText5",
+								"x": 0.6624472573839663,
+								"y": 0.8566350710900474
 							}
 						],
 						"duration": 1,

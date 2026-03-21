@@ -1366,7 +1366,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 2,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1442,7 +1442,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 3,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1518,7 +1518,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 6,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3936,7 +3936,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 5,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4012,7 +4012,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 4,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4088,7 +4088,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 7,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4164,7 +4164,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 8,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4240,7 +4240,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 9,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4316,7 +4316,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 11,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4392,7 +4392,7 @@
 						"focused": false,
 						"purchased": false,
 						"slotID": 88,
-						"sellValue": 1,
+						"sellValue": 12,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4817,6 +4817,61 @@
 					"world": {
 						"x": 2814,
 						"y": 943,
+						"width": 80,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "sellHackValueText",
+					"properties": {
+						"text": "SELL",
+						"enable-bbcode": true,
+						"font": "system-ui",
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 134,
+					"sid": 759656453822938,
+					"tags": "",
+					"instanceVariables": {
+						"id": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 759656453822938,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2807,
+						"y": 1017,
 						"width": 80,
 						"height": 34,
 						"originX": 0,

@@ -1089,7 +1089,8 @@
 						"slotBusy8": false,
 						"slotBusy9": false,
 						"slotBusy10": false,
-						"slotBusy11": false
+						"slotBusy11": false,
+						"hacksSpawned": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {

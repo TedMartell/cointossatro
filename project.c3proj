@@ -218,7 +218,8 @@
 			"coinsUpsPageShopButton",
 			"hacksPageShopButton",
 			"powerUpsPageShopButton",
-			"sellCoinValueText"
+			"sellCoinValueText",
+			"sellHackValueText"
 		],
 		"subfolders": []
 	},
