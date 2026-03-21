@@ -132,6 +132,26 @@
 			"sid": 284740617594185
 		},
 		{
+			"eventType": "variable",
+			"name": "hackSlotsUsed",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 157039265319400
+		},
+		{
+			"eventType": "variable",
+			"name": "hackSlotsMax",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 847401633309462
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -8037,6 +8057,8 @@
 														"    const y = puBG.getImagePointY(\"slot\"+i);",
 														"",
 														"    const puInst = objType.createInstance(\"shop\", x, y);",
+														"\tpuInst.instVars.slotID = i",
+														"",
 														"",
 														"\tconst puValue = puInst.instVars.buyValue;",
 														"",
@@ -8126,6 +8148,8 @@
 														"    const y = hacksBG.getImagePointY(\"slot\"+i);",
 														"",
 														"    const hackInst = objType.createInstance(\"shop\", x, y);",
+														"\thackInst.instVars.slotID = i",
+														"",
 														"",
 														"\tconst hackValue = hackInst.instVars.buyValue;",
 														"",
@@ -8214,6 +8238,7 @@
 														"    const x = coinsBG.getImagePointX(\"slot\" + i);",
 														"    const y = coinsBG.getImagePointY(\"slot\" + i);",
 														"    const coinInst = objType.createInstance(\"shop\", x, y);",
+														"\tcoinInst.instVars.slotID = i",
 														"",
 														"    // 2. Get the coin's buyValue (family variable)",
 														"    const coinValue = coinInst.instVars.buyValue;",
@@ -8711,15 +8736,6 @@
 										{
 											"id": "set-boolean-instvar",
 											"objectClass": "coins",
-											"sid": 896447019586231,
-											"parameters": {
-												"instance-variable": "purchased",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "coins",
 											"sid": 781829261134136,
 											"parameters": {
 												"instance-variable": "slotted",
@@ -8743,6 +8759,15 @@
 												"variable": "coinSlotsUsed",
 												"value": "1"
 											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "coins",
+											"sid": 979201407746362,
+											"parameters": {
+												"instance-variable": "purchased",
+												"value": "true"
+											}
 										}
 									],
 									"sid": 505561462778019,
@@ -8765,9 +8790,22 @@
 													"language": "javascript",
 													"script": [
 														"const coinInv = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-														"const coins = runtime.objects[\"coins\"].getFirstPickedInstance();",
+														"const coin = runtime.objects[\"coins\"].getFirstPickedInstance();",
+														"const textInst = runtime.objects[\"buyCoinValueText\"].getAllInstances();",
 														"",
-														"slotAllocation(coinInv, coins, 12)"
+														"for (const t of textInst) {",
+														"\tconsole.log(t.instVars.id + \" is same as? \" + coin.instVars.slotID)",
+														"\tif (t.instVars.id === coin.instVars.slotID) {",
+														"\t\tt.text = \"SOLD\"",
+														"\t\tconsole.log(\"Item SOLD\")",
+														"\t\tbreak;",
+														"\t}",
+														"}",
+														"slotAllocation(coinInv, coin, 12)",
+														"",
+														"",
+														"",
+														""
 													]
 												},
 												{
@@ -9098,11 +9136,13 @@
 											}
 										},
 										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "hacksBackground",
-											"sid": 804383551767503,
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 694761698888191,
 											"parameters": {
-												"instance-variable": "freeSpace"
+												"first-value": "hackSlotsUsed",
+												"comparison": 2,
+												"second-value": "hackSlotsMax"
 											}
 										}
 									],
@@ -9145,6 +9185,15 @@
 												"variable": "money",
 												"value": "hacks.buyValue"
 											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 216181194202212,
+											"parameters": {
+												"variable": "hackSlotsUsed",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 218316961963155,
@@ -9171,6 +9220,10 @@
 														"",
 														"slotAllocation(hacksBG, hack, 3) //Change slot ammount to variable later "
 													]
+												},
+												{
+													"callFunction": "updateHackSellValueText",
+													"sid": 216436995394977
 												}
 											],
 											"sid": 311157372090990
@@ -9202,6 +9255,10 @@
 													"parameters": {
 														"layer": "\"background\""
 													}
+												},
+												{
+													"callFunction": "updateHackSellValueText",
+													"sid": 783608545490253
 												}
 											],
 											"sid": 452332909413603
@@ -9321,7 +9378,8 @@
 									]
 								}
 							],
-							"sid": 734714247601828
+							"sid": 734714247601828,
+							"disabled": true
 						}
 					],
 					"sid": 269639485557643
@@ -9398,7 +9456,7 @@
 													"type": "script",
 													"language": "javascript",
 													"script": [
-														"const hacksBG = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+														"const hacksBG = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
 														"const hack = runtime.objects[\"hacks\"].getFirstPickedInstance();",
 														"const textInst = runtime.objects[\"sellHackValueText\"].getAllInstances();",
 														"",
@@ -9425,6 +9483,15 @@
 													"parameters": {
 														"variable": "money",
 														"value": "hacks.sellValue"
+													}
+												},
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 262883734632088,
+													"parameters": {
+														"variable": "hackSlotsUsed",
+														"value": "1"
 													}
 												}
 											],
@@ -10563,6 +10630,8 @@
 										"    const y = puBG.getImagePointY(\"slot\"+i);",
 										"",
 										"    const puInst = objType.createInstance(\"shop\", x, y);",
+										"\tpuInst.instVars.slotID = i",
+										"",
 										"",
 										"\tconst puValue = puInst.instVars.buyValue;",
 										"",
@@ -10600,6 +10669,8 @@
 										"    const y = hacksBG.getImagePointY(\"slot\"+i);",
 										"",
 										"    const hackInst = objType.createInstance(\"shop\", x, y);",
+										"\thackInst.instVars.slotID = i",
+										"",
 										"",
 										"\tconst hackValue = hackInst.instVars.buyValue;",
 										"",
@@ -10636,6 +10707,7 @@
 										"    const x = coinsBG.getImagePointX(\"slot\" + i);",
 										"    const y = coinsBG.getImagePointY(\"slot\" + i);",
 										"    const coinInst = objType.createInstance(\"shop\", x, y);",
+										"\tcoinInst.instVars.slotID = i",
 										"",
 										"    // 2. Get the coin's buyValue (family variable)",
 										"    const coinValue = coinInst.instVars.buyValue;",
