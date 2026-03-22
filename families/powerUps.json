@@ -37,6 +37,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 150025166344925
+		},
+		{
+			"name": "shopSlotID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 537259618093036
 		}
 	],
 	"behaviorTypes": [],
