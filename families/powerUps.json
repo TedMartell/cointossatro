@@ -39,13 +39,7 @@
 			"sid": 150025166344925
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 500376529067089
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
 		"powerUpVolcano",

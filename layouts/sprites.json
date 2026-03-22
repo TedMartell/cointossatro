@@ -27,6 +27,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 0,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -236,6 +237,7 @@
 						"purchased": true,
 						"slotID": 88,
 						"sellValue": 1,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1367,6 +1369,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 2,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1443,6 +1446,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 3,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -1519,6 +1523,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 6,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -3204,13 +3209,7 @@
 						"sellValue": 5,
 						"slotID": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 430188892553538,
 						"expanded": true
@@ -3253,13 +3252,7 @@
 						"sellValue": 5,
 						"slotID": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 499256796499226,
 						"expanded": true
@@ -3302,13 +3295,7 @@
 						"sellValue": 5,
 						"slotID": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 415507177990943,
 						"expanded": true
@@ -3351,13 +3338,7 @@
 						"sellValue": 5,
 						"slotID": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 363504146961618,
 						"expanded": true
@@ -3400,13 +3381,7 @@
 						"sellValue": 5,
 						"slotID": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 838772337953161,
 						"expanded": true
@@ -3449,13 +3424,7 @@
 						"sellValue": 5,
 						"slotID": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 849867590176584,
 						"expanded": true
@@ -3498,13 +3467,7 @@
 						"sellValue": 5,
 						"slotID": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 928389424244710,
 						"expanded": true
@@ -3590,7 +3553,8 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 99,
-						"sellValue": 10
+						"sellValue": 10,
+						"shopSlotID": 99
 					},
 					"behaviors": {
 						"Pin": {
@@ -3639,7 +3603,8 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 99,
-						"sellValue": 10
+						"sellValue": 10,
+						"shopSlotID": 99
 					},
 					"behaviors": {
 						"Pin": {
@@ -3688,7 +3653,8 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 99,
-						"sellValue": 10
+						"sellValue": 10,
+						"shopSlotID": 99
 					},
 					"behaviors": {
 						"Pin": {
@@ -3737,7 +3703,8 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 99,
-						"sellValue": 10
+						"sellValue": 10,
+						"shopSlotID": 99
 					},
 					"behaviors": {
 						"Pin": {
@@ -3786,7 +3753,8 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 99,
-						"sellValue": 10
+						"sellValue": 10,
+						"shopSlotID": 99
 					},
 					"behaviors": {
 						"Pin": {
@@ -3835,7 +3803,8 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 99,
-						"sellValue": 10
+						"sellValue": 10,
+						"shopSlotID": 99
 					},
 					"behaviors": {
 						"Pin": {
@@ -3884,7 +3853,8 @@
 						"purchased": false,
 						"slotted": false,
 						"slotID": 99,
-						"sellValue": 10
+						"sellValue": 10,
+						"shopSlotID": 99
 					},
 					"behaviors": {
 						"Pin": {
@@ -3937,6 +3907,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 5,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4013,6 +3984,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 4,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4089,6 +4061,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 7,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4165,6 +4138,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 8,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4241,6 +4215,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 9,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4317,6 +4292,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 11,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4393,6 +4369,7 @@
 						"purchased": false,
 						"slotID": 88,
 						"sellValue": 12,
+						"shopSlotID": 99,
 						"pushed": false
 					},
 					"behaviors": {
@@ -4872,6 +4849,61 @@
 					"world": {
 						"x": 2807,
 						"y": 1017,
+						"width": 80,
+						"height": 34,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "sellPowerUpValueText",
+					"properties": {
+						"text": "SELL",
+						"enable-bbcode": true,
+						"font": "system-ui",
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 135,
+					"sid": 195633368990183,
+					"tags": "",
+					"instanceVariables": {
+						"id": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 195633368990183,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2817.7894672373404,
+						"y": 1086.0265965882559,
 						"width": 80,
 						"height": 34,
 						"originX": 0,
