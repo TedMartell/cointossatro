@@ -7580,6 +7580,59 @@
 									"children": [
 										{
 											"eventType": "comment",
+											"text": "Move Power Ups to Action Layer"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+														"const moveTo = runtime.objects[\"PowerUpsBackground\"].getFirstInstance();",
+														"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+														"",
+														"for (let i = 0; i < powerUps.length; i++) {",
+														"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
+														"}",
+														"",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 445829207440723,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "for-each",
+															"objectClass": "System",
+															"sid": 726495678504286,
+															"parameters": {
+																"object": "powerUps"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "move-to-layer",
+															"objectClass": "powerUps",
+															"sid": 307001336841111,
+															"parameters": {
+																"layer": "\"shop\""
+															}
+														}
+													],
+													"sid": 334807057035845
+												}
+											]
+										},
+										{
+											"eventType": "comment",
 											"text": "Move Hacks to Action Layer"
 										},
 										{
@@ -7920,6 +7973,59 @@
 															"sid": 988177964715421
 														}
 													]
+												}
+											]
+										},
+										{
+											"eventType": "comment",
+											"text": "Move Power Ups to Action Layer"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+														"const moveTo = runtime.objects[\"PowerUpsBackground\"].getFirstInstance();",
+														"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+														"",
+														"for (let i = 0; i < powerUps.length; i++) {",
+														"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
+														"}",
+														"",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 247902457736510,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "for-each",
+															"objectClass": "System",
+															"sid": 252383122379663,
+															"parameters": {
+																"object": "powerUps"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "move-to-layer",
+															"objectClass": "powerUps",
+															"sid": 157853750406222,
+															"parameters": {
+																"layer": "\"shop\""
+															}
+														}
+													],
+													"sid": 162586474746276
 												}
 											]
 										},
@@ -9054,6 +9160,15 @@
 													"parameters": {
 														"variable": "money",
 														"value": "powerUps.sellValue"
+													}
+												},
+												{
+													"id": "subtract-from-eventvar",
+													"objectClass": "System",
+													"sid": 109877773853849,
+													"parameters": {
+														"variable": "powerUpsSlotsUsed",
+														"value": "1"
 													}
 												}
 											],
@@ -10331,6 +10446,64 @@
 													"language": "javascript",
 													"script": [
 														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+														"const moveTo = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
+														"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+														"",
+														"for (let i = 0; i < powerUps.length; i++) {",
+														"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
+														"}",
+														"",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 435825790135071,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "powerUps",
+															"sid": 640692783414932,
+															"parameters": {
+																"instance-variable": "slotted"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "move-to-layer",
+															"objectClass": "powerUps",
+															"sid": 956743749440049,
+															"parameters": {
+																"layer": "\"background\""
+															}
+														},
+														{
+															"id": "set-animation",
+															"objectClass": "powerUps",
+															"sid": 331382095102849,
+															"parameters": {
+																"animation": "\"slottedAction\"",
+																"from": "beginning"
+															}
+														}
+													],
+													"sid": 266446314583359
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
 														"const moveTo = runtime.objects[\"hacksBackground\"].getFirstInstance();",
 														"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
 														"",
@@ -10505,6 +10678,44 @@
 									"sid": 612100627718002
 								},
 								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 152303634604195,
+											"parameters": {
+												"object": "powerUps"
+											}
+										},
+										{
+											"id": "is-on-layer",
+											"objectClass": "powerUps",
+											"sid": 599797263081071,
+											"parameters": {
+												"layer": "\"shop\""
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "powerUps",
+											"sid": 487621873918106,
+											"parameters": {
+												"instance-variable": "slotted"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "powerUps",
+											"sid": 419893351524639
+										}
+									],
+									"sid": 373533979992765
+								},
+								{
 									"eventType": "comment",
 									"text": "Move Coins to Background "
 								},
@@ -10541,7 +10752,7 @@
 								},
 								{
 									"eventType": "comment",
-									"text": "Move Hacks Background NOT WORKING I THINK"
+									"text": "Move Hacks Background "
 								},
 								{
 									"eventType": "block",
