@@ -7526,104 +7526,123 @@
 												"click-type": "clicked",
 												"object-clicked": "coinsUpsPageShopButton"
 											}
-										}
-									],
-									"actions": [
+										},
 										{
-											"id": "set-animation",
+											"id": "is-animation-playing",
 											"objectClass": "shopInventoryBackground",
-											"sid": 675721315920569,
+											"sid": 181185651835116,
 											"parameters": {
-												"animation": "\"coins\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellCoinValueText",
-											"sid": 207516155351554,
-											"parameters": {
-												"visibility": "visible"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellHackValueText",
-											"sid": 277168819293022,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellPowerUpValueText",
-											"sid": 853084351512179,
-											"parameters": {
-												"visibility": "invisible"
-											}
+												"animation": "\"coins\""
+											},
+											"isInverted": true
 										}
 									],
+									"actions": [],
 									"sid": 125964559784350,
 									"children": [
 										{
-											"eventType": "comment",
-											"text": "Move Power Ups to Action Layer"
-										},
-										{
 											"eventType": "block",
-											"conditions": [],
-											"actions": [
+											"conditions": [
 												{
-													"type": "script",
-													"language": "javascript",
-													"script": [
-														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-														"const moveTo = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
-														"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
-														"",
-														"for (let i = 0; i < powerUps.length; i++) {",
-														"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
-														"}",
-														"",
-														"",
-														""
-													]
+													"id": "is-animation-playing",
+													"objectClass": "shopInventoryBackground",
+													"sid": 731182664393229,
+													"parameters": {
+														"animation": "\"powerUps\""
+													}
 												}
 											],
-											"sid": 445829207440723,
+											"actions": [],
+											"sid": 489924299425508,
 											"children": [
 												{
 													"eventType": "block",
-													"conditions": [
-														{
-															"id": "for-each",
-															"objectClass": "System",
-															"sid": 726495678504286,
-															"parameters": {
-																"object": "powerUps"
-															}
-														},
-														{
-															"id": "is-boolean-instance-variable-set",
-															"objectClass": "powerUps",
-															"sid": 181664244258381,
-															"parameters": {
-																"instance-variable": "slotted"
-															}
-														}
-													],
+													"conditions": [],
 													"actions": [
 														{
-															"id": "move-to-layer",
-															"objectClass": "powerUps",
-															"sid": 561552990445398,
-															"parameters": {
-																"layer": "\"background\""
-															}
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+																"const moveTo = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
+																"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+																"",
+																"for (let i = 0; i < powerUps.length; i++) {",
+																"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
+																"}",
+																"",
+																"",
+																""
+															]
 														}
 													],
-													"sid": 334807057035845
+													"sid": 904784604217473,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "for-each",
+																	"objectClass": "System",
+																	"sid": 603567433232690,
+																	"parameters": {
+																		"object": "powerUps"
+																	}
+																},
+																{
+																	"id": "is-boolean-instance-variable-set",
+																	"objectClass": "powerUps",
+																	"sid": 181010266516091,
+																	"parameters": {
+																		"instance-variable": "slotted"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "move-to-layer",
+																	"objectClass": "powerUps",
+																	"sid": 381908738785210,
+																	"parameters": {
+																		"layer": "\"background\""
+																	}
+																},
+																{
+																	"id": "set-animation",
+																	"objectClass": "powerUps",
+																	"sid": 488306502026255,
+																	"parameters": {
+																		"animation": "\"slottedAction\"",
+																		"from": "beginning"
+																	}
+																}
+															],
+															"sid": 973589005278600
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 812779157439456
 												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "shopInventoryBackground",
+													"sid": 478012860148854,
+													"parameters": {
+														"animation": "\"hacks\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 691946408677170,
+											"children": [
 												{
 													"eventType": "block",
 													"conditions": [],
@@ -7643,6 +7662,578 @@
 																"",
 																""
 															]
+														}
+													],
+													"sid": 949503777049857,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "for-each",
+																	"objectClass": "System",
+																	"sid": 313101950859165,
+																	"parameters": {
+																		"object": "hacks"
+																	}
+																},
+																{
+																	"id": "is-boolean-instance-variable-set",
+																	"objectClass": "hacks",
+																	"sid": 919468062611473,
+																	"parameters": {
+																		"instance-variable": "slotted"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "move-to-layer",
+																	"objectClass": "hacks",
+																	"sid": 614539108799139,
+																	"parameters": {
+																		"layer": "\"background\""
+																	}
+																}
+															],
+															"sid": 388171051314693
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [],
+													"sid": 639352807037512
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "shopInventoryBackground",
+													"sid": 784543532387029,
+													"parameters": {
+														"animation": "\"coins\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellCoinValueText",
+													"sid": 556980628955119,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellHackValueText",
+													"sid": 731247223976736,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellPowerUpValueText",
+													"sid": 128453344210272,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 330836044161207,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "Move Coins to Shop Layer"
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const moveTo = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+																"const moveFrom = runtime.objects[\"coinClip\"].getFirstInstance();",
+																"const coins = runtime.objects[\"coins\"].getAllInstances();",
+																"",
+																"for (let i = 0; i < coins.length; i++) {",
+																"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
+																"}",
+																"",
+																"",
+																""
+															]
+														}
+													],
+													"sid": 646096126782475,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "for-each",
+																	"objectClass": "System",
+																	"sid": 954483780385900,
+																	"parameters": {
+																		"object": "coins"
+																	}
+																},
+																{
+																	"id": "is-animation-playing",
+																	"objectClass": "coins",
+																	"sid": 900188827867556,
+																	"parameters": {
+																		"animation": "\"active\""
+																	},
+																	"isInverted": true
+																}
+															],
+															"actions": [
+																{
+																	"id": "move-to-layer",
+																	"objectClass": "coins",
+																	"sid": 880544825748583,
+																	"parameters": {
+																		"layer": "\"shop\""
+																	}
+																}
+															],
+															"sid": 454515755790849
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 114974591418445,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "hacksPageShopButton"
+											}
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "shopInventoryBackground",
+											"sid": 237745553509409,
+											"parameters": {
+												"animation": "\"hacks\""
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 230030118438095,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-animation-playing",
+													"objectClass": "shopInventoryBackground",
+													"sid": 527286191064054,
+													"parameters": {
+														"animation": "\"coins\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 254114400342151,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "for-each",
+															"objectClass": "System",
+															"sid": 803439853047735,
+															"parameters": {
+																"object": "coins"
+															}
+														},
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "coins",
+															"sid": 962695719629137,
+															"parameters": {
+																"instance-variable": "slotted"
+															}
+														}
+													],
+													"actions": [
+														{
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+																"const moveTo = runtime.objects[\"coinClip\"].getFirstInstance();",
+																"const coins = runtime.objects[\"coins\"].getAllInstances();",
+																"",
+																"for (let i = 0; i < coins.length; i++) {",
+																"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
+																"}",
+																"",
+																"",
+																""
+															]
+														}
+													],
+													"sid": 249062033659272,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "move-to-layer",
+																	"objectClass": "coins",
+																	"sid": 385097311058873,
+																	"parameters": {
+																		"layer": "\"background\""
+																	}
+																}
+															],
+															"sid": 410110718395548
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 745726439160563
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "shopInventoryBackground",
+													"sid": 856273803798822,
+													"parameters": {
+														"animation": "\"powerUps\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 402590086370202,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+																"const moveTo = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
+																"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+																"",
+																"for (let i = 0; i < powerUps.length; i++) {",
+																"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
+																"}",
+																"",
+																"",
+																""
+															]
+														}
+													],
+													"sid": 584033598863440,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "for-each",
+																	"objectClass": "System",
+																	"sid": 466038578191946,
+																	"parameters": {
+																		"object": "powerUps"
+																	}
+																},
+																{
+																	"id": "is-boolean-instance-variable-set",
+																	"objectClass": "powerUps",
+																	"sid": 852344751856006,
+																	"parameters": {
+																		"instance-variable": "slotted"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "move-to-layer",
+																	"objectClass": "powerUps",
+																	"sid": 166123482130353,
+																	"parameters": {
+																		"layer": "\"background\""
+																	}
+																},
+																{
+																	"id": "set-animation",
+																	"objectClass": "powerUps",
+																	"sid": 340515523849977,
+																	"parameters": {
+																		"animation": "\"slottedAction\"",
+																		"from": "beginning"
+																	}
+																}
+															],
+															"sid": 793854091217391
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "shopInventoryBackground",
+													"sid": 705355915129923,
+													"parameters": {
+														"animation": "\"hacks\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellHackValueText",
+													"sid": 398284783445569,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellCoinValueText",
+													"sid": 376599587014719,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellPowerUpValueText",
+													"sid": 898251881100871,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 436512711244038,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "shopInventoryBackground",
+															"sid": 183954687997092,
+															"parameters": {
+																"instance-variable": "hacksSpawned"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [],
+													"sid": 913854445517602,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 599123883903932,
+																	"parameters": {
+																		"object": "sellHackValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellHackValueText0\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellHackValueText",
+																	"sid": 427388214359986,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "0"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 315552158443790,
+																	"parameters": {
+																		"object": "sellHackValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellHackValueText1\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellHackValueText",
+																	"sid": 278336143169999,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 672908480063198,
+																	"parameters": {
+																		"object": "sellHackValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellHackValueText2\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellHackValueText",
+																	"sid": 924397335965487,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "2"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 741746074180413,
+																	"parameters": {
+																		"object": "sellHackValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellHackValueText3\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellHackValueText",
+																	"sid": 873617778521580,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "3"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 480844110424597,
+																	"parameters": {
+																		"object": "sellHackValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellHackValueText4\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellHackValueText",
+																	"sid": 240130183532045,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "4"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 509450342574103,
+																	"parameters": {
+																		"object": "sellHackValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellHackValueText5\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellHackValueText",
+																	"sid": 346460846558085,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "5"
+																	}
+																}
+															],
+															"sid": 581383356213082,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "set-boolean-instvar",
+																			"objectClass": "shopInventoryBackground",
+																			"sid": 328437980488916,
+																			"parameters": {
+																				"instance-variable": "hacksSpawned",
+																				"value": "true"
+																			}
+																		}
+																	],
+																	"sid": 134908383078015
+																}
+															]
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const moveTo = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+																"const moveFrom = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+																"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
+																"",
+																"for (let i = 0; i < hacks.length; i++) {",
+																"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
+																"}",
+																"",
+																"",
+																""
+															]
+														},
+														{
+															"callFunction": "updateHackSellValueText",
+															"sid": 314056127965402
 														}
 													],
 													"sid": 290236593770425,
@@ -7671,484 +8262,13 @@
 																{
 																	"id": "move-to-layer",
 																	"objectClass": "hacks",
-																	"sid": 318667423956027,
+																	"sid": 625418048327082,
 																	"parameters": {
-																		"layer": "\"background\""
+																		"layer": "\"shop\""
 																	}
 																}
 															],
 															"sid": 939226124879899
-														},
-														{
-															"eventType": "comment",
-															"text": "Move Coins to Shop Layer"
-														},
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"type": "script",
-																	"language": "javascript",
-																	"script": [
-																		"const moveTo = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-																		"const moveFrom = runtime.objects[\"coinClip\"].getFirstInstance();",
-																		"const coins = runtime.objects[\"coins\"].getAllInstances();",
-																		"",
-																		"for (let i = 0; i < coins.length; i++) {",
-																		"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
-																		"}",
-																		"",
-																		"",
-																		""
-																	]
-																}
-															],
-															"sid": 715058276163710,
-															"children": [
-																{
-																	"eventType": "block",
-																	"conditions": [
-																		{
-																			"id": "for-each",
-																			"objectClass": "System",
-																			"sid": 549042421307340,
-																			"parameters": {
-																				"object": "coins"
-																			}
-																		},
-																		{
-																			"id": "is-animation-playing",
-																			"objectClass": "coins",
-																			"sid": 783710991146100,
-																			"parameters": {
-																				"animation": "\"active\""
-																			},
-																			"isInverted": true
-																		}
-																	],
-																	"actions": [
-																		{
-																			"id": "move-to-layer",
-																			"objectClass": "coins",
-																			"sid": 374422099947483,
-																			"parameters": {
-																				"layer": "\"shop\""
-																			}
-																		}
-																	],
-																	"sid": 768733824009855
-																}
-															]
-														}
-													]
-												}
-											]
-										},
-										{
-											"eventType": "comment",
-											"text": "Move Hacks to Action Layer"
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-object-clicked",
-											"objectClass": "Mouse",
-											"sid": 114974591418445,
-											"parameters": {
-												"mouse-button": "left",
-												"click-type": "clicked",
-												"object-clicked": "hacksPageShopButton"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "shopInventoryBackground",
-											"sid": 822570213262166,
-											"parameters": {
-												"animation": "\"hacks\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellHackValueText",
-											"sid": 303185779091243,
-											"parameters": {
-												"visibility": "visible"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellCoinValueText",
-											"sid": 377626307934811,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellPowerUpValueText",
-											"sid": 591999254374103,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										}
-									],
-									"sid": 230030118438095,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "shopInventoryBackground",
-													"sid": 862355994707110,
-													"parameters": {
-														"instance-variable": "hacksSpawned"
-													},
-													"isInverted": true
-												}
-											],
-											"actions": [],
-											"sid": 193044754582832,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 383490328165003,
-															"parameters": {
-																"object": "sellHackValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellHackValueText0\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellHackValueText",
-															"sid": 703593818758523,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "0"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 689769225495682,
-															"parameters": {
-																"object": "sellHackValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellHackValueText1\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellHackValueText",
-															"sid": 318755690433451,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "1"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 857939280544514,
-															"parameters": {
-																"object": "sellHackValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellHackValueText2\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellHackValueText",
-															"sid": 581713225280913,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "2"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 701486280397165,
-															"parameters": {
-																"object": "sellHackValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellHackValueText3\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellHackValueText",
-															"sid": 693996622444728,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "3"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 511076987790408,
-															"parameters": {
-																"object": "sellHackValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellHackValueText4\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellHackValueText",
-															"sid": 565286030014666,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "4"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 937351177629792,
-															"parameters": {
-																"object": "sellHackValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellHackValueText5\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellHackValueText",
-															"sid": 291500087589073,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "5"
-															}
-														}
-													],
-													"sid": 548375408858441,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"id": "set-boolean-instvar",
-																	"objectClass": "shopInventoryBackground",
-																	"sid": 973451327611010,
-																	"parameters": {
-																		"instance-variable": "hacksSpawned",
-																		"value": "true"
-																	}
-																}
-															],
-															"sid": 988177964715421
-														}
-													]
-												}
-											]
-										},
-										{
-											"eventType": "comment",
-											"text": "Move Power Ups to Action Layer"
-										},
-										{
-											"eventType": "block",
-											"conditions": [],
-											"actions": [
-												{
-													"type": "script",
-													"language": "javascript",
-													"script": [
-														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-														"const moveTo = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
-														"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
-														"",
-														"for (let i = 0; i < powerUps.length; i++) {",
-														"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
-														"}",
-														"",
-														"",
-														""
-													]
-												}
-											],
-											"sid": 247902457736510,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "for-each",
-															"objectClass": "System",
-															"sid": 252383122379663,
-															"parameters": {
-																"object": "powerUps"
-															}
-														},
-														{
-															"id": "is-boolean-instance-variable-set",
-															"objectClass": "powerUps",
-															"sid": 708609459643202,
-															"parameters": {
-																"instance-variable": "slotted"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "move-to-layer",
-															"objectClass": "powerUps",
-															"sid": 303182316339534,
-															"parameters": {
-																"layer": "\"background\""
-															}
-														}
-													],
-													"sid": 162586474746276
-												},
-												{
-													"eventType": "comment",
-													"text": "Move Coins to Action Layer"
-												},
-												{
-													"eventType": "block",
-													"conditions": [],
-													"actions": [
-														{
-															"type": "script",
-															"language": "javascript",
-															"script": [
-																"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-																"const moveTo = runtime.objects[\"coinClip\"].getFirstInstance();",
-																"const coins = runtime.objects[\"coins\"].getAllInstances();",
-																"",
-																"for (let i = 0; i < coins.length; i++) {",
-																"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
-																"}",
-																"",
-																"",
-																""
-															]
-														}
-													],
-													"sid": 655775479611579,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "for-each",
-																	"objectClass": "System",
-																	"sid": 801762794079776,
-																	"parameters": {
-																		"object": "coins"
-																	}
-																},
-																{
-																	"id": "is-boolean-instance-variable-set",
-																	"objectClass": "coins",
-																	"sid": 427120339682936,
-																	"parameters": {
-																		"instance-variable": "slotted"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "move-to-layer",
-																	"objectClass": "coins",
-																	"sid": 637741978304515,
-																	"parameters": {
-																		"layer": "\"background\""
-																	}
-																}
-															],
-															"sid": 289293665730559,
-															"children": [
-																{
-																	"eventType": "block",
-																	"conditions": [],
-																	"actions": [],
-																	"sid": 808908900532303
-																}
-															]
-														},
-														{
-															"eventType": "comment",
-															"text": "Move Hacks to Shop Layer"
-														},
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"type": "script",
-																	"language": "javascript",
-																	"script": [
-																		"const moveTo = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-																		"const moveFrom = runtime.objects[\"hacksBackground\"].getFirstInstance();",
-																		"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
-																		"",
-																		"for (let i = 0; i < hacks.length; i++) {",
-																		"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
-																		"}",
-																		"",
-																		"",
-																		""
-																	]
-																}
-															],
-															"sid": 515296909908703,
-															"children": [
-																{
-																	"eventType": "block",
-																	"conditions": [
-																		{
-																			"id": "for-each",
-																			"objectClass": "System",
-																			"sid": 245568653553286,
-																			"parameters": {
-																				"object": "hacks"
-																			}
-																		}
-																	],
-																	"actions": [
-																		{
-																			"id": "move-to-layer",
-																			"objectClass": "hacks",
-																			"sid": 513845942103971,
-																			"parameters": {
-																				"layer": "\"shop\""
-																			}
-																		}
-																	],
-																	"sid": 923229874965236
-																}
-															]
 														}
 													]
 												}
@@ -8168,198 +8288,34 @@
 												"click-type": "clicked",
 												"object-clicked": "powerUpsPageShopButton"
 											}
-										}
-									],
-									"actions": [
+										},
 										{
-											"id": "set-animation",
+											"id": "is-animation-playing",
 											"objectClass": "shopInventoryBackground",
-											"sid": 789148699626766,
+											"sid": 909360061670282,
 											"parameters": {
-												"animation": "\"powerUps\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellCoinValueText",
-											"sid": 559396741159899,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellHackValueText",
-											"sid": 145858974426970,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "sellPowerUpValueText",
-											"sid": 285820515022088,
-											"parameters": {
-												"visibility": "visible"
-											}
+												"animation": "\"powerUps\""
+											},
+											"isInverted": true
 										}
 									],
+									"actions": [],
 									"sid": 260620637010882,
 									"children": [
 										{
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "is-boolean-instance-variable-set",
+													"id": "is-animation-playing",
 													"objectClass": "shopInventoryBackground",
-													"sid": 765306240896640,
+													"sid": 572075441189190,
 													"parameters": {
-														"instance-variable": "powerUpsSpawned"
-													},
-													"isInverted": true
+														"animation": "\"coins\""
+													}
 												}
 											],
 											"actions": [],
-											"sid": 341211114132780,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 187348684046967,
-															"parameters": {
-																"object": "sellPowerUpValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellPowerUpValueText0\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellPowerUpValueText",
-															"sid": 783638404173805,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "0"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 422502251234560,
-															"parameters": {
-																"object": "sellPowerUpValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellPowerUpValueText1\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellPowerUpValueText",
-															"sid": 414909440645666,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "1"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 967308346474600,
-															"parameters": {
-																"object": "sellPowerUpValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellPowerUpValueText2\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellPowerUpValueText",
-															"sid": 948850632039881,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "2"
-															}
-														},
-														{
-															"id": "spawn-another-object",
-															"objectClass": "shopInventoryBackground",
-															"sid": 960095452984088,
-															"parameters": {
-																"object": "sellPowerUpValueText",
-																"layer": "\"shop\"",
-																"image-point": "\"sellPowerUpValueText3\"",
-																"create-hierarchy": false,
-																"template-name": "\"\""
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "sellPowerUpValueText",
-															"sid": 890110866864742,
-															"parameters": {
-																"instance-variable": "id",
-																"value": "3"
-															}
-														}
-													],
-													"sid": 664513761536755,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"id": "set-boolean-instvar",
-																	"objectClass": "shopInventoryBackground",
-																	"sid": 998379454031526,
-																	"parameters": {
-																		"instance-variable": "powerUpsSpawned",
-																		"value": "true"
-																	}
-																}
-															],
-															"sid": 952388698530262
-														}
-													]
-												}
-											]
-										},
-										{
-											"eventType": "comment",
-											"text": "Move Hacks to Action Layer"
-										},
-										{
-											"eventType": "block",
-											"conditions": [],
-											"actions": [
-												{
-													"type": "script",
-													"language": "javascript",
-													"script": [
-														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-														"const moveTo = runtime.objects[\"hacksBackground\"].getFirstInstance();",
-														"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
-														"",
-														"for (let i = 0; i < hacks.length; i++) {",
-														"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
-														"}",
-														"",
-														"",
-														""
-													]
-												}
-											],
-											"sid": 594134971747355,
+											"sid": 995578892649311,
 											"children": [
 												{
 													"eventType": "block",
@@ -8367,39 +8323,20 @@
 														{
 															"id": "for-each",
 															"objectClass": "System",
-															"sid": 117833345737396,
+															"sid": 596097823187280,
 															"parameters": {
-																"object": "hacks"
+																"object": "coins"
 															}
 														},
 														{
 															"id": "is-boolean-instance-variable-set",
-															"objectClass": "hacks",
-															"sid": 591007342180650,
+															"objectClass": "coins",
+															"sid": 286525013346025,
 															"parameters": {
 																"instance-variable": "slotted"
 															}
 														}
 													],
-													"actions": [
-														{
-															"id": "move-to-layer",
-															"objectClass": "hacks",
-															"sid": 558025194441911,
-															"parameters": {
-																"layer": "\"background\""
-															}
-														}
-													],
-													"sid": 981598465473976
-												},
-												{
-													"eventType": "comment",
-													"text": "Move Coins to Action Layer"
-												},
-												{
-													"eventType": "block",
-													"conditions": [],
 													"actions": [
 														{
 															"type": "script",
@@ -8418,7 +8355,69 @@
 															]
 														}
 													],
-													"sid": 620114177912529,
+													"sid": 767829666358825,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "move-to-layer",
+																	"objectClass": "coins",
+																	"sid": 650369491617265,
+																	"parameters": {
+																		"layer": "\"background\""
+																	}
+																}
+															],
+															"sid": 222266791225917
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 627517253995097
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "shopInventoryBackground",
+													"sid": 306778448347927,
+													"parameters": {
+														"animation": "\"hacks\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 626543143337162,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+																"const moveTo = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+																"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
+																"",
+																"for (let i = 0; i < hacks.length; i++) {",
+																"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
+																"}",
+																"",
+																"",
+																""
+															]
+														}
+													],
+													"sid": 535498395699440,
 													"children": [
 														{
 															"eventType": "block",
@@ -8426,15 +8425,15 @@
 																{
 																	"id": "for-each",
 																	"objectClass": "System",
-																	"sid": 531098796535351,
+																	"sid": 976705841005524,
 																	"parameters": {
-																		"object": "coins"
+																		"object": "hacks"
 																	}
 																},
 																{
 																	"id": "is-boolean-instance-variable-set",
-																	"objectClass": "coins",
-																	"sid": 835023101365350,
+																	"objectClass": "hacks",
+																	"sid": 855995097644429,
 																	"parameters": {
 																		"instance-variable": "slotted"
 																	}
@@ -8443,84 +8442,257 @@
 															"actions": [
 																{
 																	"id": "move-to-layer",
-																	"objectClass": "coins",
-																	"sid": 701447254698878,
+																	"objectClass": "hacks",
+																	"sid": 643263504082826,
 																	"parameters": {
 																		"layer": "\"background\""
 																	}
 																}
 															],
-															"sid": 582689068306567
-														},
+															"sid": 759013152046543
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "shopInventoryBackground",
+													"sid": 401518894675306,
+													"parameters": {
+														"animation": "\"powerUps\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellCoinValueText",
+													"sid": 722288606625952,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellHackValueText",
+													"sid": 837194715360884,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "sellPowerUpValueText",
+													"sid": 803909095157993,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 335111665338329,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
 														{
-															"eventType": "comment",
-															"text": "Move Power Ups to Shop Layer"
-														},
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "shopInventoryBackground",
+															"sid": 944000565129289,
+															"parameters": {
+																"instance-variable": "powerUpsSpawned"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [],
+													"sid": 726133739892762,
+													"children": [
 														{
 															"eventType": "block",
 															"conditions": [],
 															"actions": [
 																{
-																	"type": "script",
-																	"language": "javascript",
-																	"script": [
-																		"const moveTo = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-																		"const moveFrom = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
-																		"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
-																		"",
-																		"for (let i = 0; i < powerUps.length; i++) {",
-																		"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
-																		"}",
-																		"",
-																		"",
-																		""
-																	]
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 608051266787923,
+																	"parameters": {
+																		"object": "sellPowerUpValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellPowerUpValueText0\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellPowerUpValueText",
+																	"sid": 606004230516866,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "0"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 235973797478611,
+																	"parameters": {
+																		"object": "sellPowerUpValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellPowerUpValueText1\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellPowerUpValueText",
+																	"sid": 738306271548755,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 248595018374603,
+																	"parameters": {
+																		"object": "sellPowerUpValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellPowerUpValueText2\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellPowerUpValueText",
+																	"sid": 336180350171359,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "2"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "shopInventoryBackground",
+																	"sid": 846820115803815,
+																	"parameters": {
+																		"object": "sellPowerUpValueText",
+																		"layer": "\"shop\"",
+																		"image-point": "\"sellPowerUpValueText3\"",
+																		"create-hierarchy": false,
+																		"template-name": "\"\""
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "sellPowerUpValueText",
+																	"sid": 251839022493688,
+																	"parameters": {
+																		"instance-variable": "id",
+																		"value": "3"
+																	}
 																}
 															],
-															"sid": 460141866847478,
+															"sid": 839162742434402,
 															"children": [
 																{
 																	"eventType": "block",
-																	"conditions": [
-																		{
-																			"id": "for-each",
-																			"objectClass": "System",
-																			"sid": 927458803265393,
-																			"parameters": {
-																				"object": "powerUps"
-																			}
-																		},
-																		{
-																			"id": "is-boolean-instance-variable-set",
-																			"objectClass": "powerUps",
-																			"sid": 141872593958874,
-																			"parameters": {
-																				"instance-variable": "slotted"
-																			}
-																		}
-																	],
+																	"conditions": [],
 																	"actions": [
 																		{
-																			"id": "move-to-layer",
-																			"objectClass": "powerUps",
-																			"sid": 576066010226345,
+																			"id": "set-boolean-instvar",
+																			"objectClass": "shopInventoryBackground",
+																			"sid": 941001415846182,
 																			"parameters": {
-																				"layer": "\"shop\""
-																			}
-																		},
-																		{
-																			"id": "set-animation",
-																			"objectClass": "powerUps",
-																			"sid": 172743278732111,
-																			"parameters": {
-																				"animation": "\"slotted\"",
-																				"from": "beginning"
+																				"instance-variable": "powerUpsSpawned",
+																				"value": "true"
 																			}
 																		}
 																	],
-																	"sid": 595669758338766
+																	"sid": 390916574821817
 																}
 															]
+														}
+													]
+												},
+												{
+													"eventType": "comment",
+													"text": "Move Power Ups to Shop Layer"
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"type": "script",
+															"language": "javascript",
+															"script": [
+																"const moveTo = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+																"const moveFrom = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
+																"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+																"",
+																"for (let i = 0; i < powerUps.length; i++) {",
+																"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
+																"}",
+																"",
+																"",
+																""
+															]
+														},
+														{
+															"callFunction": "updateHackSellValueText",
+															"sid": 719256883605215
+														}
+													],
+													"sid": 351679922307691,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "for-each",
+																	"objectClass": "System",
+																	"sid": 563088848063104,
+																	"parameters": {
+																		"object": "powerUps"
+																	}
+																},
+																{
+																	"id": "is-boolean-instance-variable-set",
+																	"objectClass": "powerUps",
+																	"sid": 902121928937955,
+																	"parameters": {
+																		"instance-variable": "slotted"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "move-to-layer",
+																	"objectClass": "powerUps",
+																	"sid": 621179199417021,
+																	"parameters": {
+																		"layer": "\"shop\""
+																	}
+																},
+																{
+																	"id": "set-animation",
+																	"objectClass": "powerUps",
+																	"sid": 791944276626242,
+																	"parameters": {
+																		"animation": "\"slotted\"",
+																		"from": "beginning"
+																	}
+																}
+															],
+															"sid": 415974865693584
 														}
 													]
 												}
@@ -8914,16 +9086,7 @@
 										{
 											"id": "set-boolean-instvar",
 											"objectClass": "powerUps",
-											"sid": 244522696858896,
-											"parameters": {
-												"instance-variable": "purchased",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "powerUps",
-											"sid": 642783866166003,
+											"sid": 120081486194827,
 											"parameters": {
 												"instance-variable": "slotted",
 												"value": "true"
@@ -8932,7 +9095,7 @@
 										{
 											"id": "subtract-from-eventvar",
 											"objectClass": "System",
-											"sid": 133178345090364,
+											"sid": 580158725023446,
 											"parameters": {
 												"variable": "money",
 												"value": "powerUps.buyValue"
@@ -8941,10 +9104,19 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 408275663280059,
+											"sid": 309988622716846,
 											"parameters": {
 												"variable": "powerUpsSlotsUsed",
 												"value": "1"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "powerUps",
+											"sid": 244522696858896,
+											"parameters": {
+												"instance-variable": "purchased",
+												"value": "true"
 											}
 										}
 									],
@@ -8969,9 +9141,22 @@
 													"script": [
 														"const powerUpBG = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
 														"const powerUpObj = runtime.objects[\"powerUps\"].getFirstPickedInstance();",
+														"const textInst = runtime.objects[\"buyPowerUpsValueText\"].getAllInstances();",
+														"",
+														"for (const t of textInst) {",
+														"\tif (t.instVars.id === powerUpObj.instVars.shopSlotID) {",
+														"\t\tt.text = \"SOLD\"",
+														"\t\tconsole.log(\"Item SOLD\")",
+														"\t\tbreak;",
+														"\t}",
+														"}",
 														"",
 														"slotAllocation(powerUpBG, powerUpObj, 3)"
 													]
+												},
+												{
+													"callFunction": "updatePowerUpSellValueText",
+													"sid": 125937151759208
 												}
 											],
 											"sid": 293890206399398
@@ -8992,6 +9177,15 @@
 													"script": [
 														"const powerUpBG = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
 														"const powerUpObj = runtime.objects[\"powerUps\"].getFirstPickedInstance();",
+														"const textInst = runtime.objects[\"buyPowerUpsValueText\"].getAllInstances();",
+														"",
+														"for (const t of textInst) {",
+														"\tif (t.instVars.id === powerUpObj.instVars.shopSlotID) {",
+														"\t\tt.text = \"SOLD\"",
+														"\t\tconsole.log(\"Item SOLD\")",
+														"\t\tbreak;",
+														"\t}",
+														"}",
 														"",
 														"slotAllocation(powerUpBG, powerUpObj, 3)"
 													]
@@ -9012,6 +9206,10 @@
 														"animation": "\"slottedAction\"",
 														"from": "beginning"
 													}
+												},
+												{
+													"callFunction": "updatePowerUpSellValueText",
+													"sid": 310538002114028
 												}
 											],
 											"sid": 390176832919201
@@ -10269,6 +10467,10 @@
 											"parameters": {
 												"visibility": "invisible"
 											}
+										},
+										{
+											"callFunction": "updateCoinSellValueText",
+											"sid": 955089642378913
 										}
 									],
 									"sid": 508531810445453
@@ -10583,6 +10785,14 @@
 											"id": "else",
 											"objectClass": "System",
 											"sid": 961824021635871
+										},
+										{
+											"id": "is-animation-playing",
+											"objectClass": "shopInventoryBackground",
+											"sid": 645416323102101,
+											"parameters": {
+												"animation": "\"powerUps\""
+											}
 										}
 									],
 									"actions": [],
@@ -10639,17 +10849,17 @@
 														{
 															"id": "move-to-layer",
 															"objectClass": "powerUps",
-															"sid": 526019583123748,
+															"sid": 966633178864065,
 															"parameters": {
-																"layer": "\"shop\""
+																"layer": "\"background\""
 															}
 														},
 														{
 															"id": "set-animation",
 															"objectClass": "powerUps",
-															"sid": 913182124427847,
+															"sid": 709000763715073,
 															"parameters": {
-																"animation": "\"slotted\"",
+																"animation": "\"slottedAction\"",
 																"from": "beginning"
 															}
 														}
@@ -10657,20 +10867,57 @@
 													"sid": 107936626174533
 												}
 											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [],
-											"actions": [],
-											"sid": 419382161007724
 										}
 									]
 								},
 								{
 									"eventType": "block",
 									"conditions": [],
-									"actions": [],
-									"sid": 782138754437984
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "shopInventoryBackground",
+											"sid": 943920308889504,
+											"parameters": {
+												"animation": "\"coins\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "sellCoinValueText",
+											"sid": 143475511999899,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "sellHackValueText",
+											"sid": 876806015300662,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "sellPowerUpValueText",
+											"sid": 680647215598943,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 632422452925851,
+											"parameters": {
+												"layer": "\"shop\"",
+												"interactive": false
+											}
+										}
+									],
+									"sid": 760855257772657
 								}
 							]
 						},
@@ -11434,6 +11681,49 @@
 								}
 							],
 							"sid": 147899722310514
+						}
+					]
+				},
+				{
+					"functionName": "updatePowerUpSellValueText",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 892217844375216,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const textInsts = runtime.objects[\"sellPowerUpValueText\"].getAllInstances();",
+										"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < powerUps.length; i++) {",
+										"\tconst powerUpValue = powerUps[i].instVars.sellValue",
+										"\tconst powerUpSlotId = powerUps[i].instVars.slotID",
+										"",
+										"\tfor (const t of textInsts) {",
+										"\t\tif (t.instVars.id === powerUpSlotId && powerUps[i].instVars.purchased === true) {",
+										"\t\t\tt.text = \"$\" + powerUpValue",
+										"\t\t}",
+										"\t}",
+										"}",
+										"",
+										""
+									]
+								}
+							],
+							"sid": 433857152572127
 						}
 					]
 				}
