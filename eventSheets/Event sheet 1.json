@@ -10424,38 +10424,174 @@
 							"sid": 556086536275586,
 							"children": [
 								{
+									"eventType": "comment",
+									"text": "Move Hacks to Action Layer"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
 											"id": "is-animation-playing",
 											"objectClass": "shopInventoryBackground",
-											"sid": 837574825125616,
+											"sid": 294649132314647,
 											"parameters": {
 												"animation": "\"hacks\""
-											}
-										},
-										{
-											"id": "is-animation-playing",
-											"objectClass": "shopInventoryBackground",
-											"sid": 334899177668106,
-											"parameters": {
-												"animation": "\"powerUps\""
 											}
 										}
 									],
 									"actions": [
 										{
-											"id": "set-animation",
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+												"const moveTo = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+												"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
+												"",
+												"for (let i = 0; i < hacks.length; i++) {",
+												"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
+												"}",
+												"",
+												"",
+												""
+											]
+										}
+									],
+									"sid": 195472533224164,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each",
+													"objectClass": "System",
+													"sid": 247413995209929,
+													"parameters": {
+														"object": "hacks"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "hacks",
+													"sid": 249582744800839,
+													"parameters": {
+														"instance-variable": "slotted"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-to-layer",
+													"objectClass": "hacks",
+													"sid": 665045615240390,
+													"parameters": {
+														"layer": "\"background\""
+													}
+												}
+											],
+											"sid": 183211041722638
+										},
+										{
+											"eventType": "comment",
+											"text": "Move Coins to Action Layer"
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 764400863839491
+										},
+										{
+											"id": "is-animation-playing",
 											"objectClass": "shopInventoryBackground",
-											"sid": 570774121896372,
+											"sid": 776987292434861,
 											"parameters": {
-												"animation": "\"coins\"",
-												"from": "beginning"
+												"animation": "\"coins\""
 											}
 										}
 									],
-									"sid": 344706316694228,
+									"actions": [],
+									"sid": 653083032095958,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"type": "script",
+													"language": "javascript",
+													"script": [
+														"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+														"const moveTo = runtime.objects[\"coinClip\"].getFirstInstance();",
+														"const coins = runtime.objects[\"coins\"].getAllInstances();",
+														"",
+														"for (let i = 0; i < coins.length; i++) {",
+														"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
+														"}",
+														"",
+														"",
+														""
+													]
+												}
+											],
+											"sid": 195213016678647,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "for-each",
+															"objectClass": "System",
+															"sid": 702889403491717,
+															"parameters": {
+																"object": "coins"
+															}
+														},
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "coins",
+															"sid": 823388910649115,
+															"parameters": {
+																"instance-variable": "slotted"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "move-to-layer",
+															"objectClass": "coins",
+															"sid": 216833012636888,
+															"parameters": {
+																"layer": "\"background\""
+															}
+														}
+													],
+													"sid": 206357800812645
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 961824021635871
+										}
+									],
+									"actions": [],
+									"sid": 942663964547631,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "Move Power Ups to Shop Layer"
+										},
 										{
 											"eventType": "block",
 											"conditions": [],
@@ -10477,15 +10613,23 @@
 													]
 												}
 											],
-											"sid": 435825790135071,
+											"sid": 501698672897150,
 											"children": [
 												{
 													"eventType": "block",
 													"conditions": [
 														{
+															"id": "for-each",
+															"objectClass": "System",
+															"sid": 504574062699508,
+															"parameters": {
+																"object": "powerUps"
+															}
+														},
+														{
 															"id": "is-boolean-instance-variable-set",
 															"objectClass": "powerUps",
-															"sid": 640692783414932,
+															"sid": 897811539004863,
 															"parameters": {
 																"instance-variable": "slotted"
 															}
@@ -10495,332 +10639,175 @@
 														{
 															"id": "move-to-layer",
 															"objectClass": "powerUps",
-															"sid": 956743749440049,
+															"sid": 526019583123748,
 															"parameters": {
-																"layer": "\"background\""
+																"layer": "\"shop\""
 															}
 														},
 														{
 															"id": "set-animation",
 															"objectClass": "powerUps",
-															"sid": 331382095102849,
+															"sid": 913182124427847,
 															"parameters": {
-																"animation": "\"slottedAction\"",
+																"animation": "\"slotted\"",
 																"from": "beginning"
 															}
 														}
 													],
-													"sid": 266446314583359
-												},
-												{
-													"eventType": "block",
-													"conditions": [],
-													"actions": [
-														{
-															"type": "script",
-															"language": "javascript",
-															"script": [
-																"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-																"const moveTo = runtime.objects[\"hacksBackground\"].getFirstInstance();",
-																"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
-																"",
-																"for (let i = 0; i < hacks.length; i++) {",
-																"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
-																"}",
-																"",
-																"",
-																""
-															]
-														}
-													],
-													"sid": 963522842416734,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "is-boolean-instance-variable-set",
-																	"objectClass": "hacks",
-																	"sid": 583789591582926,
-																	"parameters": {
-																		"instance-variable": "slotted"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "move-to-layer",
-																	"objectClass": "hacks",
-																	"sid": 896232388674650,
-																	"parameters": {
-																		"layer": "\"background\""
-																	}
-																}
-															],
-															"sid": 615780588055837
-														},
-														{
-															"eventType": "comment",
-															"text": "Move Coins to Shop Layer"
-														},
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"type": "script",
-																	"language": "javascript",
-																	"script": [
-																		"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-																		"const moveTo = runtime.objects[\"coinClip\"].getFirstInstance();",
-																		"const coins = runtime.objects[\"coins\"].getAllInstances();",
-																		"",
-																		"for (let i = 0; i < coins.length; i++) {",
-																		"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
-																		"}",
-																		"",
-																		"",
-																		""
-																	]
-																}
-															],
-															"sid": 263885602674815,
-															"children": [
-																{
-																	"eventType": "block",
-																	"conditions": [
-																		{
-																			"id": "is-animation-playing",
-																			"objectClass": "coins",
-																			"sid": 863900546478784,
-																			"parameters": {
-																				"animation": "\"active\""
-																			},
-																			"isInverted": true
-																		}
-																	],
-																	"actions": [
-																		{
-																			"id": "move-to-layer",
-																			"objectClass": "coins",
-																			"sid": 555229288372610,
-																			"parameters": {
-																				"layer": "\"background\""
-																			}
-																		}
-																	],
-																	"sid": 756389322641263
-																}
-															]
-														}
-													]
+													"sid": 107936626174533
 												}
 											]
-										}
-									],
-									"isOrBlock": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 929536826215982,
-											"parameters": {
-												"object": "coins"
-											}
 										},
-										{
-											"id": "is-on-layer",
-											"objectClass": "coins",
-											"sid": 697302517988843,
-											"parameters": {
-												"layer": "\"shop\""
-											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "coins",
-											"sid": 841937336336309,
-											"parameters": {
-												"instance-variable": "slotted"
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "coins",
-											"sid": 141639168796602
-										}
-									],
-									"sid": 790004910617104
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 588785267965419,
-											"parameters": {
-												"object": "hacks"
-											}
-										},
-										{
-											"id": "is-on-layer",
-											"objectClass": "hacks",
-											"sid": 303891006502224,
-											"parameters": {
-												"layer": "\"shop\""
-											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "hacks",
-											"sid": 812596384068143,
-											"parameters": {
-												"instance-variable": "slotted"
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "hacks",
-											"sid": 427242474227900
-										}
-									],
-									"sid": 612100627718002
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 152303634604195,
-											"parameters": {
-												"object": "powerUps"
-											}
-										},
-										{
-											"id": "is-on-layer",
-											"objectClass": "powerUps",
-											"sid": 599797263081071,
-											"parameters": {
-												"layer": "\"shop\""
-											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "powerUps",
-											"sid": 487621873918106,
-											"parameters": {
-												"instance-variable": "slotted"
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "powerUps",
-											"sid": 419893351524639
-										}
-									],
-									"sid": 373533979992765
-								},
-								{
-									"eventType": "comment",
-									"text": "Move Coins to Background "
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"type": "script",
-											"language": "javascript",
-											"script": [
-												"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-												"const moveTo = runtime.objects[\"coinClip\"].getFirstInstance();",
-												"const coins = runtime.objects[\"coins\"].getAllInstances();",
-												"",
-												"for (let i = 0; i < coins.length; i++) {",
-												"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
-												"}",
-												"",
-												"",
-												""
-											]
-										},
-										{
-											"id": "move-to-layer",
-											"objectClass": "coins",
-											"sid": 534726397325203,
-											"parameters": {
-												"layer": "\"background\""
-											}
-										}
-									],
-									"sid": 604313991282456
-								},
-								{
-									"eventType": "comment",
-									"text": "Move Hacks Background "
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"type": "script",
-											"language": "javascript",
-											"script": [
-												"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
-												"const moveTo = runtime.objects[\"hacksBackground\"].getFirstInstance();",
-												"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
-												"",
-												"for (let i = 0; i < hacks.length; i++) {",
-												"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
-												"}",
-												"",
-												"",
-												""
-											]
-										},
-										{
-											"id": "move-to-layer",
-											"objectClass": "hacks",
-											"sid": 504323181438597,
-											"parameters": {
-												"layer": "\"background\""
-											}
-										}
-									],
-									"sid": 980525272765388,
-									"children": [
 										{
 											"eventType": "block",
 											"conditions": [],
-											"actions": [
-												{
-													"id": "set-layer-interactive",
-													"objectClass": "System",
-													"sid": 790318528108228,
-													"parameters": {
-														"layer": "\"shop\"",
-														"interactive": false
-													}
-												}
-											],
-											"sid": 910816257054320
+											"actions": [],
+											"sid": 419382161007724
 										}
 									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 782138754437984
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Move Coins to Background "
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+										"const moveTo = runtime.objects[\"coinClip\"].getFirstInstance();",
+										"const coins = runtime.objects[\"coins\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < coins.length; i++) {",
+										"    moveInventory(moveFrom, moveTo, 12, coins[i]);",
+										"}",
+										"",
+										"",
+										""
+									]
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "coins",
+									"sid": 534726397325203,
+									"parameters": {
+										"layer": "\"background\""
+									}
+								}
+							],
+							"sid": 604313991282456,
+							"disabled": true
+						},
+						{
+							"eventType": "comment",
+							"text": "Move Hacks Background "
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+										"const moveTo = runtime.objects[\"hacksBackground\"].getFirstInstance();",
+										"const hacks = runtime.objects[\"hacks\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < hacks.length; i++) {",
+										"    moveInventory(moveFrom, moveTo, 3, hacks[i]);",
+										"}",
+										"",
+										"",
+										""
+									]
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "hacks",
+									"sid": 504323181438597,
+									"parameters": {
+										"layer": "\"background\""
+									}
+								}
+							],
+							"sid": 980525272765388,
+							"disabled": true
+						},
+						{
+							"eventType": "comment",
+							"text": "Move Power Ups to background"
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "script",
+									"language": "javascript",
+									"script": [
+										"const moveFrom = runtime.objects[\"shopInventoryBackground\"].getFirstInstance();",
+										"const moveTo = runtime.objects[\"powerUpsBackground\"].getFirstInstance();",
+										"const powerUps = runtime.objects[\"powerUps\"].getAllInstances();",
+										"",
+										"for (let i = 0; i < powerUps.length; i++) {",
+										"    moveInventory(moveFrom, moveTo, 3, powerUps[i]);",
+										"}",
+										"",
+										"",
+										""
+									]
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "powerUps",
+									"sid": 693722354790635,
+									"parameters": {
+										"layer": "\"background\""
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "powerUps",
+									"sid": 900349777705118,
+									"parameters": {
+										"animation": "\"slottedAction\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 132047654109226,
+							"disabled": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-layer-interactive",
+											"objectClass": "System",
+											"sid": 250162795714149,
+											"disabled": true,
+											"parameters": {
+												"layer": "\"shop\"",
+												"interactive": false
+											}
+										}
+									],
+									"sid": 207432526445859,
+									"disabled": true
 								}
 							]
 						}
