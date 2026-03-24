@@ -1,7 +1,7 @@
 {
-	"name": "shopInformation",
+	"name": "rerollHacksButton",
 	"plugin-id": "Sprite",
-	"sid": 461351535952866,
+	"sid": 971405626041815,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,38 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 138,
+						"height": 41,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4793485,
+						"imageSpriteId": 6858432,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "shopOptionsButton",
-								"x": 0.104,
-								"y": 0.704
-							},
-							{
-								"name": "shopSoundButton",
-								"x": 0.38,
-								"y": 0.704
-							},
-							{
-								"name": "shopAchiButton",
-								"x": 0.656,
-								"y": 0.704
-							}
-						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 109672483952598,
+				"sid": 791087303765425,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

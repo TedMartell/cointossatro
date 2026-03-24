@@ -3668,6 +3668,18 @@
 														"instance-variable": "id",
 														"value": "4"
 													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "coinShop",
+													"sid": 420828343515699,
+													"parameters": {
+														"object": "rerollCoinsButton",
+														"layer": "\"shop\"",
+														"image-point": "\"rerollCoinsButton\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
 												}
 											],
 											"sid": 702722297373600
@@ -3754,6 +3766,18 @@
 														"instance-variable": "id",
 														"value": "2"
 													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "powerUpShop",
+													"sid": 444913875651495,
+													"parameters": {
+														"object": "rerollPowerUpsButton",
+														"layer": "\"shop\"",
+														"image-point": "\"rerollPowerUpsButton\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
 												}
 											],
 											"sid": 801146020685077
@@ -3839,6 +3863,18 @@
 													"parameters": {
 														"instance-variable": "id",
 														"value": "2"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "hacksShop",
+													"sid": 984366423044844,
+													"parameters": {
+														"object": "rerollHacksButton",
+														"layer": "\"shop\"",
+														"image-point": "\"rerollHacksButton\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
 													}
 												}
 											],
@@ -8647,8 +8683,8 @@
 															]
 														},
 														{
-															"callFunction": "updateHackSellValueText",
-															"sid": 719256883605215
+															"callFunction": "updatePowerUpSellValueText",
+															"sid": 905991239500557
 														}
 													],
 													"sid": 351679922307691,
@@ -8731,11 +8767,13 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-key-pressed",
-											"objectClass": "Keyboard",
-											"sid": 216046748290548,
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 120405596114043,
 											"parameters": {
-												"key": 66
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "rerollPowerUpsButton"
 											}
 										}
 									],
@@ -8821,11 +8859,13 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-key-pressed",
-											"objectClass": "Keyboard",
-											"sid": 528019094712393,
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 249298788030979,
 											"parameters": {
-												"key": 66
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "rerollHacksButton"
 											}
 										}
 									],
@@ -8912,11 +8952,13 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-key-pressed",
-											"objectClass": "Keyboard",
-											"sid": 893050228441584,
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 136181327615394,
 											"parameters": {
-												"key": 66
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "rerollCoinsButton"
 											}
 										}
 									],

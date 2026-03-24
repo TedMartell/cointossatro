@@ -64,6 +64,11 @@
 								"name": "sellPowerUpsValueText2",
 								"x": 0.5393548387096774,
 								"y": 0.8339622641509434
+							},
+							{
+								"name": "rerollPowerUpsButton",
+								"x": 0.7496774193548387,
+								"y": 0.052830188679245285
 							}
 						],
 						"duration": 1,

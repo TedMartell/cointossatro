@@ -220,7 +220,11 @@
 			"powerUpsPageShopButton",
 			"sellCoinValueText",
 			"sellHackValueText",
-			"sellPowerUpValueText"
+			"sellPowerUpValueText",
+			"rerollCoinsButton",
+			"rerollHacksButton",
+			"rerollPowerUpsButton",
+			"shopOptionsButton"
 		],
 		"subfolders": []
 	},
