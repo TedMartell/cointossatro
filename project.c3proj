@@ -224,7 +224,9 @@
 			"rerollCoinsButton",
 			"rerollHacksButton",
 			"rerollPowerUpsButton",
-			"shopOptionsButton"
+			"shopOptionsButton",
+			"shopSoundButton",
+			"shopAchiButton"
 		],
 		"subfolders": []
 	},
