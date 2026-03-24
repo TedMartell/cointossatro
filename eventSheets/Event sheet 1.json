@@ -4156,6 +4156,65 @@
 											"sid": 888187787696095
 										}
 									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": [
+												"//Shop Information SPAWNS"
+											]
+										}
+									],
+									"sid": 368767084742383,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInformation",
+													"sid": 449415177715155,
+													"parameters": {
+														"object": "shopOptionsButton",
+														"layer": "\"shop\"",
+														"image-point": "\"shopOptionsButton\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInformation",
+													"sid": 187679110299167,
+													"parameters": {
+														"object": "shopSoundButton",
+														"layer": "\"shop\"",
+														"image-point": "\"shopSoundButton\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "shopInformation",
+													"sid": 226785429321901,
+													"parameters": {
+														"object": "shopAchiButton",
+														"layer": "\"shop\"",
+														"image-point": "\"shopAchiButton\"",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												}
+											],
+											"sid": 146302911149408
+										}
+									]
 								}
 							]
 						}
